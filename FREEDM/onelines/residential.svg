@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:tgs="http://www.totalgrid.org" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color:black;" viewBox="0 0 900.0 407.5" preserveAspectRatio="xMidYMid meet">
+ <title>residential</title>
+ <defs>
+  <symbol id="quality_questionable">
+   <title>Quality Questionable</title>
+   <g id="svg_30">
+    <path fill="#FFFF00" stroke="#999999" d="m7.5,5c0,0 2.5,0 5,0c2.5,0 2.5,0 2.5,2.5c0,2.5 0,2.5 0,5c0,2.5 0,2.5 -2.5,2.5c-2.5,0 -2.5,0 -5,0c-2.5,0 -2.5,0 -2.5,-2.5c0,-2.5 0,-2.5 0,-5c0,-2.5 0,-2.5 2.5,-2.5z" id="svg_31"/>
+    <text font-weight="bold" text-anchor="middle" font-family="serif" font-size="10" y="14" x="10" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#999999" fill="#000000" id="svg_32">?</text>
+   </g>
+  </symbol>
+ </defs>
+ <g>
+  <title>modeling</title>
+  <g tgs:uri="ModelNodeDetailPlace:?model_node_name=LV;tab=schematic" name="schematic:LV" x="110" y="200" class="clickable" tgs:schematic-type="navigation-label" id="svg_28">
+   <text class="default" x="110" y="200" id="svg_29">GreenHub LV</text>
+  </g>
+  <text x="850" y="195" class="symbol-label" text-anchor="middle" id="svg_33"/>
+  <text x="367" y="184.5" class="symbol-label" text-anchor="middle" id="svg_34">CB LA</text>
+  <text x="429" y="32.5" class="symbol-label" text-anchor="middle" id="svg_35">RP1</text>
+  <text x="492" y="118" class="symbol-label" text-anchor="middle" id="svg_37">CB EV</text>
+  <text x="492" y="224.5" class="symbol-label" text-anchor="middle" id="svg_38">CB ESS</text>
+  <text fill="undefined" x="691" y="96" class="symbol-label" text-anchor="middle" id="svg_40">EV Charging</text>
+  <text fill="undefined" x="692" y="202" class="symbol-label" text-anchor="middle" id="svg_41">Energy Storage</text>
+  <text x="210" y="186.5" class="symbol-label" text-anchor="middle" id="svg_42"/>
+  <g class="connection" tgs:schematic-type="connection" id="svg_43">
+   <line y2="200" x1="218.5" class="voltage-208V" x2="283.75" y1="200" id="svg_44"/>
+   <line y2="199.76" x1="283.75" class="voltage-208V" x2="283.75" y1="200" id="svg_45"/>
+   <line y2="199.76" x1="283.75" class="voltage-208V" x2="349" y1="199.76" id="svg_46"/>
+  </g>
+  <g class="connection" tgs:schematic-type="connection" id="svg_47">
+   <line y2="199.76" x1="385" class="voltage-208V" x2="406" y1="199.76" id="svg_48"/>
+   <line y2="199.76" x1="406" class="voltage-208V" x2="427" y1="199.76" id="svg_49"/>
+  </g>
+  <g class="connection" tgs:schematic-type="connection" id="svg_53">
+   <line y2="132.76" x1="427" class="voltage-208V" x2="450.5" y1="132.76" id="svg_54"/>
+   <line y2="132.76" x1="450.5" class="voltage-208V" x2="474" y1="132.76" id="svg_55"/>
+  </g>
+  <g class="connection" tgs:schematic-type="connection" id="svg_56">
+   <line y2="239.76" x1="427" class="voltage-208V" x2="450.5" y1="239.76" id="svg_57"/>
+   <line y2="239.76" x1="450.5" class="voltage-208V" x2="474" y1="239.76" id="svg_58"/>
+  </g>
+  <g class="connection" tgs:schematic-type="connection" id="svg_63">
+   <line y2="132.76" x1="510" class="voltage-208V" x2="591.25" y1="132.76" id="svg_64"/>
+   <line y2="133" x1="591.25" class="voltage-208V" x2="591.25" y1="132.76" id="svg_65"/>
+   <line y2="133" x1="591.25" class="voltage-208V" x2="672.5" y1="133" id="svg_66"/>
+  </g>
+  <g class="connection" tgs:schematic-type="connection" id="svg_67">
+   <line y2="239.76" x1="510" class="voltage-208V" x2="591.25" y1="239.76" id="svg_68"/>
+   <line y2="240" x1="591.25" class="voltage-208V" x2="591.25" y1="239.76" id="svg_69"/>
+   <line y2="240" x1="591.25" class="voltage-208V" x2="672.5" y1="240" id="svg_70"/>
+  </g>
+  <g id="svg_2">
+   <svg tgs:symbol-type="nullequipment" id="svg_77" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="850" y="200">
+    <g id="svg_78"/>
+   </svg>
+  </g>
+  <g id="svg_5">
+   <svg tgs:symbol-type="symbolextension" id="svg_85" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="349" y="179">
+    <g id="svg_86">
+     <path stroke-linecap="null" fill="none" stroke-linejoin="null" stroke-dasharray="null" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" id="svg_89" stroke="#ffffff" stroke-width="2"/>
+     <circle cx="2" r="2" cy="21" id="svg_88"/>
+     <circle cx="35" r="2" cy="21" id="svg_87"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_13">
+   <svg tgs:symbol-type="symbolextension" id="svg_90" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="474" y="112">
+    <g id="svg_91">
+     <path stroke-linecap="null" fill="none" stroke-linejoin="null" stroke-dasharray="null" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" id="svg_94" stroke="#ffffff" stroke-width="2"/>
+     <circle cx="2" r="2" cy="21" id="svg_93"/>
+     <circle cx="35" r="2" cy="21" id="svg_92"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_16">
+   <svg tgs:symbol-type="symbolextension" id="svg_95" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="474" y="219">
+    <g id="svg_96">
+     <path stroke-linecap="null" fill="none" stroke-linejoin="null" stroke-dasharray="null" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" id="svg_99" stroke="#ffffff" stroke-width="2"/>
+     <circle cx="2" r="2" cy="21" id="svg_98"/>
+     <circle cx="35" r="2" cy="21" id="svg_97"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_23">
+   <svg tgs:symbol-type="generator" id="svg_100" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="671" y="117" xmlns:html="http://www.w3.org/1999/xhtml">
+    <g id="svg_101">
+     <foreignObject x="9" width="16" height="16" y="8">EV</foreignObject>
+     <circle r="15" cx="17" cy="16" fill="none" id="svg_102"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_25">
+   <svg tgs:symbol-type="generator" id="svg_103" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="671" y="224" xmlns:html="http://www.w3.org/1999/xhtml">
+    <g id="svg_104">
+     <foreignObject x="9" width="16" height="16" y="8">ES</foreignObject>
+     <circle r="15" cx="17" cy="16" fill="none" id="svg_105"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_27">
+   <svg tgs:symbol-type="destinationarrow" id="svg_106" preserveAspectRatio="xMidYMid meet" tgs:schematic-type="equipment-symbol" class="symbol" x="201.5" y="191.5">
+    <g transform="rotate(180 8.5 8.5)" id="svg_107">
+     <path d="m0,0l0,15l15,-7.5l-15,-7.5" fill="white" id="svg_108"/>
+    </g>
+   </svg>
+  </g>
+  <line fill="none" stroke="#bf005f" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="427" y1="39" x2="427" y2="358" id="svg_115"/>
+  <g tgs:point-name="Residential.ESS_R.Inverter_Watts" tgs:schematic-type="point" class="point" id="svg_81">
+   <use x="715" y="222.5" class="quality-display" xlink:href="#quality_questionable" id="svg_80"/>
+   <text class="data-label" xml:space="preserve" id="svg_79" y="236.5" x="735">xxxxxx uu</text>
+  </g>
+  <g tgs:point-name="Residential.ESS_R.%SOC" tgs:schematic-type="point" class="point" id="svg_84">
+   <use x="715" y="244.5" class="quality-display" xlink:href="#quality_questionable" id="svg_83"/>
+   <text class="data-label" xml:space="preserve" id="svg_82" y="258.5" x="735">xxxxxx uu</text>
+  </g>
+  <g id="svg_62" class="point" tgs:schematic-type="point" tgs:point-name="Residential.EVCS_Eaton.Op_Voltage">
+   <use id="svg_61" xlink:href="#quality_questionable" class="quality-display" y="102.5" x="716"/>
+   <text x="736" y="116.5" id="svg_60" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_73" class="point" tgs:schematic-type="point" tgs:point-name="Residential.EVCS_Eaton.Ic">
+   <use id="svg_72" xlink:href="#quality_questionable" class="quality-display" y="124.5" x="716"/>
+   <text x="736" y="138.5" id="svg_71" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_76" class="point" tgs:schematic-type="point" tgs:point-name="Residential.EVCS_Eaton.EVSE_State">
+   <use id="svg_75" xlink:href="#quality_questionable" class="quality-display" y="145.5" x="716"/>
+   <text x="736" y="159.5" id="svg_74" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <text stroke="#FFFFFF" transform="matrix(0.5 0 0 0.516129 334 7.74194)" xml:space="preserve" text-anchor="middle" font-family="Serif" font-size="24" id="svg_109" y="210" x="880" stroke-width="0" fill="#ffff00">Volts</text>
+  <text style="cursor: move; " id="svg_110" fill="undefined" x="691" y="108" class="symbol-label" text-anchor="middle">Station</text>
+  <text style="cursor: move; " id="svg_111" fill="undefined" x="692" y="218" class="symbol-label" text-anchor="middle">System</text>
+ </g>
+ <g display="none">
+  <title>navigation</title>
+ </g>
+</svg>

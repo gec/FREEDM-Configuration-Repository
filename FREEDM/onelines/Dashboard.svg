@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:tgs="http://www.totalgrid.org" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color:black;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1473.75 577.5">
+ <title>Dashboard</title>
+ <defs>
+  <symbol id="quality_questionable">
+   <title>Quality Questionable</title>
+   <g id="svg_30">
+    <path id="svg_31" d="m7.5,5c0,0 2.5,0 5,0c2.5,0 2.5,0 2.5,2.5c0,2.5 0,2.5 0,5c0,2.5 0,2.5 -2.5,2.5c-2.5,0 -2.5,0 -5,0c-2.5,0 -2.5,0 -2.5,-2.5c0,-2.5 0,-2.5 0,-5c0,-2.5 0,-2.5 2.5,-2.5z" stroke="#999999" fill="#FFFF00"/>
+    <text id="svg_32" fill="#000000" stroke="#999999" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="10" y="14" font-size="10" font-family="serif" text-anchor="middle" font-weight="bold">?</text>
+   </g>
+  </symbol>
+ </defs>
+ <g>
+  <title>modeling</title>
+  <g id="svg_88" tgs:schematic-type="label" y="400" x="450" name="BTB1">
+   <text id="svg_89" y="400" x="450" class="default">BTB1</text>
+  </g>
+  <g id="svg_90" tgs:schematic-type="label" y="400" x="500" name="BTB2">
+   <text fill="undefined" id="svg_91" y="400" x="500" class="default">BTB2</text>
+  </g>
+  <g id="svg_92" tgs:schematic-type="label" y="100" x="20" name="22kV">
+   <text id="svg_93" y="100" x="20" class="default">22kV</text>
+  </g>
+  <text id="svg_94" text-anchor="middle" class="symbol-label" y="12.5" x="384.5">MDP</text>
+  <text fill="undefined" id="svg_95" text-anchor="middle" class="symbol-label" y="89" x="345">MAIN</text>
+  <text id="svg_96" text-anchor="middle" class="symbol-label" y="304.5" x="345">CB PV</text>
+  <text id="svg_97" text-anchor="middle" class="symbol-label" y="299" x="220">Rooftop PV</text>
+  <text id="svg_98" text-anchor="middle" class="symbol-label" y="64.5" x="425">CB T2</text>
+  <text id="svg_99" text-anchor="middle" class="symbol-label" y="102" x="32"/>
+  <text id="svg_100" text-anchor="middle" class="symbol-label" y="77.5" x="182">T1</text>
+  <text id="svg_101" text-anchor="middle" class="symbol-label" y="47.5" x="525">T2</text>
+  <text id="svg_102" text-anchor="middle" class="symbol-label" y="64.5" x="645">CB208</text>
+  <text id="svg_103" text-anchor="middle" class="symbol-label" y="42.5" x="684.5">LDA</text>
+  <text id="svg_104" text-anchor="middle" class="symbol-label" y="192.5" x="594.5">HAD</text>
+  <text id="svg_105" text-anchor="middle" class="symbol-label" y="209" x="425" fill="undefined">HAD</text>
+  <text id="svg_106" text-anchor="middle" class="symbol-label" y="209" x="556" fill="undefined">MAIN HAD</text>
+  <text id="svg_107" text-anchor="middle" class="symbol-label" y="269" x="425" fill="undefined">BTB1</text>
+  <text id="svg_108" text-anchor="middle" class="symbol-label" y="269" x="555" fill="undefined">BTB2</text>
+  <text id="svg_109" y="370" x="485" class="symbol-label"/>
+  <text id="svg_110" y="370" x="535" class="symbol-label"/>
+  <text id="svg_112" text-anchor="middle" class="symbol-label" y="287.5" x="695">T3</text>
+  <text id="svg_113" text-anchor="middle" class="symbol-label" y="304.5" x="845">CB MV</text>
+  <text id="svg_114" text-anchor="middle" class="symbol-label" y="272.5" x="884.5">MV BUS</text>
+  <text id="svg_115" text-anchor="middle" class="symbol-label" y="344.5" x="925">SW MV1</text>
+  <text id="svg_116" text-anchor="middle" class="symbol-label" y="424.5" x="925">SW MV2</text>
+  <text id="svg_117" text-anchor="middle" class="symbol-label" y="340" x="1081.25">TCE</text>
+  <text id="svg_118" text-anchor="middle" class="symbol-label" y="340" x="1237.5">TCD</text>
+  <text id="svg_119" text-anchor="middle" class="symbol-label" y="340" x="1393.75">TCC</text>
+  <text id="svg_120" text-anchor="middle" class="symbol-label" y="420" x="1159.375">TCA</text>
+  <text id="svg_121" text-anchor="middle" class="symbol-label" y="420" x="1315.625">TCB</text>
+  <text id="svg_122" text-anchor="middle" class="symbol-label" y="84.5" x="800">CB LA</text>
+  <text fill="undefined" id="svg_123" text-anchor="middle" class="symbol-label" y="22" x="885">RP1</text>
+  <text id="svg_125" text-anchor="middle" class="symbol-label" y="62" x="1020">CB EV</text>
+  <text id="svg_126" text-anchor="middle" class="symbol-label" y="142" x="1020">CB ESS</text>
+  <text id="svg_128" text-anchor="middle" class="symbol-label" y="56" x="1130">EV Charging Station</text>
+  <text id="svg_129" text-anchor="middle" class="symbol-label" y="136" x="1130">Energy Storage System</text>
+  <g id="svg_130" tgs:schematic-type="connection" class="connection">
+   <line id="svg_131" y1="110" x2="371.25" class="voltage-277V" x1="382.5" y2="110"/>
+   <line id="svg_132" y1="110" x2="360" class="voltage-277V" x1="371.25" y2="110"/>
+  </g>
+  <g id="svg_133" tgs:schematic-type="connection" class="connection">
+   <line id="svg_134" y1="319.76" x2="372.5" class="voltage-277V" x1="382.5" y2="319.76"/>
+   <line id="svg_135" y1="319.76" x2="373" class="voltage-277V" x1="372.5" y2="319.76"/>
+   <line id="svg_136" y1="319.76" x2="363" class="voltage-277V" x1="373" y2="319.76"/>
+  </g>
+  <g id="svg_137" tgs:schematic-type="connection" class="connection">
+   <line id="svg_138" y1="319.76" x2="281.75" class="voltage-277V" x1="327" y2="319.76"/>
+   <line id="svg_139" y1="319.76" x2="281.75" class="voltage-277V" x1="281.75" y2="320"/>
+   <line id="svg_140" y1="320" x2="236.5" class="voltage-277V" x1="281.75" y2="320"/>
+  </g>
+  <g id="svg_141" tgs:schematic-type="connection" class="connection">
+   <line id="svg_142" y1="79.76" x2="394.75" class="voltage-277V" x1="382.5" y2="79.76"/>
+   <line id="svg_143" y1="79.76" x2="407" class="voltage-277V" x1="394.75" y2="79.76"/>
+  </g>
+  <g id="svg_144" tgs:schematic-type="connection" class="connection">
+   <line id="svg_145" y1="110" x2="264.5" class="voltage-277V" x1="199" y2="110"/>
+   <line id="svg_146" y1="110" x2="330" class="voltage-277V" x1="264.5" y2="110"/>
+  </g>
+  <g id="svg_147" tgs:schematic-type="connection" class="connection">
+   <line id="svg_148" y1="110" x2="100" class="voltage-22kV" x1="35" y2="110"/>
+   <line id="svg_149" y1="110" x2="165" class="voltage-22kV" x1="100" y2="110"/>
+  </g>
+  <g id="svg_150" tgs:schematic-type="connection" class="connection">
+   <line id="svg_151" y1="79.76" x2="475.5" class="voltage-277V" x1="443" y2="79.76"/>
+   <line id="svg_152" y1="79.76" x2="475.5" class="voltage-277V" x1="475.5" y2="80"/>
+   <line id="svg_153" y1="80" x2="508" class="voltage-277V" x1="475.5" y2="80"/>
+  </g>
+  <g id="svg_154" tgs:schematic-type="connection" class="connection">
+   <line id="svg_155" y1="80" x2="584.5" class="voltage-208V" x1="542" y2="80"/>
+   <line id="svg_156" y1="80" x2="584.5" class="voltage-208V" x1="584.5" y2="79.76"/>
+   <line id="svg_157" y1="79.76" x2="627" class="voltage-208V" x1="584.5" y2="79.76"/>
+  </g>
+  <g id="svg_158" tgs:schematic-type="connection" class="connection">
+   <line id="svg_159" y1="79.76" x2="672.5" class="voltage-208V" x1="682.5" y2="79.76"/>
+   <line id="svg_160" y1="79.76" x2="673" class="voltage-208V" x1="672.5" y2="79.76"/>
+   <line id="svg_161" y1="79.76" x2="663" class="voltage-208V" x1="673" y2="79.76"/>
+  </g>
+  <g id="svg_162" tgs:schematic-type="connection" class="connection">
+   <line id="svg_163" y1="230" x2="396.25" class="voltage-277V" x1="382.5" y2="230"/>
+   <line id="svg_164" y1="230" x2="410" class="voltage-277V" x1="396.25" y2="230"/>
+  </g>
+  <g id="svg_165" tgs:schematic-type="connection" class="connection">
+   <line id="svg_166" y1="230" x2="581.25" class="voltage-277V" x1="592.5" y2="230"/>
+   <line id="svg_167" y1="230" x2="570" class="voltage-277V" x1="581.25" y2="230"/>
+  </g>
+  <g id="svg_168" tgs:schematic-type="connection" class="connection">
+   <line id="svg_169" y1="230" x2="490" class="voltage-277V" x1="440" y2="230"/>
+   <line id="svg_170" y1="230" x2="540" class="voltage-277V" x1="490" y2="230"/>
+  </g>
+  <g id="svg_171" tgs:schematic-type="connection" class="connection">
+   <line id="svg_172" y1="290" x2="396.25" class="voltage-277V" x1="382.5" y2="290"/>
+   <line id="svg_173" y1="290" x2="410" class="voltage-277V" x1="396.25" y2="290"/>
+  </g>
+  <g id="svg_174" tgs:schematic-type="connection" class="connection">
+   <line id="svg_175" y1="290" x2="581.25" class="voltage-277V" x1="592.5" y2="290"/>
+   <line id="svg_176" y1="290" x2="570" class="voltage-277V" x1="581.25" y2="290"/>
+  </g>
+  <g id="svg_177" tgs:schematic-type="connection" class="connection">
+   <line id="svg_178" y1="290" x2="465" class="voltage-277V" x1="440" y2="290"/>
+   <line id="svg_179" y1="290" x2="465" class="voltage-277V" x1="465" y2="367"/>
+  </g>
+  <g id="svg_180" tgs:schematic-type="connection" class="connection">
+   <line id="svg_181" y1="290" x2="515" class="voltage-277V" x1="540" y2="290"/>
+   <line id="svg_182" y1="290" x2="515" class="voltage-277V" x1="515" y2="367"/>
+  </g>
+  <g id="svg_183" tgs:schematic-type="connection" class="connection">
+   <line id="svg_184" y1="320" x2="606.25" class="voltage-277V" x1="592.5" y2="320"/>
+   <line id="svg_185" y1="320" x2="620" class="voltage-277V" x1="606.25" y2="320"/>
+  </g>
+  <g id="svg_186" tgs:schematic-type="connection" class="connection">
+   <line id="svg_187" y1="320" x2="664" class="voltage-277V" x1="650" y2="320"/>
+   <line id="svg_188" y1="320" x2="678" class="voltage-277V" x1="664" y2="320"/>
+  </g>
+  <g id="svg_193" tgs:schematic-type="connection" class="connection">
+   <line id="svg_194" y1="319.76" x2="872.5" class="voltage-7_2kV" x1="882.5" y2="319.76"/>
+   <line id="svg_195" y1="319.76" x2="873" class="voltage-7_2kV" x1="872.5" y2="319.76"/>
+   <line id="svg_196" y1="319.76" x2="863" class="voltage-7_2kV" x1="873" y2="319.76"/>
+  </g>
+  <g id="svg_197" tgs:schematic-type="connection" class="connection">
+   <line id="svg_198" y1="359.76" x2="894.75" class="voltage-7_2kV" x1="882.5" y2="359.76"/>
+   <line id="svg_199" y1="359.76" x2="907" class="voltage-7_2kV" x1="894.75" y2="359.76"/>
+  </g>
+  <g id="svg_200" tgs:schematic-type="connection" class="connection">
+   <line id="svg_201" y1="439.76" x2="894.75" class="voltage-7_2kV" x1="882.5" y2="439.76"/>
+   <line id="svg_202" y1="439.76" x2="907" class="voltage-7_2kV" x1="894.75" y2="439.76"/>
+  </g>
+  <g id="svg_203" tgs:schematic-type="connection" class="connection">
+   <line id="svg_204" y1="359.76" x2="1003.125" class="voltage-7_2kV" x1="943" y2="359.76"/>
+   <line id="svg_205" y1="359.76" x2="1003.125" class="voltage-7_2kV" x1="1003.125" y2="360"/>
+   <line id="svg_206" y1="360" x2="1063.25" class="voltage-7_2kV" x1="1003.125" y2="360"/>
+  </g>
+  <g id="svg_207" tgs:schematic-type="connection" class="connection">
+   <line id="svg_208" y1="360" x2="1159.375" class="voltage-7_2kV" x1="1099.25" y2="360"/>
+   <line id="svg_209" y1="360" x2="1219.5" class="voltage-7_2kV" x1="1159.375" y2="360"/>
+  </g>
+  <g id="svg_210" tgs:schematic-type="connection" class="connection">
+   <line id="svg_211" y1="360" x2="1315.625" class="voltage-7_2kV" x1="1255.5" y2="360"/>
+   <line id="svg_212" y1="360" x2="1375.75" class="voltage-7_2kV" x1="1315.625" y2="360"/>
+  </g>
+  <g id="svg_213" tgs:schematic-type="connection" class="connection">
+   <line id="svg_214" y1="439.76" x2="1042.1875" class="voltage-7_2kV" x1="943" y2="439.76"/>
+   <line id="svg_215" y1="439.76" x2="1042.1875" class="voltage-7_2kV" x1="1042.1875" y2="440"/>
+   <line id="svg_216" y1="440" x2="1141.375" class="voltage-7_2kV" x1="1042.1875" y2="440"/>
+  </g>
+  <g id="svg_217" tgs:schematic-type="connection" class="connection">
+   <line id="svg_218" y1="440" x2="1237.5" class="voltage-7_2kV" x1="1177.375" y2="440"/>
+   <line id="svg_219" y1="440" x2="1297.625" class="voltage-7_2kV" x1="1237.5" y2="440"/>
+  </g>
+  <g id="svg_220" tgs:schematic-type="connection" class="connection">
+   <line id="svg_221" y1="360" x2="1421.75" class="voltage-7_2kV" x1="1411.75" y2="360"/>
+   <line id="svg_222" y1="360" x2="1421.75" class="voltage-7_2kV" x1="1421.75" y2="440"/>
+   <line id="svg_223" y1="440" x2="1333.625" class="voltage-7_2kV" x1="1421.75" y2="440"/>
+  </g>
+  <g id="svg_224" tgs:schematic-type="connection" class="connection">
+   <line id="svg_225" y1="99.76" x2="732.25" class="voltage-208V" x1="682.5" y2="99.76"/>
+   <line id="svg_226" y1="99.76" x2="782" class="voltage-208V" x1="732.25" y2="99.76"/>
+  </g>
+  <g id="svg_227" tgs:schematic-type="connection" class="connection">
+   <line id="svg_228" y1="99.76" x2="851.25" class="voltage-208V" x1="819" y2="99.76"/>
+   <line id="svg_229" y1="99.76" x2="883.5" class="voltage-208V" x1="851.25" y2="99.76"/>
+  </g>
+  <g id="svg_233" tgs:schematic-type="connection" class="connection">
+   <line id="svg_234" y1="76.76" x2="942.25" class="voltage-208V" x1="882.5" y2="76.76"/>
+   <line id="svg_235" y1="76.76" x2="1002" class="voltage-208V" x1="942.25" y2="76.76"/>
+  </g>
+  <g id="svg_236" tgs:schematic-type="connection" class="connection">
+   <line id="svg_237" y1="156.76" x2="942.25" class="voltage-208V" x1="882.5" y2="156.76"/>
+   <line id="svg_238" y1="156.76" x2="1002" class="voltage-208V" x1="942.25" y2="156.76"/>
+  </g>
+  <g id="svg_243" tgs:schematic-type="connection" class="connection">
+   <line id="svg_244" y1="76.76" x2="1076.75" class="voltage-208V" x1="1038" y2="76.76"/>
+   <line id="svg_245" y1="76.76" x2="1076.75" class="voltage-208V" x1="1076.75" y2="77"/>
+   <line id="svg_246" y1="77" x2="1115.5" class="voltage-208V" x1="1076.75" y2="77"/>
+  </g>
+  <g id="svg_247" tgs:schematic-type="connection" class="connection">
+   <line id="svg_248" y1="156.76" x2="1076.75" class="voltage-208V" x1="1038" y2="156.76"/>
+   <line id="svg_249" y1="156.76" x2="1076.75" class="voltage-208V" x1="1076.75" y2="157"/>
+   <line id="svg_250" y1="157" x2="1115.5" class="voltage-208V" x1="1076.75" y2="157"/>
+  </g>
+  <g id="svg_4">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_352" x="329" y="94" tgs:point-name="LV.CB_Main.Status" tgs:symbol-type="circuitbreaker">
+    <g tgs:state="open" display="none" id="svg_356">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_357"/>
+    </g>
+    <g tgs:state="closed" id="svg_354">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_355"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_7">
+   <svg y="299" x="327" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_358" tgs:symbol-type="symbolextension">
+    <g id="svg_359">
+     <path stroke-width="2" stroke="#ffffff" id="svg_362" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_361" cy="21" r="2" cx="2"/>
+     <circle id="svg_360" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_9">
+   <svg y="304" x="204" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_363" tgs:symbol-type="generator" xmlns:html="http://www.w3.org/1999/xhtml">
+    <g id="svg_364">
+     <foreignObject y="8" height="16" width="16" x="9">PV</foreignObject>
+     <circle id="svg_365" fill="none" cy="16" cx="17" r="15"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_12">
+   <svg y="59" x="407" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_366" tgs:symbol-type="symbolextension">
+    <g id="svg_367">
+     <path stroke-width="2" stroke="#ffffff" id="svg_370" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_369" cy="21" r="2" cx="2"/>
+     <circle id="svg_368" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_14">
+   <svg y="107" x="29" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_371" tgs:symbol-type="gridtiepoint">
+    <g id="svg_372">
+     <circle id="svg_373" cy="3" r="3" cx="3"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_16">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_374" x="164.5" y="82.5" tgs:symbol-type="transformer">
+    <g tgs:state="default" id="svg_375">
+     <g tgs:voltageGroup="high" class="voltage-22kV" stroke-width="2px" fill="none" id="svg_382">
+      <path d="m1,0.5a5,5 0 0 1 -1,13.5" id="svg_387"/>
+      <path d="m1,14a5,5 0 0 1 -1,13.5" id="svg_386"/>
+      <path d="m1,27.5a5,5 0 0 1 -1,13.5" id="svg_385"/>
+      <path d="m1,41a5,5 0 0 1 -1,13.5" id="svg_384"/>
+      <path d="m14,0.5l0,54" id="svg_383"/>
+     </g>
+     <g tgs:voltageGroup="low" class="voltage-277V" stroke-width="2px" fill="none" id="svg_376">
+      <path d="m22,0.5l0,54" id="svg_381"/>
+      <path d="m35,0.5a5,5 0 0 0 -1,13.5" id="svg_380"/>
+      <path d="m35,14a5,5 0 0 0 -1,13.5" id="svg_379"/>
+      <path d="m35,27.5a5,5 0 0 0 -1,13.5" id="svg_378"/>
+      <path d="m35,41a5,5 0 0 0 -1,13.5" id="svg_377"/>
+     </g>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_18">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_388" x="507.5" y="52.5" tgs:symbol-type="transformer">
+    <g tgs:state="default" id="svg_389">
+     <g tgs:voltageGroup="high" class="voltage-277V" stroke-width="2px" fill="none" id="svg_396">
+      <path d="m1,0.5a5,5 0 0 1 -1,13.5" id="svg_428"/>
+      <path d="m1,14a5,5 0 0 1 -1,13.5" id="svg_427"/>
+      <path d="m1,27.5a5,5 0 0 1 -1,13.5" id="svg_423"/>
+      <path d="m1,41a5,5 0 0 1 -1,13.5" id="svg_422"/>
+      <path d="m14,0.5l0,54" id="svg_421"/>
+     </g>
+     <g tgs:voltageGroup="low" class="voltage-208V" stroke-width="2px" fill="none" id="svg_390">
+      <path d="m22,0.5l0,54" id="svg_395"/>
+      <path d="m35,0.5a5,5 0 0 0 -1,13.5" id="svg_394"/>
+      <path d="m35,14a5,5 0 0 0 -1,13.5" id="svg_393"/>
+      <path d="m35,27.5a5,5 0 0 0 -1,13.5" id="svg_392"/>
+      <path d="m35,41a5,5 0 0 0 -1,13.5" id="svg_391"/>
+     </g>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_24">
+   <svg y="59" x="627" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_429" tgs:symbol-type="symbolextension">
+    <g id="svg_439">
+     <path stroke-width="2" stroke="#ffffff" id="svg_443" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_442" cy="21" r="2" cx="2"/>
+     <circle id="svg_441" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_34">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_444" x="409" y="214" tgs:point-name="LV.CB_HAD.Status" tgs:symbol-type="circuitbreaker">
+    <g tgs:state="open" display="none" id="svg_447">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_448"/>
+    </g>
+    <g tgs:state="closed" id="svg_445">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_446"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_36">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_450" x="539" y="214" tgs:point-name="LV.CB_MainHAD.Status" tgs:symbol-type="circuitbreaker">
+    <g tgs:state="open" display="none" id="svg_453">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_454"/>
+    </g>
+    <g tgs:state="closed" id="svg_451">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_452"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_38">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_455" x="409" y="274" tgs:point-name="LV.CB_BTB1.Status" tgs:symbol-type="circuitbreaker">
+    <g tgs:state="open" display="none" id="svg_458">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_459"/>
+    </g>
+    <g tgs:state="closed" id="svg_456">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_457"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_40">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_460" x="539" y="274" tgs:point-name="LV.CB_BTB2.Status" tgs:symbol-type="circuitbreaker">
+    <g tgs:state="open" display="none" id="svg_463">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_464"/>
+    </g>
+    <g tgs:state="closed" id="svg_461">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_462"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_42">
+   <svg y="355" x="450" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_465" tgs:symbol-type="terminationcabinettype2">
+    <g id="svg_466">
+     <rect id="svg_468" height="30" y="0" width="30" x="0" fill="none"/>
+     <circle id="svg_467" cy="15" r="3" cx="15"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_44">
+   <svg y="355" x="500" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_469" tgs:symbol-type="terminationcabinettype2">
+    <g id="svg_470">
+     <rect id="svg_472" height="30" y="0" width="30" x="0" fill="none"/>
+     <circle id="svg_471" cy="15" r="3" cx="15"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_46">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_473" x="619" y="304" tgs:point-name="LV.CB_T3.Status" tgs:symbol-type="circuitbreaker">
+    <g tgs:state="open" display="none" id="svg_476">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_477"/>
+    </g>
+    <g tgs:state="closed" id="svg_474">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_475"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_48">
+   <svg preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" id="svg_478" x="677.5" y="292.5" tgs:symbol-type="transformer">
+    <g tgs:state="default" id="svg_479">
+     <g tgs:voltageGroup="high" class="voltage-277V" stroke-width="2px" fill="none" id="svg_486">
+      <path d="m1,0.5a5,5 0 0 1 -1,13.5" id="svg_491"/>
+      <path d="m1,14a5,5 0 0 1 -1,13.5" id="svg_490"/>
+      <path d="m1,27.5a5,5 0 0 1 -1,13.5" id="svg_489"/>
+      <path d="m1,41a5,5 0 0 1 -1,13.5" id="svg_488"/>
+      <path d="m14,0.5l0,54" id="svg_487"/>
+     </g>
+     <g tgs:voltageGroup="low" class="voltage-7_2kV" stroke-width="2px" fill="none" id="svg_480">
+      <path d="m22,0.5l0,54" id="svg_485"/>
+      <path d="m35,0.5a5,5 0 0 0 -1,13.5" id="svg_484"/>
+      <path d="m35,14a5,5 0 0 0 -1,13.5" id="svg_483"/>
+      <path d="m35,27.5a5,5 0 0 0 -1,13.5" id="svg_482"/>
+      <path d="m35,41a5,5 0 0 0 -1,13.5" id="svg_481"/>
+     </g>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_51">
+   <svg y="299" x="827" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_492" tgs:symbol-type="symbolextension">
+    <g id="svg_493">
+     <path stroke-width="2" stroke="#ffffff" id="svg_496" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_495" cy="21" r="2" cx="2"/>
+     <circle id="svg_494" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_55">
+   <svg y="337" x="907" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_497" tgs:symbol-type="symbolextension">
+    <g id="svg_498">
+     <line id="svg_501" y1="23" x2="28" x1="3" y2="13"/>
+     <circle id="svg_500" cy="23" r="2" cx="2"/>
+     <circle id="svg_499" cy="23" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_57">
+   <svg y="417" x="907" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_503" tgs:symbol-type="symbolextension">
+    <g id="svg_504">
+     <line id="svg_507" y1="23" x2="28" x1="3" y2="13"/>
+     <circle id="svg_506" cy="23" r="2" cx="2"/>
+     <circle id="svg_505" cy="23" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_59">
+   <svg y="330" x="1051.25" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_508" tgs:symbol-type="terminationcabinettype1">
+    <g id="svg_509">
+     <rect id="svg_513" height="30" y="15" width="60" x="0" fill="none"/>
+     <circle id="svg_512" cy="30" r="3" cx="15"/>
+     <circle id="svg_511" cy="30" r="3" cx="45"/>
+     <line id="svg_510" stroke-dasharray=" 4px, 4px" y1="30" x2="42" x1="18" y2="30"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_61">
+   <svg y="330" x="1207.5" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_514" tgs:symbol-type="terminationcabinettype1">
+    <g id="svg_515">
+     <rect id="svg_519" height="30" y="15" width="60" x="0" fill="none"/>
+     <circle id="svg_518" cy="30" r="3" cx="15"/>
+     <circle id="svg_517" cy="30" r="3" cx="45"/>
+     <line id="svg_516" stroke-dasharray=" 4px, 4px" y1="30" x2="42" x1="18" y2="30"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_63">
+   <svg y="330" x="1363.75" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_520" tgs:symbol-type="terminationcabinettype1">
+    <g id="svg_521">
+     <rect id="svg_525" height="30" y="15" width="60" x="0" fill="none"/>
+     <circle id="svg_524" cy="30" r="3" cx="15"/>
+     <circle id="svg_523" cy="30" r="3" cx="45"/>
+     <line id="svg_522" stroke-dasharray=" 4px, 4px" y1="30" x2="42" x1="18" y2="30"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_65">
+   <svg y="410" x="1129.375" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_526" tgs:symbol-type="terminationcabinettype1">
+    <g id="svg_527">
+     <rect id="svg_531" height="30" y="15" width="60" x="0" fill="none"/>
+     <circle id="svg_530" cy="30" r="3" cx="15"/>
+     <circle id="svg_529" cy="30" r="3" cx="45"/>
+     <line id="svg_528" stroke-dasharray=" 4px, 4px" y1="30" x2="42" x1="18" y2="30"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_67">
+   <svg y="410" x="1285.625" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_532" tgs:symbol-type="terminationcabinettype1">
+    <g id="svg_533">
+     <rect id="svg_537" height="30" y="15" width="60" x="0" fill="none"/>
+     <circle id="svg_536" cy="30" r="3" cx="15"/>
+     <circle id="svg_535" cy="30" r="3" cx="45"/>
+     <line id="svg_534" stroke-dasharray=" 4px, 4px" y1="30" x2="42" x1="18" y2="30"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_70">
+   <svg y="79" x="782" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_538" tgs:symbol-type="symbolextension">
+    <g id="svg_539">
+     <path stroke-width="2" stroke="#ffffff" id="svg_542" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_541" cy="21" r="2" cx="2"/>
+     <circle id="svg_540" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_78">
+   <svg y="56" x="1002" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_543" tgs:symbol-type="symbolextension">
+    <g id="svg_544">
+     <path stroke-width="2" stroke="#ffffff" id="svg_547" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_546" cy="21" r="2" cx="2"/>
+     <circle id="svg_545" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_81">
+   <svg y="136" x="1002" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_548" tgs:symbol-type="symbolextension">
+    <g id="svg_549">
+     <path stroke-width="2" stroke="#ffffff" id="svg_552" d="m2.43613,15.80768c7.23092,-10.61537 27.23132,-7.53862 30.616059,0.30757" stroke-dasharray="null" stroke-linejoin="null" fill="none" stroke-linecap="null"/>
+     <circle id="svg_551" cy="21" r="2" cx="2"/>
+     <circle id="svg_550" cy="21" r="2" cx="35"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_85">
+   <svg y="61" x="1114" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_553" tgs:symbol-type="generator" xmlns:html="http://www.w3.org/1999/xhtml">
+    <g id="svg_554">
+     <foreignObject y="8" height="16" width="16" x="9">EV</foreignObject>
+     <circle id="svg_555" fill="none" cy="16" cx="17" r="15"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_87">
+   <svg y="141" x="1114" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_556" tgs:symbol-type="generator" xmlns:html="http://www.w3.org/1999/xhtml">
+    <g id="svg_557">
+     <foreignObject y="8" height="16" width="16" x="9">ES</foreignObject>
+     <circle id="svg_558" fill="none" cy="16" cx="17" r="15"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_397" tgs:schematic-type="pointgroup" name="LV.Line_Dgen.kW_tot">
+   <g tgs:point-name="LV.Line_PV.kW_tot" tgs:schematic-type="point" id="LV.Line_PV.kW_tot" name="LV.Line_PV.kW_tot">
+    <use id="svg_398" x="240" y="328" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_399" y="342" x="260" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_400" tgs:schematic-type="pointgroup" name="LV.Line.kW_tot">
+   <g tgs:point-name="LV.Line.kW_tot" tgs:schematic-type="point" id="LV.Line.kW_tot" name="LV.Line.kW_tot">
+    <use id="svg_401" x="207" y="78" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_402" y="92" x="227" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_403" tgs:schematic-type="pointgroup" name="MV.Line.kW_tot">
+   <g tgs:point-name="MV.Line.kW_tot" tgs:schematic-type="point" id="MV.Line.kW_tot" name="MV.Line.kW_tot">
+    <use id="svg_404" x="720" y="278" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_405" y="292" x="740" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_406" tgs:schematic-type="pointgroup" name="MV.TCE.kW_tot">
+   <g tgs:point-name="MV.TCE.kW_tot" tgs:schematic-type="point" id="MV.TCE.kW_tot" name="MV.TCE.kW_tot">
+    <use id="svg_407" x="966.25" y="332" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_408" y="346" x="986.25" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_409" tgs:schematic-type="pointgroup" name="MV.TCD.kW_tot">
+   <g tgs:point-name="MV.TCD.kW_tot" tgs:schematic-type="point" id="MV.TCD.kW_tot" name="MV.TCD.kW_tot">
+    <use id="svg_410" x="1122.5" y="332" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_411" y="346" x="1142.5" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_412" tgs:schematic-type="pointgroup" name="MV.TCC.kW_tot">
+   <g tgs:point-name="MV.TCC.kW_tot" tgs:schematic-type="point" id="MV.TCC.kW_tot" name="MV.TCC.kW_tot">
+    <use id="svg_413" x="1278.75" y="332" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_414" y="346" x="1298.75" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_415" tgs:schematic-type="pointgroup" name="MV.TCA.kW_tot">
+   <g tgs:point-name="MV.TCA.kW_tot" tgs:schematic-type="point" id="MV.TCA.kW_tot" name="MV.TCA.kW_tot">
+    <use id="svg_416" x="1044.375" y="412" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_417" y="426" x="1064.375" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_418" tgs:schematic-type="pointgroup" name="MV.TCB.kW_tot">
+   <g tgs:point-name="MV.TCB.kW_tot" tgs:schematic-type="point" id="MV.TCB.kW_tot" name="MV.TCB.kW_tot">
+    <use id="svg_419" x="1200.625" y="412" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_420" y="426" x="1220.625" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <g id="svg_424" tgs:schematic-type="pointgroup" name="Residential.EVCS_Eaton.Ic">
+   <g tgs:point-name="Residential.EVCS_Eaton.Ic" tgs:schematic-type="point" id="Residential.EVCS_Eaton.Ic" name="Residential.EVCS_Eaton.Ic">
+    <use id="svg_425" x="1145" y="66" xlink:href="#quality_questionable" class="quality-display"/>
+    <text id="svg_426" y="80" x="1165" class="data-label">xxxxxx uu</text>
+   </g>
+  </g>
+  <line id="svg_436" y2="408" x2="383" y1="22" x1="383" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="#00bfbf" fill="none"/>
+  <line id="svg_437" y2="408" x2="594" y1="198" x1="594" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="#00bfbf" fill="none"/>
+  <line id="svg_438" y2="137" x2="682" y1="47" x1="682" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="#bf005f" fill="none"/>
+  <line id="svg_440" y2="207" x2="883" y1="30" x1="883" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="#bf005f" fill="none"/>
+  <line id="svg_449" y2="526" x2="883" y1="277" x1="883" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="3" stroke="#ffff00" fill="none"/>
+  <line class="voltage-7_2kV" id="svg_502" y2="320" x2="710" y1="320" x1="830" stroke="#FFFFFF" fill="none"/>
+  <text text-anchor="middle" class="symbol-label" y="297" x="635" fill="undefined" id="svg_353">T3</text>
+  <g tgs:point-name="Residential.ESS_R.Inverter_Watts" tgs:schematic-type="point" class="point" id="svg_564">
+   <use x="1147.25" y="145.5" class="quality-display" xlink:href="#quality_questionable" id="svg_563"/>
+   <text class="data-label" xml:space="preserve" id="svg_562" y="159.5" x="1167.25">xxxxxx uu</text>
+  </g>
+ </g>
+ <g display="none">
+  <title>modeling</title>
+  <g id="svg_430" tgs:schematic-type="navigation-area" class="clickable navigation-area" name="schematic-LV">
+   <polygon id="svg_431" points="12.5 10.0 817.5 10.0 817.5 420.0 12.5 420.0 "/>
+  </g>
+  <g id="svg_432" tgs:schematic-type="navigation-area" class="clickable navigation-area" name="schematic-MV">
+   <polygon id="svg_433" points="835.0 310.0 1455.0 310.0 1455.0 475.0 835.0 475.0 "/>
+  </g>
+  <g id="svg_434" tgs:schematic-type="navigation-area" class="clickable navigation-area" name="schematic-Residential">
+   <polygon id="svg_435" points="880.0 10.0 1460.0 10.0 1460.0 250.0 880.0 250.0 "/>
+  </g>
+ </g>
+ <g display="inline">
+  <title>navigation</title>
+  <rect fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="210" y="10" width="460" height="480" id="svg_349" tgs:schematic-type="navigation-area" class="navigation-area clickable" tgs:uri="ModelNodeDetailPlace:?model_node_name=LV;tab=schematic"/>
+  <rect fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="760" y="0" width="470" height="220" id="svg_350" tgs:schematic-type="navigation-area" class="navigation-area clickable" tgs:uri="ModelNodeDetailPlace:?model_node_name=Residential;tab=schematic"/>
+  <rect fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="710" y="260" width="740" height="290" id="svg_351" tgs:schematic-type="navigation-area" class="navigation-area clickable" tgs:uri="ModelNodeDetailPlace:?model_node_name=MV;tab=schematic"/>
+ </g>
+</svg>

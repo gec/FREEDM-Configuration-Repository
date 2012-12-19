@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2011 Green Energy Corp.
+
+    Licensed to Green Energy Corp (www.greenenergycorp.com) under one or more
+    contributor license agreements. See the NOTICE file distributed with this
+    work for additional information regarding copyright ownership. Green Energy
+    Corp licenses this file to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+    License for the specific language governing permissions and limitations under
+    the License.
+
+-->
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>Atoll Server Configuration</comment>
+	<entry key="atoll.insecurePort">8888</entry>
+	<entry key="atoll.warFile">atoll-web.war</entry>
+	<entry key="atoll.secure">false</entry>
+
+	<!--
+	 atoll.data.dir should be set to something outside of the application
+	 directories so it isn't overwritten with software upgrades.
+
+	 The atoll data directory contains the following:
+	 	assets/css/voltage.css  - Voltage and color properties for lines and transformers.
+	 	assets/images/logo-medium.png  - Medium sized image for customer logo.
+	 -->
+	<entry key="atoll.data.dir">/home/developer/displays</entry>
+
+	<!--  Enable the following parameters if you set atoll.secure to true. -->
+	<!--  Remember to obfuscate your passwords with atollobf.sh! -->
+	
+	<!-- <entry key="atoll.securePort">8443</entry>
+	<entry key="atoll.keystoreLocation">security/.keystore</entry>
+	<entry key="atoll.keyPassword">YOUR EXPORT PASSWORD HERE</entry>
+	<entry key="atoll.keystorePassword">YOUR KEYSTORE PASSWORD HERE</entry>
+	<entry key="atoll.truststorePassword">YOUR KEYSTORE PASSWORD HERE</entry>
+	<entry key="atoll.truststoreLocation">security/.keystore</entry> -->
+</properties>

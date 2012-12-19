@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:tgs="http://www.totalgrid.org" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color:black;" viewBox="0 0 1289.0 442.0" preserveAspectRatio="xMidYMid meet">
+ <title>cesTC</title>
+ <defs>
+  <symbol id="quality_questionable">
+   <title>Quality Questionable</title>
+   <g id="svg_30">
+    <path id="svg_31" d="m7.5,5c0,0 2.5,0 5,0c2.5,0 2.5,0 2.5,2.5c0,2.5 0,2.5 0,5c0,2.5 0,2.5 -2.5,2.5c-2.5,0 -2.5,0 -5,0c-2.5,0 -2.5,0 -2.5,-2.5c0,-2.5 0,-2.5 0,-5c0,-2.5 0,-2.5 2.5,-2.5z" stroke="#999999" fill="#FFFF00"/>
+    <text id="svg_32" fill="#000000" stroke="#999999" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="10" y="14" font-size="10" font-family="serif" text-anchor="middle" font-weight="bold">?</text>
+   </g>
+  </symbol>
+ </defs>
+ <g>
+  <title>modeling</title>
+  <g id="svg_58">
+   <rect stroke="#FFFFFF" stroke-width="2" fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="493" y="168" width="64.999995" height="64.999995" id="svg_11"/>
+   <line stroke="#FFFFFF" stroke-width="2" fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="493" y1="232.999995" x2="557.999995" y2="168" id="svg_10"/>
+   <path stroke="#FFFFFF" stroke-width="2" fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m499.703125,181.710938c4.0625,-6.09375 12.1875,-6.09375 16.25,0c4.0625,6.09375 12.1875,6.09375 16.25,0" id="svg_9"/>
+   <path stroke="#FFFFFF" stroke-width="2" id="svg_8" fill="none" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m518.390625,220.507797c4.0625,-6.093735 12.1875,-6.093735 16.25,0c4.0625,6.09375 12.1875,6.09375 16.25,0"/>
+  </g>
+  <g transform="matrix(1.4 0 0 1.4 -302 -27.2)" id="svg_215">
+   <svg tgs:point-name="CES_Test_Case.App.Demo4" tgs:action="command" y="75.28572" x="899.42861" preserveAspectRatio="xMaxYMax" class="symbol clickable" tgs:schematic-type="equipment-symbol" tgs:symbol-type="circuitbreaker" id="svg_1" xmlns:tgs="http://www.totalgrid.org">
+    <g display="none" tgs:state="open" id="svg_4">
+     <rect fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000" id="svg_5"/>
+    </g>
+    <g tgs:state="closed" id="svg_2">
+     <rect fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000" id="svg_3"/>
+    </g>
+   </svg>
+  </g>
+  <text id="svg_105" text-anchor="middle" class="symbol-label" y="190" x="650"/>
+  <text id="svg_107" text-anchor="middle" class="symbol-label" y="220" x="1160"/>
+  <text id="svg_109" y="0" x="1320" class="symbol-label"/>
+  <text id="svg_119" y="380" x="1080" class="symbol-label"/>
+  <g id="svg_90" transform="matrix(1.4 0 0 1.4 -302 -27.2)">
+   <svg tgs:point-name="CES_Test_Case.App.Demo1" tgs:action="command" id="svg_6" y="75.28571" x="749.42859" preserveAspectRatio="xMaxYMax" class="symbol clickable" tgs:schematic-type="equipment-symbol" tgs:symbol-type="circuitbreaker" xmlns:tgs="http://www.totalgrid.org">
+    <g display="none" id="svg_13" tgs:state="open">
+     <rect id="svg_14" fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000"/>
+    </g>
+    <g id="svg_7" tgs:state="closed">
+     <rect id="svg_12" fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_45" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.PV.kW">
+   <use id="svg_43" xlink:href="#quality_questionable" class="quality-display" y="202" x="1106.5"/>
+   <text x="1126.5" y="216" id="svg_42" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_51" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.CES.kW">
+   <use id="svg_49" xlink:href="#quality_questionable" class="quality-display" y="269" x="723"/>
+   <text x="743" y="283" id="svg_47" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_57" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.LOAD.kVar">
+   <use id="svg_55" xlink:href="#quality_questionable" class="quality-display" y="289" x="723"/>
+   <text x="743" y="303" id="svg_53" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_62" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.CES.SOC">
+   <use id="svg_61" xlink:href="#quality_questionable" class="quality-display" y="309" x="723"/>
+   <text x="743" y="323" id="svg_59" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.PV.kVar" id="svg_63">
+   <use xlink:href="#quality_questionable" class="quality-display" y="180.5" x="1106.5" id="svg_64"/>
+   <text x="1126.5" y="194.5" xml:space="preserve" class="data-label" id="svg_65">xxxxxx uu</text>
+  </g>
+  <g id="svg_68" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.SST.kV_ap">
+   <use id="svg_67" xlink:href="#quality_questionable" class="quality-display" y="172" x="362"/>
+   <text x="382" y="186" id="svg_66" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_71" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.SST.kV_as">
+   <use id="svg_70" xlink:href="#quality_questionable" class="quality-display" y="132" x="575"/>
+   <text x="595" y="146" id="svg_69" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_74" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.SST.kW_a">
+   <use id="svg_73" xlink:href="#quality_questionable" class="quality-display" y="152" x="575"/>
+   <text x="595" y="166" id="svg_72" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g id="svg_77" class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.SST.kVar_a">
+   <use id="svg_76" xlink:href="#quality_questionable" class="quality-display" y="172" x="575"/>
+   <text x="595" y="186" id="svg_75" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.LOAD.kW" id="svg_79">
+   <use xlink:href="#quality_questionable" class="quality-display" y="273" x="977.5" id="svg_80"/>
+   <text x="997.5" y="287" xml:space="preserve" class="data-label" id="svg_81">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="CES_Test_Case.LOAD.kVar" id="svg_82">
+   <use xlink:href="#quality_questionable" class="quality-display" y="293" x="977.5" id="svg_83"/>
+   <text x="997.5" y="307" xml:space="preserve" class="data-label" id="svg_84">xxxxxx uu</text>
+  </g>
+  <text transform="matrix(2.25 0 0 1.41026 -966 -23.3205)" fill="#ffffff" stroke-width="null" x="772" y="92" id="svg_142" font-size="null" font-family="null" text-anchor="middle" xml:space="preserve">1</text>
+  <g transform="matrix(1.4 0 0 1.4 -302 -27.2)" id="svg_143">
+   <svg tgs:point-name="CES_Test_Case.App.Demo2" tgs:action="command" y="75.28571" x="799.42861" preserveAspectRatio="xMaxYMax" class="symbol clickable" tgs:schematic-type="equipment-symbol" tgs:symbol-type="circuitbreaker" id="svg_15" xmlns:tgs="http://www.totalgrid.org">
+    <g display="none" tgs:state="open" id="svg_18">
+     <rect fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000" id="svg_19"/>
+    </g>
+    <g tgs:state="closed" id="svg_16">
+     <rect fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000" id="svg_17"/>
+    </g>
+   </svg>
+  </g>
+  <g transform="matrix(1.4 0 0 1.4 -302 -27.2)" id="svg_150">
+   <svg tgs:point-name="CES_Test_Case.App.Demo3" tgs:action="command" y="75.28571" x="849.42857" preserveAspectRatio="xMaxYMax" class="symbol clickable" tgs:schematic-type="equipment-symbol" tgs:symbol-type="circuitbreaker" id="svg_20" xmlns:tgs="http://www.totalgrid.org">
+    <g display="none" tgs:state="open" id="svg_23">
+     <rect fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000" id="svg_24"/>
+    </g>
+    <g tgs:state="closed" id="svg_21">
+     <rect fill="#000000" height="30" width="30" y="2" x="2" stroke="#ff0000" id="svg_22"/>
+    </g>
+   </svg>
+  </g>
+  <line stroke-width="2" id="svg_118" y2="60" x2="1030" y1="60" x1="740" stroke="#ffffff" fill="none"/>
+  <text stroke="#ffffff" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_120" y="40" x="880" stroke-width="0" fill="#FFFFFF">Mode Selection</text>
+  <text id="svg_128" transform="matrix(2.25 0 0 1.41026 -966 -23.3205)" fill="#ffffff" stroke-width="null" x="803" y="92" font-size="null" font-family="null" text-anchor="middle" xml:space="preserve">2</text>
+  <text id="svg_129" transform="matrix(2.25 0 0 1.41026 -966 -23.3205)" fill="#ffffff" stroke-width="null" x="834" y="92" font-size="null" font-family="null" text-anchor="middle" xml:space="preserve">3</text>
+  <text id="svg_130" transform="matrix(2.25 0 0 1.41026 -966 -23.3205)" fill="#ffffff" stroke-width="null" x="865" y="92" font-size="null" font-family="null" text-anchor="middle" xml:space="preserve">4</text>
+  <circle stroke-width="2" id="svg_134" r="30" cy="200" cx="1070" stroke="#FFFFFF" fill="none"/>
+  <line class="voltage-240V" id="svg_154" y2="200" x2="1040" y1="200" x1="560" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#FFFFFF" fill="none"/>
+  <g id="svg_254">
+   <g id="svg_152">
+    <g transform="matrix(1.43333 0 0 1.43333 -438.1 -153.533)" id="svg_52">
+     <svg y="343.2093" x="962.16268" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" id="svg_34" tgs:symbol-type="ground">
+      <g stroke="gray" id="svg_35">
+       <line id="svg_38" y1="6" x2="30" x1="0" y2="6"/>
+       <line id="svg_37" y1="15" x2="26.25" x1="3.75" y2="15"/>
+       <line id="svg_36" y1="24" x2="18.75" x1="11.25" y2="24"/>
+      </g>
+     </svg>
+    </g>
+    <g transform="rotate(90 960.554 295.789) matrix(1.875 0 0 1.875 -565.25 -193.375)" id="svg_147">
+     <svg y="257.26667" x="801.3" preserveAspectRatio="xMaxYMax" class="symbol" tgs:schematic-type="equipment-symbol" tgs:symbol-type="load" id="svg_39" xmlns:tgs="http://www.totalgrid.org">
+      <g tgs:state="default" id="svg_40">
+       <rect width="24" height="6" y="0" x="1" id="svg_41"/>
+      </g>
+     </svg>
+    </g>
+    <line class="voltage-240V" id="svg_149" y2="346.07397" x2="962" y1="319" x1="962" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#FFFFFF" fill="none"/>
+   </g>
+   <line fill="none" stroke="#FFFFFF" x1="960" y1="270" x2="960" y2="200" id="svg_253" class="voltage-240V"/>
+  </g>
+  <g id="svg_255">
+   <g transform="matrix(1.325 0 0 1.325 -240.175 -92.95)" id="svg_155">
+    <svg id="svg_44" y="275.82627" x="677.6043" class="symbol" tgs:schematic-type="equipment-symbol" preserveAspectRatio="xMidYMid meet" tgs:symbol-type="storage">
+     <g id="svg_46">
+      <rect id="svg_48" fill="undefined" height="50" y="0" ry="3" x="5" width="40" rx="3"/>
+     </g>
+    </svg>
+   </g>
+   <line fill="none" stroke="#FFFFFF" x1="690" y1="270" x2="690" y2="200" id="svg_252" class="voltage-240V"/>
+  </g>
+  <line class="voltage-7_2kV" id="svg_153" y2="200" x2="330" y1="200" x1="490" stroke="#FFFFFF" fill="none"/>
+  <line fill="none" stroke="#ffff00" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="330" y1="110" x2="330" y2="300" id="svg_263"/>
+  <line fill="none" stroke="#ffff00" stroke-width="3" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="330" y1="150" x2="190" y2="150" id="svg_264"/>
+  <g id="svg_265">
+   <svg id="svg_50" tgs:symbol-type="symbolextension" tgs:schematic-type="equipment-symbol" class="symbol" preserveAspectRatio="xMaxYMax" x="150.5" y="129" xmlns:tgs="http://www.totalgrid.org" xmlns:html="http://www.w3.org/1999/xhtml">
+    <g id="svg_54" tgs:state="default">
+     <foreignObject x="8" y="12" height="16" width="25">Grid</foreignObject>
+     <circle id="svg_56" r="20" cx="21" cy="21" fill="none" stroke="#ffff00"/>
+    </g>
+   </svg>
+  </g>
+  <text stroke="#ffffff" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="120" x="170" stroke-width="0" fill="#FFFFFF" id="svg_267">Grid</text>
+  <text stroke="#ffffff" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_162" y="320" x="230" stroke-width="0" fill="#FFFFFF"/>
+  <ellipse id="svg_165" cy="340" cx="280" stroke="#ffffff" fill="#FFFFFF"/>
+  <ellipse id="svg_166" cy="260" cx="210" stroke="#ffffff" fill="#FFFFFF"/>
+  <ellipse id="svg_168" cy="240" cx="200" stroke="#ffffff" fill="#FFFFFF"/>
+  <ellipse id="svg_169" cy="210" cx="200" stroke="#ffffff" fill="#FFFFFF"/>
+  <text xml:space="preserve" text-anchor="middle" font-family="null" font-size="20.024" id="svg_171" y="159" x="523" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#ffffff">SST</text>
+  <text id="svg_172" xml:space="preserve" text-anchor="middle" font-family="null" font-size="20.024" y="360" x="690" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#ffffff">CES</text>
+  <text id="svg_173" xml:space="preserve" text-anchor="middle" font-family="null" font-size="20.024" y="210" x="1070" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#ffffff">PV</text>
+ </g>
+ <g display="none">
+  <title>navigation</title>
+ </g>
+</svg>
