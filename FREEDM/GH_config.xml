@@ -696,6 +696,7 @@
       <!--End Gen1_SST Equipment Configuration-->
       <eq:equipmentProfile name="MicroGridProfile" />
     </eq:equipment>
+    <!--Gen2 SST-->
     <eq:equipment name="Gen2_SST">
       <!--Start Gen2_SST Equipment Configuration-->
       <eq:equipment name="SST2">
@@ -1404,7 +1405,7 @@
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--SST-->
+    <!--SST1-->
     <cm:endpoint name="SST_ARM">
       <cm:type name="Endpoint" />
       <cm:protocol name="dnp3">
@@ -1462,6 +1463,7 @@
       </cm:equipment>
       <cm:interface name="SST_ARM_DNP" ip="152.14.125.211" netmask="255.255.255.0" port="20000" network="any"></cm:interface>
     </cm:endpoint>
+    <!--SST2-->
     <cm:endpoint name="SST2_ARM">
       <cm:type name="Endpoint" />
       <cm:protocol name="dnp3">
