@@ -1548,7 +1548,7 @@
     <cm:endpoint name="FID1_ARM">
       <cm:type name="Endpoint" />
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/FID1_arm_dnp3.xml"></common:configFile>
+        <common:configFile fileName="comms/fid1_arm_dnp3.xml"></common:configFile>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
       <cm:equipment name="Gen1_FID">
