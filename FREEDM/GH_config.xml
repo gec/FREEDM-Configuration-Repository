@@ -696,6 +696,17 @@
       <!--End Gen1_SST Equipment Configuration-->
       <eq:equipmentProfile name="MicroGridProfile" />
     </eq:equipment>
+    <eq:equipment name="Gen2_SST">
+      <!--Start Gen2_SST Equipment Configuration-->
+      <eq:equipment name="SST2">
+        <eq:equipmentProfile name="SST_Lprofile"></eq:equipmentProfile>
+      </eq:equipment>
+      <common:info>
+        <common:configFile fileName="onelines/sst2_control.svg" mimeType="schematic/svg+xml" name="SST2" />
+      </common:info>
+      <!--End Gen2_SST Equipment Configuration-->
+      <eq:equipmentProfile name="MicroGridProfile" />
+    </eq:equipment>
     <!--Root Equipment Configuration-->
     <eq:equipment name="FREEDM" addParentNames="false" xmlns:equip="equipment.loader.reef.totalgrid.org">
       <eq:type name="Root" />
@@ -1450,6 +1461,63 @@
         </cm:equipment>
       </cm:equipment>
       <cm:interface name="SST_ARM_DNP" ip="152.14.125.211" netmask="255.255.255.0" port="20000" network="any"></cm:interface>
+    </cm:endpoint>
+    <cm:endpoint name="SST2_ARM">
+      <cm:type name="Endpoint" />
+      <cm:protocol name="dnp3">
+        <common:configFile fileName="comms/sst2_arm_dnp3.xml"></common:configFile>
+        <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
+      </cm:protocol>
+      <cm:equipment name="Gen2_SST">
+        <cm:equipment name="SST2">
+          <cm:analog name="VAC_HIGH_RMS" index="36" unit="Volts" />
+          <cm:analog name="IAC_HIGH_RMS" index="37" unit="Amps" />
+          <cm:analog name="Freq_Grid" index="38" unit="Hz" />
+          <cm:analog name="Power_Factor" index="39" unit="PF" />
+          <cm:analog name="P_Grid" index="40" unit="Watts" />
+          <cm:analog name="Q_Grid" index="41" unit="VARs" />
+          <cm:analog name="Id_HighAC" index="42" unit="Amps" />
+          <cm:analog name="Iq_HighAC" index="43" unit="Amps" />
+          <cm:analog name="VDC1_High" index="44" unit="Volts"></cm:analog>
+          <cm:analog name="VDC2_High" index="45" unit="Volts" />
+          <cm:analog name="VDC3_High" index="46" unit="Volts" />
+          <cm:analog name="VDCt_High" index="47" unit="Volts" />
+          <cm:analog name="VDC_Low" index="48" unit="Volts" />
+          <cm:analog name="IDC_Low" index="49" unit="Amps" />
+          <cm:analog name="VAC_Low_RMS" index="50" unit="Volts" />
+          <cm:analog name="IAC_Low_RMS" index="51" unit="Amps" />
+          <cm:control name="REC_Run" index="0">
+            <cm:optionsDnp3 type="LATCH_ON" />
+          </cm:control>
+          <cm:control name="REC_Stop" index="0">
+            <cm:optionsDnp3 type="LATCH_OFF" />
+          </cm:control>
+          <cm:control name="DAB_Run" index="5">
+            <cm:optionsDnp3 type="LATCH_ON" />
+          </cm:control>
+          <cm:control name="DAB_Stop" index="5">
+            <cm:optionsDnp3 type="LATCH_OFF" />
+          </cm:control>
+          <cm:control name="INV_Run" index="6">
+            <cm:optionsDnp3 type="LATCH_ON" />
+          </cm:control>
+          <cm:control name="INV_Stop" index="6">
+            <cm:optionsDnp3 type="LATCH_OFF" />
+          </cm:control>
+          <cm:setpoint name="REC_VDC_REF_SP" index="7" />
+          <cm:setpoint name="DAB_VSEC_REF_SP" index="8" />
+          <cm:setpoint name="INV_VAC_REF_SP" index="9" />
+          <cm:setpoint name="VAR_REF_SP" index="10" />
+          <cm:analog name="VAR_REF" index="203" unit="Volts" />
+          <cm:analog name="REC_Vdc_REF" index="200" unit="Volts" />
+          <cm:analog name="DAB_Vsec_REF" index="201" unit="Volts" />
+          <cm:analog name="INV_Vac_REF" index="202" unit="Volts" />
+          <cm:status name="REC_COMMAND" index="100" unit="raw" />
+          <cm:status name="DAB_COMMAND" index="101" unit="raw" />
+          <cm:status name="INV_COMMAND" index="102" unit="raw" />
+        </cm:equipment>
+      </cm:equipment>
+      <cm:interface name="SST2_ARM_DNP" ip="152.14.125.125" netmask="255.255.255.0" port="20000" network="any"></cm:interface>
     </cm:endpoint>
     <!--SEL751-->
     <cm:endpoint name="SEL751">
