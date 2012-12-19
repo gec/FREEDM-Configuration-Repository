@@ -720,6 +720,7 @@
       <eq:equipment name="Residential" />
       <eq:equipment name="RTDS" />
       <eq:equipment name="Gen1_SST" />
+      <eq:equipment name="Gen2_SST" />
       <eq:equipment name="PHEV_Test_Case" />
       <eq:equipment name="CES_Test_Case" />
     </eq:equipment>
