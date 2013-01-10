@@ -1563,7 +1563,7 @@
           <cm:status name="Status" index="100" unit="raw" />
         </cm:equipment>
       </cm:equipment>
-      <cm:interface name="FID1_ARM_DNP" ip="152.14.125.254" netmask="255.255.255.0" port="20000" network="any"></cm:interface>
+      <cm:interface name="FID1_ARM_DNP" ip="152.14.125.154" netmask="255.255.255.0" port="20000" network="any"></cm:interface>
     </cm:endpoint>
     <!--SEL751-->
     <cm:endpoint name="SEL751">
