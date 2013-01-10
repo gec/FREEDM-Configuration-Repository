@@ -719,7 +719,7 @@
       <eq:equipmentProfile name="MicroGridProfile" />
     </eq:equipment>
     <!--Gen1 FID-->
-    <eq:equipment name="GEN1_FID">
+    <eq:equipment name="Gen1_FID">
       <!--Start Gen1_FID Equipment Configuration-->
       <eq:equipment name="FID1">
         <eq:equipmentProfile name="FID_profile"></eq:equipmentProfile>
