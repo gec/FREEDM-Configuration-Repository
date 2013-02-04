@@ -2293,7 +2293,7 @@
           <cm:status name="mos_bypass" index="29" unit="raw" />
         </cm:equipment>
       </cm:equipment>
-      <cm:interface name="MINI_ARM_DNP" ip="152.14.125.211" netmask="255.255.255.0" port="20000" network="any" />
+      <cm:interface name="MINI_ARM_DNP" ip="152.14.125.192" netmask="255.255.255.0" port="20000" network="any" />
     </cm:endpoint>
   </cm:communicationsModel>
 </configuration>
