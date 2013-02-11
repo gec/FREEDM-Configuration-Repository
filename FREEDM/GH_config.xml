@@ -5,2295 +5,2413 @@
   Version 23
 -->
 <configuration version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="configuration.loader.reef.totalgrid.org" xmlns:eq="equipment.loader.reef.totalgrid.org" xmlns:cm="communications.loader.reef.totalgrid.org" xmlns:common="common.loader.reef.totalgrid.org">
-  <messageModel />
+  <messageModel/>
   <actionModel>
     <actionSet name="RLC" priority="100">
       <rising>
-        <message name="Scada.OutOfReasonable" />
+        <message name="Scada.OutOfReasonable"/>
       </rising>
       <high>
-        <setAbnormal />
+        <setAbnormal/>
       </high>
     </actionSet>
     <actionSet name="Nominal" priority="500">
       <rising>
-        <message name="Scada.OutOfNominal" />
+        <message name="Scada.OutOfNominal"/>
       </rising>
     </actionSet>
     <actionSet name="Abnormal" priority="500">
       <high>
-        <setAbnormal />
+        <setAbnormal/>
       </high>
     </actionSet>
   </actionModel>
   <eq:equipmentModel>
     <eq:profiles>
+
+    <!-- Status Point Profiles-->
       <eq:pointProfile name="ModOffUnAval">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="OffNotAvailable" />
-          <eq:valueMap fromValue="false" toValue="Null" />
+          <eq:valueMap fromValue="true" toValue="OffNotAvailable"/>
+          <eq:valueMap fromValue="false" toValue="Null"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="ModVar">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="VarMgmtAvail" />
-          <eq:valueMap fromValue="false" toValue="NoVARMgmt" />
+          <eq:valueMap fromValue="true" toValue="VarMgmtAvail"/>
+          <eq:valueMap fromValue="false" toValue="NoVARMgmt"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="ModOffAval">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="OffAvailable" />
-          <eq:valueMap fromValue="false" toValue="Null" />
+          <eq:valueMap fromValue="true" toValue="OffAvailable"/>
+          <eq:valueMap fromValue="false" toValue="Null"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="ModOnAval">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="OnNotConnected" />
-          <eq:valueMap fromValue="false" toValue="Null" />
+          <eq:valueMap fromValue="true" toValue="OnNotConnected"/>
+          <eq:valueMap fromValue="false" toValue="Null"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="ModOnConn">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="OnConnected" />
-          <eq:valueMap fromValue="false" toValue="Null" />
+          <eq:valueMap fromValue="true" toValue="OnConnected"/>
+          <eq:valueMap fromValue="false" toValue="Null"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="RemLoc">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Local" />
-          <eq:valueMap fromValue="false" toValue="Remote" />
+          <eq:valueMap fromValue="true" toValue="Local"/>
+          <eq:valueMap fromValue="false" toValue="Remote"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="AutoNot">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Auto" />
-          <eq:valueMap fromValue="false" toValue="NotAuto" />
+          <eq:valueMap fromValue="true" toValue="Auto"/>
+          <eq:valueMap fromValue="false" toValue="NotAuto"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="NullStopped">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Stopped" />
-          <eq:valueMap fromValue="false" toValue="Null" />
+          <eq:valueMap fromValue="true" toValue="Stopped"/>
+          <eq:valueMap fromValue="false" toValue="Null"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="NullStarted">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Started" />
-          <eq:valueMap fromValue="false" toValue="Null" />
+          <eq:valueMap fromValue="true" toValue="Started"/>
+          <eq:valueMap fromValue="false" toValue="Null"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="DisEnNoAlm">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Enabled" />
-          <eq:valueMap fromValue="false" toValue="Disabled" />
+          <eq:valueMap fromValue="true" toValue="Enabled"/>
+          <eq:valueMap fromValue="false" toValue="Disabled"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="TrueFalseNoAlm">
-        <eq:unexpected stringValue="False" actionSet="Abnormal" />
+        <eq:unexpected stringValue="False" actionSet="Abnormal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="True" />
-          <eq:valueMap fromValue="false" toValue="False" />
+          <eq:valueMap fromValue="true" toValue="True"/>
+          <eq:valueMap fromValue="false" toValue="False"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="TrueFalseAlm">
-        <eq:unexpected stringValue="True" actionSet="Nominal" />
+        <eq:unexpected stringValue="True" actionSet="Nominal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="True" />
-          <eq:valueMap fromValue="false" toValue="False" />
+          <eq:valueMap fromValue="true" toValue="True"/>
+          <eq:valueMap fromValue="false" toValue="False"/>
         </eq:transform>
       </eq:pointProfile>
-      <!-- Status Point Profiles-->
       <eq:pointProfile name="ChargeDis_NoAlm">
-        <eq:unexpected stringValue="Discharge" actionSet="Abnormal" />
+        <eq:unexpected stringValue="Discharge" actionSet="Abnormal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Discharge" />
-          <eq:valueMap fromValue="false" toValue="Charge" />
+          <eq:valueMap fromValue="true" toValue="Discharge"/>
+          <eq:valueMap fromValue="false" toValue="Charge"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="FID_BKR">
-        <eq:unexpected stringValue="Open" actionSet="Nominal" />
+        <eq:unexpected stringValue="Open" actionSet="Nominal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="closed" />
-          <eq:valueMap fromValue="false" toValue="open" />
+          <eq:valueMap fromValue="true" toValue="closed"/>
+          <eq:valueMap fromValue="false" toValue="open"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="NormallyTrueAlarmed">
-        <eq:unexpected stringValue="Alarm" actionSet="Nominal" />
+        <eq:unexpected stringValue="Alarm" actionSet="Nominal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Alarm" />
-          <eq:valueMap fromValue="false" toValue="Normal" />
+          <eq:valueMap fromValue="true" toValue="Alarm"/>
+          <eq:valueMap fromValue="false" toValue="Normal"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="NormallyFalseAlarmed">
-        <eq:unexpected stringValue="Alarm" actionSet="Nominal" />
+        <eq:unexpected stringValue="Alarm" actionSet="Nominal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Normal" />
-          <eq:valueMap fromValue="false" toValue="Alarm" />
+          <eq:valueMap fromValue="true" toValue="Normal"/>
+          <eq:valueMap fromValue="false" toValue="Alarm"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="AutoMan_NoAlm">
-        <eq:unexpected stringValue="Manual" actionSet="Abnormal" />
+        <eq:unexpected stringValue="Manual" actionSet="Abnormal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Manual" />
-          <eq:valueMap fromValue="false" toValue="Auto" />
+          <eq:valueMap fromValue="true" toValue="Manual"/>
+          <eq:valueMap fromValue="false" toValue="Auto"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="OnOff_NoAlm">
-        <eq:unexpected stringValue="Off" actionSet="Abnormal" />
+        <eq:unexpected stringValue="Off" actionSet="Abnormal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="On" />
-          <eq:valueMap fromValue="false" toValue="Off" />
+          <eq:valueMap fromValue="true" toValue="On"/>
+          <eq:valueMap fromValue="false" toValue="Off"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="GenMWh">
-        <eq:range actionSet="RLC" low="0" high="12000" deadband="1" />
+        <eq:range actionSet="RLC" low="0" high="12000" deadband="1"/>
       </eq:pointProfile>
       <eq:pointProfile name="EV_State" xmlns:equip="equipment.loader.reef.totalgrid.org">
         <equip:transform fromUnit="raw" toUnit="state" transformationType="counter">
-          <equip:valueMap fromValue="0" toValue="PU_Init" />
-          <equip:valueMap fromValue="1" toValue="Idle" />
-          <equip:valueMap fromValue="2" toValue="TestMode" />
-          <equip:valueMap fromValue="3" toValue="DemoMode" />
-          <equip:valueMap fromValue="4" toValue="PermRunDisabled" />
-          <equip:valueMap fromValue="5" toValue="ServiceReq" />
-          <equip:valueMap fromValue="6" toValue="TempFault" />
-          <equip:valueMap fromValue="7" toValue="Charging" />
-          <equip:valueMap fromValue="8" toValue="EVConnNotCharge" />
-          <equip:valueMap fromValue="9" toValue="EVConnALC" />
-          <equip:valueMap fromValue="28" toValue="PulseActModeIdle" />
+          <equip:valueMap fromValue="0" toValue="PU_Init"/>
+          <equip:valueMap fromValue="1" toValue="Idle"/>
+          <equip:valueMap fromValue="2" toValue="TestMode"/>
+          <equip:valueMap fromValue="3" toValue="DemoMode"/>
+          <equip:valueMap fromValue="4" toValue="PermRunDisabled"/>
+          <equip:valueMap fromValue="5" toValue="ServiceReq"/>
+          <equip:valueMap fromValue="6" toValue="TempFault"/>
+          <equip:valueMap fromValue="7" toValue="Charging"/>
+          <equip:valueMap fromValue="8" toValue="EVConnNotCharge"/>
+          <equip:valueMap fromValue="9" toValue="EVConnALC"/>
+          <equip:valueMap fromValue="28" toValue="PulseActModeIdle"/>
         </equip:transform>
       </eq:pointProfile>
       <eq:pointProfile name="InactAct">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Active" />
-          <eq:valueMap fromValue="false" toValue="Inactive" />
+          <eq:valueMap fromValue="true" toValue="Active"/>
+          <eq:valueMap fromValue="false" toValue="Inactive"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="Op_Voltage" xmlns:equip="equipment.loader.reef.totalgrid.org">
         <equip:transform fromUnit="raw" toUnit="Volts" transformationType="counter">
-          <equip:valueMap fromValue="0" toValue="120" />
-          <equip:valueMap fromValue="1" toValue="208" />
+          <equip:valueMap fromValue="0" toValue="120"/>
+          <equip:valueMap fromValue="1" toValue="208"/>
         </equip:transform>
       </eq:pointProfile>
       <eq:pointProfile name="NormAlm">
-        <eq:unexpected stringValue="Alarm" actionSet="Nominal" />
+        <eq:unexpected stringValue="Alarm" actionSet="Nominal"/>
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="Alarm" />
-          <eq:valueMap fromValue="false" toValue="Normal" />
+          <eq:valueMap fromValue="true" toValue="Alarm"/>
+          <eq:valueMap fromValue="false" toValue="Normal"/>
         </eq:transform>
       </eq:pointProfile>
       <eq:pointProfile name="OffOn">
         <eq:transform fromUnit="raw" toUnit="status" transformationType="status">
-          <eq:valueMap fromValue="true" toValue="On" />
-          <eq:valueMap fromValue="false" toValue="Off" />
+          <eq:valueMap fromValue="true" toValue="On"/>
+          <eq:valueMap fromValue="false" toValue="Off"/>
         </eq:transform>
       </eq:pointProfile>
+      
       <!-- Equipment Profiles-->
+
       <eq:equipmentProfile name="MicroGridProfile">
-        <eq:type name="MicroGrid" />
-        <eq:type name="EquipmentGroup" />
+        <eq:type name="MicroGrid"/>
+        <eq:type name="EquipmentGroup"/>
       </eq:equipmentProfile>
+
       <eq:equipmentProfile name="FullBreaker">
-        <eq:type name="Breaker" />
-        <eq:control name="Open" />
-        <eq:control name="Close" />
+        <eq:type name="Breaker"/>
+        <eq:control name="Open"/>
+        <eq:control name="Close"/>
         <eq:status name="Status" unit="status" pointProfile="FID_BKR">
-          <eq:control name="Open" />
-          <eq:control name="Close" />
+          <eq:control name="Open"/>
+          <eq:control name="Close"/>
         </eq:status>
-        <eq:status name="Overcurrent" unit="status" pointProfile="NormallyTrueAlarmed" />
+        <eq:status name="Overcurrent" unit="status" pointProfile="NormallyTrueAlarmed"/>
       </eq:equipmentProfile>
+
       <!-- FID Profile-->
+
       <eq:equipmentProfile name="FID_profile">
-        <eq:type name="FID" />
-        <eq:control name="Open" />
-        <eq:control name="Close" />
+        <eq:type name="FID"/>
+        <eq:control name="Open"/>
+        <eq:control name="Close"/>
         <eq:status name="Status" unit="status" pointProfile="FID_BKR">
-          <eq:control name="Open" />
-          <eq:control name="Close" />
+          <eq:control name="Open"/>
+          <eq:control name="Close"/>
         </eq:status>
       </eq:equipmentProfile>
+
       <eq:equipmentProfile name="KvKwkVar_Meas">
-        <eq:type name="PV" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kV" unit="kV" />
-        <eq:analog name="kW" unit="kW" />
-        <eq:analog name="kVar" unit="kVar" />
+        <eq:type name="PV"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kV" unit="kV"/>
+        <eq:analog name="kW" unit="kW"/>
+        <eq:analog name="kVar" unit="kVar"/>
       </eq:equipmentProfile>
+
       <eq:equipmentProfile name="DES">
-        <eq:type name="PV" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kV" unit="kV" />
+        <eq:type name="PV"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kV" unit="kV"/>
         <eq:analog name="kW" unit="kW">
-          <eq:setpoint name="Pset" />
+          <eq:setpoint name="Pset"/>
         </eq:analog>
         <eq:analog name="kVar" unit="kVar">
-          <eq:setpoint name="Qset" />
+          <eq:setpoint name="Qset"/>
         </eq:analog>
-        <eq:analog name="%SOC" unit="%SOC" />
-        <eq:setpoint name="Pset" />
-        <eq:setpoint name="Qset" />
-        <eq:control name="Charge" />
-        <eq:control name="Discharge" />
+        <eq:analog name="%SOC" unit="%SOC"/>
+        <eq:setpoint name="Pset"/>
+        <eq:setpoint name="Qset"/>
+        <eq:control name="Charge"/>
+        <eq:control name="Discharge"/>
         <eq:status name="Mode" unit="status" pointProfile="ChargeDis_NoAlm">
-          <eq:control name="Charge" />
-          <eq:control name="Discharge" />
+          <eq:control name="Charge"/>
+          <eq:control name="Discharge"/>
         </eq:status>
-        <eq:analog name="Amps" unit="Amps" />
+        <eq:analog name="Amps" unit="Amps"/>
       </eq:equipmentProfile>
+
       <eq:equipmentProfile name="Line_Meas">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
-        <eq:analog name="Amps" unit="Amps" />
-        <eq:analog name="kW" unit="kW" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="Amps" unit="Amps"/>
+        <eq:analog name="kW" unit="kW"/>
       </eq:equipmentProfile>
+
       <eq:equipmentProfile name="SST">
-        <eq:type name="SST" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kW_a" unit="kW" />
-        <eq:setpoint name="Qref_a" />
+        <eq:type name="SST"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kW_a" unit="kW"/>
+        <eq:setpoint name="Qref_a"/>
         <eq:analog name="kVar_a" unit="kVar">
-          <eq:setpoint name="Qref_a" />
+          <eq:setpoint name="Qref_a"/>
         </eq:analog>
-        <eq:analog name="kV_a" unit="kV" />
-        <eq:status name="Qsst_a" unit="status" pointProfile="OnOff_NoAlm" />
+        <eq:analog name="kV_a" unit="kV"/>
+        <eq:status name="Qsst_a" unit="status" pointProfile="OnOff_NoAlm"/>
       </eq:equipmentProfile>
+
+      <!-- A1800 MV Profile-->
+
       <eq:equipmentProfile name="FREEDM_Meter_MV">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kW_tot" unit="kW" />
-        <eq:analog name="kVar_tot" unit="kVar" />
-        <eq:counter name="kWh" unit="kWh" />
-        <eq:analog name="kV_a" unit="kV" />
-        <eq:analog name="Frequency" unit="Hz" />
-        <eq:analog name="I_a" unit="Amps" />
-        <eq:analog name="I_b" unit="Amps" />
-        <eq:analog name="I_c" unit="Amps" />
-        <eq:analog name="kV_b" unit="kV" />
-        <eq:analog name="kV_c" unit="kV" />
-        <eq:analog name="kW_a" unit="kW" />
-        <eq:analog name="kW_b" unit="kW" />
-        <eq:analog name="kW_c" unit="kW" />
-        <eq:analog name="kVar_a" unit="kVar" />
-        <eq:analog name="kVar_b" unit="kVar" />
-        <eq:analog name="kVar_c" unit="kVar" />
-        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kW_tot" unit="kW"/>
+        <eq:analog name="kVar_tot" unit="kVar"/>
+        <eq:counter name="kWh" unit="kWh"/>
+        <eq:analog name="kV_a" unit="kV"/>
+        <eq:analog name="Frequency" unit="Hz"/>
+        <eq:analog name="I_a" unit="Amps"/>
+        <eq:analog name="I_b" unit="Amps"/>
+        <eq:analog name="I_c" unit="Amps"/>
+        <eq:analog name="kV_b" unit="kV"/>
+        <eq:analog name="kV_c" unit="kV"/>
+        <eq:analog name="kW_a" unit="kW"/>
+        <eq:analog name="kW_b" unit="kW"/>
+        <eq:analog name="kW_c" unit="kW"/>
+        <eq:analog name="kVar_a" unit="kVar"/>
+        <eq:analog name="kVar_b" unit="kVar"/>
+        <eq:analog name="kVar_c" unit="kVar"/>
+        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
       </eq:equipmentProfile>
+
+      <!-- A1800 LV Profile-->
+
       <eq:equipmentProfile name="FREEDM_Meter_LV">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
         <eq:analog name="kW_tot" unit="kW">
-          <eq:range low="108" high="148" deadband="5" actionSet="Abnormal" />
+          <eq:range low="108" high="148" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_tot" unit="kVar">
-          <eq:range low="-150" high="300" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-150" high="300" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:counter name="kWh" unit="kWh">
-          <eq:range low="0" high="1000" deadband="5" actionSet="Abnormal" />
+          <eq:range low="0" high="1000" deadband="5" actionSet="Abnormal"/>
         </eq:counter>
         <eq:analog name="kV_a" unit="kV">
-          <eq:range low=".475" high=".485" deadband=".2" actionSet="Abnormal" />
+          <eq:range low=".475" high=".485" deadband=".2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="Frequency" unit="Hz">
-          <eq:range low="59" high="61" deadband="2" actionSet="Abnormal" />
+          <eq:range low="59" high="61" deadband="2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="I_a" unit="Amps">
-          <eq:range low="75" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="75" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="I_b" unit="Amps">
-          <eq:range low="75" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="75" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="I_c" unit="Amps">
-          <eq:range low="75" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="75" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kV_b" unit="kV">
-          <eq:range low=".475" high=".485" deadband=".2" actionSet="Abnormal" />
+          <eq:range low=".475" high=".485" deadband=".2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kV_c" unit="kV">
-          <eq:range low=".475" high=".485" deadband=".2" actionSet="Abnormal" />
+          <eq:range low=".475" high=".485" deadband=".2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kW_a" unit="kW">
-          <eq:range low="36" high="49" deadband="5" actionSet="Abnormal" />
+          <eq:range low="36" high="49" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kW_b" unit="kW">
-          <eq:range low="36" high="49" deadband="5" actionSet="Abnormal" />
+          <eq:range low="36" high="49" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kW_c" unit="kW">
-          <eq:range low="36" high="49" deadband="5" actionSet="Abnormal" />
+          <eq:range low="36" high="49" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_a" unit="kVar">
-          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_b" unit="kVar">
-          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_c" unit="kVar">
-          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
-        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
+        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
       </eq:equipmentProfile>
+
+      <!-- A1800 RES Profile-->
+
       <eq:equipmentProfile name="FREEDM_Meter_Res">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
         <eq:analog name="kW_tot" unit="kW">
-          <eq:range low="600" high="900" deadband="5" actionSet="Abnormal" />
+          <eq:range low="600" high="900" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_tot" unit="kVar">
-          <eq:range low="-150" high="300" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-150" high="300" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:counter name="kWh" unit="kWh">
-          <eq:range low="0" high="1000" deadband="5" actionSet="Abnormal" />
+          <eq:range low="0" high="1000" deadband="5" actionSet="Abnormal"/>
         </eq:counter>
         <eq:analog name="kV_a" unit="kV">
-          <eq:range low=".118" high=".122" deadband=".2" actionSet="Abnormal" />
+          <eq:range low=".118" high=".122" deadband=".2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="Frequency" unit="Hz">
-          <eq:range low="59" high="61" deadband="2" actionSet="Abnormal" />
+          <eq:range low="59" high="61" deadband="2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="I_a" unit="Amps">
-          <eq:range low="30" high="60" deadband="5" actionSet="Abnormal" />
+          <eq:range low="30" high="60" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="I_b" unit="Amps">
-          <eq:range low="30" high="60" deadband="5" actionSet="Abnormal" />
+          <eq:range low="30" high="60" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="I_c" unit="Amps">
-          <eq:range low="30" high="60" deadband="5" actionSet="Abnormal" />
+          <eq:range low="30" high="60" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kV_b" unit="kV">
-          <eq:range low=".118" high=".122" deadband=".2" actionSet="Abnormal" />
+          <eq:range low=".118" high=".122" deadband=".2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kV_c" unit="kV">
-          <eq:range low=".118" high=".122" deadband=".2" actionSet="Abnormal" />
+          <eq:range low=".118" high=".122" deadband=".2" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kW_a" unit="kW">
-          <eq:range low="300" high="500" deadband="5" actionSet="Abnormal" />
+          <eq:range low="300" high="500" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kW_b" unit="kW">
-          <eq:range low="300" high="500" deadband="5" actionSet="Abnormal" />
+          <eq:range low="300" high="500" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kW_c" unit="kW">
-          <eq:range low="300" high="500" deadband="5" actionSet="Abnormal" />
+          <eq:range low="300" high="500" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_a" unit="kVar">
-          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_b" unit="kVar">
-          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
         <eq:analog name="kVar_c" unit="kVar">
-          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal" />
+          <eq:range low="-50" high="100" deadband="5" actionSet="Abnormal"/>
         </eq:analog>
-        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
+        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
       </eq:equipmentProfile>
+
       <eq:equipmentProfile name="Bus_Meas">
-        <eq:type name="Bus" />
-        <eq:analog name="kW_a" unit="kW" />
-        <eq:analog name="kVar_a" unit="kVar" />
-        <eq:analog name="kV_a" unit="kV" />
+        <eq:type name="Bus"/>
+        <eq:analog name="kW_a" unit="kW"/>
+        <eq:analog name="kVar_a" unit="kVar"/>
+        <eq:analog name="kV_a" unit="kV"/>
       </eq:equipmentProfile>
+
+      <!-- FREEDM_751_MV Profile-->
+
       <eq:equipmentProfile name="FREEDM_751_MV">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kW_tot" unit="kW" />
-        <eq:analog name="kVar_tot" unit="kVar" />
-        <eq:analog name="kVA_tot" unit="kVA" />
-        <eq:analog name="MWh" unit="MWh" />
-        <eq:analog name="Frequency" unit="Hz" />
-        <eq:analog name="I_a" unit="Amps" />
-        <eq:analog name="I_b" unit="Amps" />
-        <eq:analog name="I_c" unit="Amps" />
-        <eq:analog name="kV_a" unit="kV" />
-        <eq:analog name="kV_b" unit="kV" />
-        <eq:analog name="kV_c" unit="kV" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kW_tot" unit="kW"/>
+        <eq:analog name="kVar_tot" unit="kVar"/>
+        <eq:analog name="kVA_tot" unit="kVA"/>
+        <eq:analog name="MWh" unit="MWh"/>
+        <eq:analog name="Frequency" unit="Hz"/>
+        <eq:analog name="I_a" unit="Amps"/>
+        <eq:analog name="I_b" unit="Amps"/>
+        <eq:analog name="I_c" unit="Amps"/>
+        <eq:analog name="kV_a" unit="kV"/>
+        <eq:analog name="kV_b" unit="kV"/>
+        <eq:analog name="kV_c" unit="kV"/>
       </eq:equipmentProfile>
+
+      <!-- FREEDM_PM800_LV Profile-->
+
       <eq:equipmentProfile name="FREEDM_PM800_LV">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kW_tot" unit="kW" />
-        <eq:analog name="kVar_tot" unit="kVar" />
-        <eq:analog name="V_a" unit="Volts" />
-        <eq:analog name="Frequency" unit="Hz" />
-        <eq:analog name="I_a" unit="Amps" />
-        <eq:analog name="I_b" unit="Amps" />
-        <eq:analog name="I_c" unit="Amps" />
-        <eq:analog name="V_b" unit="Volts" />
-        <eq:analog name="V_c" unit="Volts" />
-        <eq:analog name="kW_a" unit="kW" />
-        <eq:analog name="kW_b" unit="kW" />
-        <eq:analog name="kW_c" unit="kW" />
-        <eq:analog name="kVar_a" unit="kVar" />
-        <eq:analog name="kVar_b" unit="kVar" />
-        <eq:analog name="kVar_c" unit="kVar" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kW_tot" unit="kW"/>
+        <eq:analog name="kVar_tot" unit="kVar"/>
+        <eq:analog name="V_a" unit="Volts"/>
+        <eq:analog name="Frequency" unit="Hz"/>
+        <eq:analog name="I_a" unit="Amps"/>
+        <eq:analog name="I_b" unit="Amps"/>
+        <eq:analog name="I_c" unit="Amps"/>
+        <eq:analog name="V_b" unit="Volts"/>
+        <eq:analog name="V_c" unit="Volts"/>
+        <eq:analog name="kW_a" unit="kW"/>
+        <eq:analog name="kW_b" unit="kW"/>
+        <eq:analog name="kW_c" unit="kW"/>
+        <eq:analog name="kVar_a" unit="kVar"/>
+        <eq:analog name="kVar_b" unit="kVar"/>
+        <eq:analog name="kVar_c" unit="kVar"/>
       </eq:equipmentProfile>
+
       <!--SST_Profile-->
+
       <eq:equipmentProfile name="SST_Lprofile">
-        <eq:type name="SST" />
-        <eq:type name="Equipment" />
-        <eq:analog name="VDC_Low" unit="Volts" />
-        <eq:analog name="VAC_HIGH_RMS" unit="Volts" />
-        <eq:analog name="IAC_HIGH_RMS" unit="Amps" />
-        <eq:analog name="Freq_Grid" unit="Hz" />
-        <eq:analog name="Power_Factor" unit="PF" />
-        <eq:analog name="P_Grid" unit="Watts" />
-        <eq:analog name="Q_Grid" unit="VARs" />
-        <eq:analog name="Id_HighAC" unit="Amps" />
-        <eq:analog name="Iq_HighAC" unit="Amps" />
-        <eq:analog name="VDC1_High" unit="Volts" />
-        <eq:analog name="VDC2_High" unit="Volts" />
-        <eq:analog name="VDC3_High" unit="Volts" />
-        <eq:analog name="VDCt_High" unit="Volts" />
-        <eq:analog name="IDC_Low" unit="Amps" />
-        <eq:analog name="VAC_Low_RMS" unit="Volts" />
-        <eq:analog name="IAC_Low_RMS" unit="Amps" />
+        <eq:type name="SST"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="VDC_Low" unit="Volts"/>
+        <eq:analog name="VAC_HIGH_RMS" unit="Volts"/>
+        <eq:analog name="IAC_HIGH_RMS" unit="Amps"/>
+        <eq:analog name="Freq_Grid" unit="Hz"/>
+        <eq:analog name="Power_Factor" unit="PF"/>
+        <eq:analog name="P_Grid" unit="Watts"/>
+        <eq:analog name="Q_Grid" unit="VARs"/>
+        <eq:analog name="Id_HighAC" unit="Amps"/>
+        <eq:analog name="Iq_HighAC" unit="Amps"/>
+        <eq:analog name="VDC1_High" unit="Volts"/>
+        <eq:analog name="VDC2_High" unit="Volts"/>
+        <eq:analog name="VDC3_High" unit="Volts"/>
+        <eq:analog name="VDCt_High" unit="Volts"/>
+        <eq:analog name="IDC_Low" unit="Amps"/>
+        <eq:analog name="VAC_Low_RMS" unit="Volts"/>
+        <eq:analog name="IAC_Low_RMS" unit="Amps"/>
         <eq:analog name="VAR_REF" unit="Volts">
-          <eq:setpoint name="VAR_REF_SP" />
+          <eq:setpoint name="VAR_REF_SP"/>
         </eq:analog>
-        <eq:control name="DAB_Run" />
-        <eq:control name="DAB_Stop" />
-        <eq:control name="REC_Run" />
-        <eq:control name="REC_Stop" />
-        <eq:control name="INV_Run" />
-        <eq:control name="INV_Stop" />
-        <eq:setpoint name="VAR_REF_SP" />
-        <eq:setpoint name="REC_VDC_REF_SP" />
-        <eq:setpoint name="INV_VAC_REF_SP" />
-        <eq:setpoint name="DAB_VSEC_REF_SP" />
+        <eq:control name="DAB_Run"/>
+        <eq:control name="DAB_Stop"/>
+        <eq:control name="REC_Run"/>
+        <eq:control name="REC_Stop"/>
+        <eq:control name="INV_Run"/>
+        <eq:control name="INV_Stop"/>
+        <eq:setpoint name="VAR_REF_SP"/>
+        <eq:setpoint name="REC_VDC_REF_SP"/>
+        <eq:setpoint name="INV_VAC_REF_SP"/>
+        <eq:setpoint name="DAB_VSEC_REF_SP"/>
         <eq:analog name="REC_Vdc_REF" unit="Volts">
-          <eq:setpoint name="REC_VDC_REF_SP" />
+          <eq:setpoint name="REC_VDC_REF_SP"/>
         </eq:analog>
         <eq:analog name="DAB_Vsec_REF" unit="Volts">
-          <eq:setpoint name="DAB_VSEC_REF_SP" />
+          <eq:setpoint name="DAB_VSEC_REF_SP"/>
         </eq:analog>
         <eq:analog name="INV_Vac_REF" unit="Volts">
-          <eq:setpoint name="INV_VAC_REF_SP" />
+          <eq:setpoint name="INV_VAC_REF_SP"/>
         </eq:analog>
         <eq:status name="REC_COMMAND" unit="status" pointProfile="FID_BKR">
-          <eq:control name="REC_Run" />
-          <eq:control name="REC_Stop" />
+          <eq:control name="REC_Run"/>
+          <eq:control name="REC_Stop"/>
         </eq:status>
         <eq:status name="DAB_COMMAND" unit="status" pointProfile="FID_BKR">
-          <eq:control name="DAB_Run" />
-          <eq:control name="DAB_Stop" />
+          <eq:control name="DAB_Run"/>
+          <eq:control name="DAB_Stop"/>
         </eq:status>
         <eq:status name="INV_COMMAND" unit="status" pointProfile="FID_BKR">
-          <eq:control name="INV_Run" />
-          <eq:control name="INV_Stop" />
+          <eq:control name="INV_Run"/>
+          <eq:control name="INV_Stop"/>
         </eq:status>
       </eq:equipmentProfile>
+
       <!--MINIWATSON_Profile-->
+
       <eq:equipmentProfile name="MINI_profile">
-        <eq:type name="MINIWATSON" />
-        <eq:type name="Equipment" />
-        <eq:analog name="Vs" unit="Volts" />
-        <eq:analog name="Vdc" unit="Volts" />
-        <eq:analog name="Vload" unit="Volts" />
-        <eq:analog name="Is" unit="Amps" />
-        <eq:analog name="Freq" unit="Hz" />
-        <eq:analog name="PF" unit="PF" />
-        <eq:analog name="P" unit="Watts" />
-        <eq:analog name="Q" unit="VARs" />
-        <eq:analog name="Iload" unit="Amps" />
-        <eq:analog name="PL" unit="Watts" />
-        <eq:analog name="QL" unit="VARs" />
-        <eq:analog name="PFL" unit="PF" />
-        <eq:control name="work_Run" />
-        <eq:control name="work_Stop" />
-        <eq:control name="bypass_Run" />
-        <eq:control name="bypass_Stop" />
-        <eq:control name="startup_Run" />
-        <eq:control name="startup_Stop" />
-        <eq:setpoint name="Vcr" />
-        <eq:setpoint name="Qcr" />
-        <eq:setpoint name="Mode" />
+        <eq:type name="MINIWATSON"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="Vs" unit="Volts"/>
+        <eq:analog name="Vdc" unit="Volts"/>
+        <eq:analog name="Vload" unit="Volts"/>
+        <eq:analog name="Is" unit="Amps"/>
+        <eq:analog name="Freq" unit="Hz"/>
+        <eq:analog name="PF" unit="PF"/>
+        <eq:analog name="P" unit="Watts"/>
+        <eq:analog name="Q" unit="VARs"/>
+        <eq:analog name="Iload" unit="Amps"/>
+        <eq:analog name="PL" unit="Watts"/>
+        <eq:analog name="QL" unit="VARs"/>
+        <eq:analog name="PFL" unit="PF"/>
+        <eq:control name="work_Run"/>
+        <eq:control name="work_Stop"/>
+        <eq:control name="bypass_Run"/>
+        <eq:control name="bypass_Stop"/>
+        <eq:control name="startup_Run"/>
+        <eq:control name="startup_Stop"/>
+        <eq:setpoint name="Vcr"/>
+        <eq:setpoint name="Qcr"/>
+        <eq:setpoint name="Mode"/>
         <eq:analog name="Vcr_REF" unit="Volts">
-          <eq:setpoint name="Vcr" />
+          <eq:setpoint name="Vcr"/>
         </eq:analog>
         <eq:analog name="Qcr_REF" unit="VARs">
-          <eq:setpoint name="Qcr" />
+          <eq:setpoint name="Qcr"/>
         </eq:analog>
         <eq:analog name="Mode_REF" unit="Volts">
-          <eq:setpoint name="Mode" />
+          <eq:setpoint name="Mode"/>
         </eq:analog>
         <eq:status name="bypass_COMMAND" unit="status" pointProfile="FID_BKR">
-          <eq:control name="bypass_Run" />
-          <eq:control name="bypass_Stop" />
+          <eq:control name="bypass_Run"/>
+          <eq:control name="bypass_Stop"/>
         </eq:status>
         <eq:status name="startup_COMMAND" unit="status" pointProfile="FID_BKR">
-          <eq:control name="startup_Run" />
-          <eq:control name="startup_Stop" />
+          <eq:control name="startup_Run"/>
+          <eq:control name="startup_Stop"/>
         </eq:status>
         <eq:status name="work_COMMAND" unit="status" pointProfile="FID_BKR">
-          <eq:control name="work_Run" />
-          <eq:control name="work_Stop" />
+          <eq:control name="work_Run"/>
+          <eq:control name="work_Stop"/>
         </eq:status>
-        <eq:status name="brk" unit="status" pointProfile="FID_BKR" />
-        <eq:status name="inv_work" unit="status" pointProfile="FID_BKR" />
-        <eq:status name="mos_bypass" unit="status" pointProfile="FID_BKR" />
+        <eq:status name="brk" unit="status" pointProfile="FID_BKR"/>
+        <eq:status name="inv_work" unit="status" pointProfile="FID_BKR"/>
+        <eq:status name="mos_bypass" unit="status" pointProfile="FID_BKR"/>
       </eq:equipmentProfile>
+
+      <!--FREEDM_PM800_LV Profile-->
+
       <eq:equipmentProfile name="FREEDM_Meter_PV">
-        <eq:type name="Line" />
-        <eq:type name="Equipment" />
-        <eq:analog name="kW_tot" unit="kW" />
-        <eq:analog name="kVar_tot" unit="kVar" />
-        <eq:counter name="kWh" unit="kWh" />
-        <eq:analog name="kV_a" unit="kV" />
-        <eq:analog name="Frequency" unit="Hz" />
-        <eq:analog name="I_a" unit="Amps" />
-        <eq:analog name="I_b" unit="Amps" />
-        <eq:analog name="I_c" unit="Amps" />
-        <eq:analog name="kV_b" unit="kV" />
-        <eq:analog name="kV_c" unit="kV" />
-        <eq:analog name="kW_a" unit="kW" />
-        <eq:analog name="kW_b" unit="kW" />
-        <eq:analog name="kW_c" unit="kW" />
-        <eq:analog name="kVar_a" unit="kVar" />
-        <eq:analog name="kVar_b" unit="kVar" />
-        <eq:analog name="kVar_c" unit="kVar" />
-        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed" />
-        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed" />
+        <eq:type name="Line"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="kW_tot" unit="kW"/>
+        <eq:analog name="kVar_tot" unit="kVar"/>
+        <eq:counter name="kWh" unit="kWh"/>
+        <eq:analog name="kV_a" unit="kV"/>
+        <eq:analog name="Frequency" unit="Hz"/>
+        <eq:analog name="I_a" unit="Amps"/>
+        <eq:analog name="I_b" unit="Amps"/>
+        <eq:analog name="I_c" unit="Amps"/>
+        <eq:analog name="kV_b" unit="kV"/>
+        <eq:analog name="kV_c" unit="kV"/>
+        <eq:analog name="kW_a" unit="kW"/>
+        <eq:analog name="kW_b" unit="kW"/>
+        <eq:analog name="kW_c" unit="kW"/>
+        <eq:analog name="kVar_a" unit="kVar"/>
+        <eq:analog name="kVar_b" unit="kVar"/>
+        <eq:analog name="kVar_c" unit="kVar"/>
+        <eq:status name="Meter_Config_Error" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Power_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Loss_Pot" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_Low_Batt" unit="status" pointProfile="NormallyTrueAlarmed"/>
+        <eq:status name="Meter_RAM_Fail" unit="status" pointProfile="NormallyTrueAlarmed"/>
       </eq:equipmentProfile>
+
       <!--Eaton EV Profile-->
+
       <eq:equipmentProfile name="EatonEV_Profile">
-        <eq:type name="EV_Charger" />
-        <eq:analog name="Vp" unit="Volts" />
-        <eq:analog name="ALCRatio" unit="NA" />
-        <eq:analog name="MaxPilotDC" unit="Volts" />
-        <eq:analog name="Igf" unit="Amps" />
-        <eq:analog name="Ic" unit="Amps" />
-        <eq:analog name="Iv" unit="Amps" />
-        <eq:analog name="Rprox" unit="Ohms" />
-        <eq:analog name="LightSense" unit="NA" />
-        <eq:analog name="Temp" unit="DegC" />
-        <eq:counter name="EVSE_State" unit="state" pointProfile="EV_State" />
-        <eq:counter name="Op_Voltage" unit="Volts" pointProfile="Op_Voltage" />
+        <eq:type name="EV_Charger"/>
+        <eq:analog name="Vp" unit="Volts"/>
+        <eq:analog name="ALCRatio" unit="NA"/>
+        <eq:analog name="MaxPilotDC" unit="Volts"/>
+        <eq:analog name="Igf" unit="Amps"/>
+        <eq:analog name="Ic" unit="Amps"/>
+        <eq:analog name="Iv" unit="Amps"/>
+        <eq:analog name="Rprox" unit="Ohms"/>
+        <eq:analog name="LightSense" unit="NA"/>
+        <eq:analog name="Temp" unit="DegC"/>
+        <eq:counter name="EVSE_State" unit="state" pointProfile="EV_State"/>
+        <eq:counter name="Op_Voltage" unit="Volts" pointProfile="Op_Voltage"/>
       </eq:equipmentProfile>
+
+      <!--BMS Profile-->
+
       <eq:equipmentProfile name="BMS_Profile">
-        <eq:type name="BMS" />
-        <eq:analog name="Vdc_out" unit="Volts" />
-        <eq:analog name="I_out" unit="Amps" />
-        <eq:analog name="Inverter_Watts" unit="Watts" />
-        <eq:analog name="Charger_Watts" unit="Watts" />
-        <eq:analog name="%SOC" unit="%" />
-        <eq:analog name="Capacity_1" unit="Ah" />
-        <eq:analog name="Capacity_2" unit="Ah" />
-        <eq:analog name="Capacity_3" unit="Ah" />
-        <eq:analog name="Capacity_4" unit="Ah" />
-        <eq:analog name="Capacity_5" unit="Ah" />
-        <eq:analog name="Capacity_6" unit="Ah" />
-        <eq:analog name="Capacity_7" unit="Ah" />
-        <eq:analog name="Capacity_8" unit="Ah" />
-        <eq:analog name="Capacity_9" unit="Ah" />
-        <eq:analog name="Capacity_10" unit="Ah" />
-        <eq:analog name="Capacity_11" unit="Ah" />
-        <eq:analog name="Capacity_12" unit="Ah" />
-        <eq:analog name="Capacity_13" unit="Ah" />
-        <eq:analog name="Capacity_14" unit="Ah" />
-        <eq:analog name="Capacity_15" unit="Ah" />
-        <eq:analog name="Capacity_16" unit="Ah" />
+        <eq:type name="BMS"/>
+        <eq:analog name="Vdc_out" unit="Volts"/>
+        <eq:analog name="I_out" unit="Amps"/>
+        <eq:analog name="Inverter_Watts" unit="Watts"/>
+        <eq:analog name="Charger_Watts" unit="Watts"/>
+        <eq:analog name="%SOC" unit="%"/>
+        <eq:analog name="Capacity_1" unit="Ah"/>
+        <eq:analog name="Capacity_2" unit="Ah"/>
+        <eq:analog name="Capacity_3" unit="Ah"/>
+        <eq:analog name="Capacity_4" unit="Ah"/>
+        <eq:analog name="Capacity_5" unit="Ah"/>
+        <eq:analog name="Capacity_6" unit="Ah"/>
+        <eq:analog name="Capacity_7" unit="Ah"/>
+        <eq:analog name="Capacity_8" unit="Ah"/>
+        <eq:analog name="Capacity_9" unit="Ah"/>
+        <eq:analog name="Capacity_10" unit="Ah"/>
+        <eq:analog name="Capacity_11" unit="Ah"/>
+        <eq:analog name="Capacity_12" unit="Ah"/>
+        <eq:analog name="Capacity_13" unit="Ah"/>
+        <eq:analog name="Capacity_14" unit="Ah"/>
+        <eq:analog name="Capacity_15" unit="Ah"/>
+        <eq:analog name="Capacity_16" unit="Ah"/>
       </eq:equipmentProfile>
-      <eq:equipmentProfile name="MicroGridProfile">
-        <eq:type name="MicroGrid" />
-        <eq:type name="EquipmentGroup" />
-      </eq:equipmentProfile>
+
+      <!--CES_DI Profile-->
+
       <eq:equipmentProfile name="CES_DI">
-        <eq:type name="DESS" />
-        <eq:type name="Equipment" />
-        <eq:control name="Open" />
-        <eq:control name="Close" />
-        <eq:control name="PeakEnable" />
-        <eq:control name="PeakDisable" />
-        <eq:control name="Enable" />
-        <eq:control name="Disable" />
-        <eq:control name="StartPVGen" />
-        <eq:control name="StopPVGen" />
-        <eq:control name="SetAuto" />
+        <eq:type name="DESS"/>
+        <eq:type name="Equipment"/>
+        <eq:control name="Open"/>
+        <eq:control name="Close"/>
+        <eq:control name="PeakEnable"/>
+        <eq:control name="PeakDisable"/>
+        <eq:control name="Enable"/>
+        <eq:control name="Disable"/>
+        <eq:control name="StartPVGen"/>
+        <eq:control name="StopPVGen"/>
+        <eq:control name="SetAuto"/>
         <eq:status name="OpModWLim_0" unit="status" pointProfile="DisEnNoAlm">
-          <eq:control name="PeakEnable" />
-          <eq:control name="PeakDisable" />
+          <eq:control name="PeakEnable"/>
+          <eq:control name="PeakDisable"/>
         </eq:status>
         <eq:status name="OpModWRte_2" unit="status" pointProfile="DisEnNoAlm">
-          <eq:control name="Enable" />
-          <eq:control name="Disable" />
+          <eq:control name="Enable"/>
+          <eq:control name="Disable"/>
         </eq:status>
-        <eq:status name="DERStr_3" unit="status" pointProfile="NullStarted" />
-        <eq:status name="DERStop_4" unit="status" pointProfile="NullStopped" />
-        <eq:status name="AutoManCtl_5" unit="status" pointProfile="AutoNot" />
-        <eq:status name="LocRemCtl_6" unit="status" pointProfile="RemLoc" />
+        <eq:status name="DERStr_3" unit="status" pointProfile="NullStarted"/>
+        <eq:status name="DERStop_4" unit="status" pointProfile="NullStopped"/>
+        <eq:status name="AutoManCtl_5" unit="status" pointProfile="AutoNot"/>
+        <eq:status name="LocRemCtl_6" unit="status" pointProfile="RemLoc"/>
         <eq:status name="AutoMan_7" unit="status" pointProfile="AutoNot">
-          <eq:control name="SetAuto" />
+          <eq:control name="SetAuto"/>
         </eq:status>
         <eq:status name="ModOnConn_8" unit="status" pointProfile="ModOnConn">
-          <eq:control name="StartPVGen" />
-          <eq:control name="StopPVGen" />
+          <eq:control name="StartPVGen"/>
+          <eq:control name="StopPVGen"/>
         </eq:status>
-        <eq:status name="ModOnAval_9" unit="status" pointProfile="ModOnAval" />
-        <eq:status name="ModOffAval_10" unit="status" pointProfile="ModOffAval" />
-        <eq:status name="ModOffUnav_11" unit="status" pointProfile="ModOffUnAval" />
-        <eq:status name="TotWrange_13" unit="status" pointProfile="NormAlm" />
-        <eq:status name="TotWrange_14" unit="status" pointProfile="NormAlm" />
-        <eq:status name="TotVArrange_15" unit="status" pointProfile="NormAlm" />
-        <eq:status name="ITotVArrange_16" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Hzrange_17" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Hzrange_18" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Amprange_27" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Amprange_28" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Volrange_29" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Volrange_30" unit="status" pointProfile="NormAlm" />
-        <eq:status name="BatSt_31" unit="status" pointProfile="OffOn" />
-        <eq:status name="Volrange_32" unit="status" pointProfile="NormAlm" />
-        <eq:status name="Volrange_33" unit="status" pointProfile="NormAlm" />
-        <eq:status name="InBatV_34" unit="status" pointProfile="NormAlm" />
-        <eq:status name="InBatV_35" unit="status" pointProfile="NormAlm" />
-        <eq:status name="SchdSt_36" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_37" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_38" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_39" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_40" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_41" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_42" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_43" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_44" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_45" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_46" unit="status" pointProfile="InactAct" />
-        <eq:status name="SchdSt_47" unit="status" pointProfile="InactAct" />
-        <eq:status name="PhAVoltsHigh_48" unit="status" pointProfile="TrueFalseAlm" />
-        <eq:status name="PhAVoltsLow_49" unit="status" pointProfile="TrueFalseAlm" />
-        <eq:status name="PhBVoltsHigh_50" unit="status" pointProfile="TrueFalseAlm" />
-        <eq:status name="PhBVoltsLow_51" unit="status" pointProfile="TrueFalseAlm" />
+        <eq:status name="ModOnAval_9" unit="status" pointProfile="ModOnAval"/>
+        <eq:status name="ModOffAval_10" unit="status" pointProfile="ModOffAval"/>
+        <eq:status name="ModOffUnav_11" unit="status" pointProfile="ModOffUnAval"/>
+        <eq:status name="TotWrange_13" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="TotWrange_14" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="TotVArrange_15" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="ITotVArrange_16" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Hzrange_17" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Hzrange_18" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Amprange_27" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Amprange_28" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Volrange_29" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Volrange_30" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="BatSt_31" unit="status" pointProfile="OffOn"/>
+        <eq:status name="Volrange_32" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="Volrange_33" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="InBatV_34" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="InBatV_35" unit="status" pointProfile="NormAlm"/>
+        <eq:status name="SchdSt_36" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_37" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_38" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_39" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_40" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_41" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_42" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_43" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_44" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_45" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_46" unit="status" pointProfile="InactAct"/>
+        <eq:status name="SchdSt_47" unit="status" pointProfile="InactAct"/>
+        <eq:status name="PhAVoltsHigh_48" unit="status" pointProfile="TrueFalseAlm"/>
+        <eq:status name="PhAVoltsLow_49" unit="status" pointProfile="TrueFalseAlm"/>
+        <eq:status name="PhBVoltsHigh_50" unit="status" pointProfile="TrueFalseAlm"/>
+        <eq:status name="PhBVoltsLow_51" unit="status" pointProfile="TrueFalseAlm"/>
         <eq:status name="DERSw_ctl" unit="status" pointProfile="TrueFalseNoAlm">
-          <eq:control name="Open" />
-          <eq:control name="Close" />
+          <eq:control name="Open"/>
+          <eq:control name="Close"/>
         </eq:status>
       </eq:equipmentProfile>
+
+      <!--CES_CO Profile-->
+
       <eq:equipmentProfile name="CES_CO">
-        <eq:type name="DESS" />
-        <eq:type name="Equipment" />
-        <eq:counter name="SupWh_0" unit="Wh" />
-        <eq:counter name="DmdWh_2" unit="Wh" />
+        <eq:type name="DESS"/>
+        <eq:type name="Equipment"/>
+        <eq:counter name="SupWh_0" unit="Wh"/>
+        <eq:counter name="DmdWh_2" unit="Wh"/>
       </eq:equipmentProfile>
+
+      <!--CES_AI Profile-->
+
       <eq:equipmentProfile name="CES_AI">
-        <eq:type name="DESS" />
-        <eq:type name="Equipment" />
-        <eq:analog name="MaxLimWPct_0" unit="%" />
-        <eq:analog name="OutWRte_1" unit="%" />
-        <eq:analog name="OpTmh_6" unit="Hours" />
-        <eq:analog name="OpTms_7" unit="Seconds" />
-        <eq:analog name="TotW_8" unit="Watts" />
-        <eq:analog name="TotVAr_9" unit="VARs" />
-        <eq:analog name="Hz_10" unit="Hz" />
-        <eq:analog name="TotW_11" unit="Watts" />
-        <eq:analog name="TotVAr_12" unit="VARs" />
-        <eq:analog name="PF_13" unit="PF" />
-        <eq:analog name="PhVPhsAmag_14" unit="Volts" />
-        <eq:analog name="PhVPhsBmag_16" unit="Volts" />
-        <eq:analog name="PhVPhsCmag_18" unit="Volts" />
-        <eq:analog name="Pin_20" unit="Watts" />
-        <eq:analog name="Amp_21" unit="Amps" />
-        <eq:analog name="Vol_22" unit="Volts" />
-        <eq:analog name="InBatV_24" unit="Volts" />
-        <eq:analog name="AhrPct_25" unit="%SOC" />
+        <eq:type name="DESS"/>
+        <eq:type name="Equipment"/>
+        <eq:analog name="MaxLimWPct_0" unit="%"/>
+        <eq:analog name="OutWRte_1" unit="%"/>
+        <eq:analog name="OpTmh_6" unit="Hours"/>
+        <eq:analog name="OpTms_7" unit="Seconds"/>
+        <eq:analog name="TotW_8" unit="Watts"/>
+        <eq:analog name="TotVAr_9" unit="VARs"/>
+        <eq:analog name="Hz_10" unit="Hz"/>
+        <eq:analog name="TotW_11" unit="Watts"/>
+        <eq:analog name="TotVAr_12" unit="VARs"/>
+        <eq:analog name="PF_13" unit="PF"/>
+        <eq:analog name="PhVPhsAmag_14" unit="Volts"/>
+        <eq:analog name="PhVPhsBmag_16" unit="Volts"/>
+        <eq:analog name="PhVPhsCmag_18" unit="Volts"/>
+        <eq:analog name="Pin_20" unit="Watts"/>
+        <eq:analog name="Amp_21" unit="Amps"/>
+        <eq:analog name="Vol_22" unit="Volts"/>
+        <eq:analog name="InBatV_24" unit="Volts"/>
+        <eq:analog name="AhrPct_25" unit="%SOC"/>
       </eq:equipmentProfile>
+
+      <!--CES_AO Profile-->
+
       <eq:equipmentProfile name="CES_AO">
-        <eq:type name="DESS" />
-        <eq:type name="Equipment" />
-        <eq:setpoint name="%Rate" />
-        <eq:setpoint name="MaxChRate" />
-        <eq:setpoint name="MaxDisRate" />
-        <eq:setpoint name="HzHigh" />
-        <eq:setpoint name="HzLow" />
-        <eq:setpoint name="VoltsHighLim" />
-        <eq:setpoint name="VoltsLowLim" />
-        <eq:setpoint name="StorInd" />
-        <eq:setpoint name="VbHighLim" />
-        <eq:setpoint name="VbLowLim" />
+        <eq:type name="DESS"/>
+        <eq:type name="Equipment"/>
+        <eq:setpoint name="%Rate"/>
+        <eq:setpoint name="MaxChRate"/>
+        <eq:setpoint name="MaxDisRate"/>
+        <eq:setpoint name="HzHigh"/>
+        <eq:setpoint name="HzLow"/>
+        <eq:setpoint name="VoltsHighLim"/>
+        <eq:setpoint name="VoltsLowLim"/>
+        <eq:setpoint name="StorInd"/>
+        <eq:setpoint name="VbHighLim"/>
+        <eq:setpoint name="VbLowLim"/>
         <eq:analog name="%RateSP_16" unit="%">
-          <eq:setpoint name="%Rate" />
+          <eq:setpoint name="%Rate"/>
         </eq:analog>
         <eq:analog name="MaxChRateSP_56" unit="%">
-          <eq:setpoint name="MaxChRate" />
+          <eq:setpoint name="MaxChRate"/>
         </eq:analog>
         <eq:analog name="MaxDisRateSP_57" unit="%">
-          <eq:setpoint name="MaxDisRate" />
+          <eq:setpoint name="MaxDisRate"/>
         </eq:analog>
         <eq:analog name="HzHighSP_33" unit="Hz">
-          <eq:setpoint name="HzHigh" />
+          <eq:setpoint name="HzHigh"/>
         </eq:analog>
         <eq:analog name="HzLowSP_34" unit="Hz">
-          <eq:setpoint name="HzLow" />
+          <eq:setpoint name="HzLow"/>
         </eq:analog>
         <eq:analog name="VHighSP_41" unit="Volts">
-          <eq:setpoint name="VoltsHighLim" />
+          <eq:setpoint name="VoltsHighLim"/>
         </eq:analog>
         <eq:analog name="VLowSP_42" unit="Volts">
-          <eq:setpoint name="VoltsLowLim" />
+          <eq:setpoint name="VoltsLowLim"/>
         </eq:analog>
         <eq:analog name="VbHighSP_43" unit="Volts">
-          <eq:setpoint name="VbHighLim" />
+          <eq:setpoint name="VbHighLim"/>
         </eq:analog>
         <eq:analog name="VbLowSP_44" unit="Volts">
-          <eq:setpoint name="VbLowLim" />
+          <eq:setpoint name="VbLowLim"/>
         </eq:analog>
         <eq:analog name="StorIndSP_21" unit="%SOC">
-          <eq:setpoint name="StorInd" />
+          <eq:setpoint name="StorInd"/>
         </eq:analog>
       </eq:equipmentProfile>
     </eq:profiles>
-    <!-- Equipment Definition-->
-    <!--Start RTDS Equipment Configuration-->
+
+
+    <!-- Equipment Definition Section-->
+
+
+    <!--RTDS Equipment Configuration-->
+
     <eq:equipment name="RTDS">
       <common:info>
-        <common:configFile fileName="onelines/RTDS_OL.svg" mimeType="schematic/svg+xml" name="RTDS_OL" />
+        <common:configFile fileName="onelines/RTDS_OL.svg" mimeType="schematic/svg+xml" name="RTDS_OL"/>
       </common:info>
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
       <eq:equipment name="FID1">
-        <eq:equipmentProfile name="FullBreaker" />
+        <eq:equipmentProfile name="FullBreaker"/>
       </eq:equipment>
       <eq:equipment name="FID2">
-        <eq:equipmentProfile name="FullBreaker" />
+        <eq:equipmentProfile name="FullBreaker"/>
       </eq:equipment>
       <eq:equipment name="FID3">
-        <eq:equipmentProfile name="FullBreaker" />
+        <eq:equipmentProfile name="FullBreaker"/>
       </eq:equipment>
       <eq:equipment name="FID4">
-        <eq:equipmentProfile name="FullBreaker" />
+        <eq:equipmentProfile name="FullBreaker"/>
       </eq:equipment>
       <!--<eq:equipment name="CB1" xmlns:eq="equipment.loader.reef.totalgrid.org"><eq:equipmentProfile name="FullBreaker" /></eq:equipment>-->
       <eq:equipment name="Substation1">
-        <eq:equipmentProfile name="Bus_Meas" />
-        <eq:analog name="Frequency" unit="Hz" />
+        <eq:equipmentProfile name="Bus_Meas"/>
+        <eq:analog name="Frequency" unit="Hz"/>
       </eq:equipment>
       <eq:equipment name="Bus1">
-        <eq:type name="Bus" />
-        <eq:equipmentProfile name="Bus_Meas" />
+        <eq:type name="Bus"/>
+        <eq:equipmentProfile name="Bus_Meas"/>
       </eq:equipment>
       <eq:equipment name="Bus2">
-        <eq:type name="Bus" />
-        <eq:equipmentProfile name="Bus_Meas" />
+        <eq:type name="Bus"/>
+        <eq:equipmentProfile name="Bus_Meas"/>
       </eq:equipment>
       <eq:equipment name="Bus3">
-        <eq:type name="Bus" />
-        <eq:equipmentProfile name="Bus_Meas" />
+        <eq:type name="Bus"/>
+        <eq:equipmentProfile name="Bus_Meas"/>
       </eq:equipment>
       <eq:equipment name="PV1">
-        <eq:equipmentProfile name="KvKwkVar_Meas" />
+        <eq:equipmentProfile name="KvKwkVar_Meas"/>
       </eq:equipment>
       <eq:equipment name="PV2">
-        <eq:equipmentProfile name="KvKwkVar_Meas" />
+        <eq:equipmentProfile name="KvKwkVar_Meas"/>
       </eq:equipment>
       <eq:equipment name="PV3">
-        <eq:equipmentProfile name="KvKwkVar_Meas" />
+        <eq:equipmentProfile name="KvKwkVar_Meas"/>
       </eq:equipment>
       <eq:equipment name="Line1">
-        <eq:equipmentProfile name="Line_Meas" />
+        <eq:equipmentProfile name="Line_Meas"/>
       </eq:equipment>
       <eq:equipment name="Line2">
-        <eq:equipmentProfile name="Line_Meas" />
+        <eq:equipmentProfile name="Line_Meas"/>
       </eq:equipment>
       <eq:equipment name="Line3">
-        <eq:equipmentProfile name="Line_Meas" />
+        <eq:equipmentProfile name="Line_Meas"/>
       </eq:equipment>
       <eq:equipment name="Line4">
-        <eq:equipmentProfile name="Line_Meas" />
+        <eq:equipmentProfile name="Line_Meas"/>
       </eq:equipment>
       <eq:equipment name="SST1">
-        <eq:equipmentProfile name="SST" />
+        <eq:equipmentProfile name="SST"/>
       </eq:equipment>
       <eq:equipment name="SST2">
-        <eq:equipmentProfile name="SST" />
+        <eq:equipmentProfile name="SST"/>
       </eq:equipment>
       <eq:equipment name="SST3">
-        <eq:equipmentProfile name="SST" />
+        <eq:equipmentProfile name="SST"/>
       </eq:equipment>
       <eq:equipment name="DES1">
-        <eq:equipmentProfile name="DES" />
+        <eq:equipmentProfile name="DES"/>
       </eq:equipment>
       <eq:equipment name="DES2">
-        <eq:equipmentProfile name="DES" />
+        <eq:equipmentProfile name="DES"/>
       </eq:equipment>
       <eq:equipment name="DES3">
-        <eq:equipmentProfile name="DES" />
+        <eq:equipmentProfile name="DES"/>
       </eq:equipment>
     </eq:equipment>
-    <!--End RTDS Equipment Configuration-->
-    <!--Start Residential Equipment Configuration-->
+
+
+    <!--Residential Equipment Configuration-->
+
     <eq:equipment name="Residential">
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
       <common:info>
-        <common:configFile fileName="onelines/residential.svg" mimeType="schematic/svg+xml" name="residential" />
+        <common:configFile fileName="onelines/residential.svg" mimeType="schematic/svg+xml" name="residential"/>
       </common:info>
+
       <!--EV Chargers-->
+
       <eq:equipment name="EVCS_Eaton">
-        <eq:equipmentProfile name="EatonEV_Profile" />
-        <common:info xmlns:common="common.loader.reef.totalgrid.org" />
+        <eq:equipmentProfile name="EatonEV_Profile"/>
+        <common:info xmlns:common="common.loader.reef.totalgrid.org"/>
       </eq:equipment>
+
       <!--BMS-->
+
       <eq:equipment name="ESS_R">
-        <eq:equipmentProfile name="BMS_Profile" />
+        <eq:equipmentProfile name="BMS_Profile"/>
       </eq:equipment>
     </eq:equipment>
-    <!--End Residential Equipment Configuration-->
+
     <!--Power Hub-->
+
     <eq:equipment name="CES">
       <common:info>
-        <common:configFile fileName="onelines/PHub.svg" mimeType="schematic/svg+xml" name="PHub" />
+        <common:configFile fileName="onelines/PHub.svg" mimeType="schematic/svg+xml" name="PHub"/>
       </common:info>
       <eq:equipment name="Residential">
-        <eq:equipmentProfile name="CES_DI" />
-        <eq:equipmentProfile name="CES_CO" />
-        <eq:equipmentProfile name="CES_AI" />
-        <eq:equipmentProfile name="CES_AO" />
+        <eq:equipmentProfile name="CES_DI"/>
+        <eq:equipmentProfile name="CES_CO"/>
+        <eq:equipmentProfile name="CES_AI"/>
+        <eq:equipmentProfile name="CES_AO"/>
       </eq:equipment>
     </eq:equipment>
     <eq:equipment name="PHEV_Test_Case">
       <common:info>
-        <common:configFile fileName="onelines/Mgrid.svg" mimeType="schematic/svg+xml" name="Mgrid" />
+        <common:configFile fileName="onelines/Mgrid.svg" mimeType="schematic/svg+xml" name="Mgrid"/>
       </common:info>
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
     </eq:equipment>
     <eq:equipment name="MV">
-      <!--Start MV Equipment Configuration-->
+
+      <!-- MV Equipment Configuration-->
+
       <common:info>
-        <common:configFile fileName="onelines/mv.svg" mimeType="schematic/svg+xml" name="mv" />
+        <common:configFile fileName="onelines/mv.svg" mimeType="schematic/svg+xml" name="mv"/>
       </common:info>
       <eq:equipment name="Line">
-        <eq:equipmentProfile name="FREEDM_751_MV" />
+        <eq:equipmentProfile name="FREEDM_751_MV"/>
       </eq:equipment>
       <eq:equipment name="TCA">
-        <eq:equipmentProfile name="FREEDM_Meter_MV" />
+        <eq:equipmentProfile name="FREEDM_Meter_MV"/>
       </eq:equipment>
       <eq:equipment name="TCB">
-        <eq:equipmentProfile name="FREEDM_Meter_MV" />
+        <eq:equipmentProfile name="FREEDM_Meter_MV"/>
       </eq:equipment>
       <eq:equipment name="TCC">
-        <eq:equipmentProfile name="FREEDM_Meter_MV" />
+        <eq:equipmentProfile name="FREEDM_Meter_MV"/>
       </eq:equipment>
       <eq:equipment name="TCD">
-        <eq:equipmentProfile name="FREEDM_Meter_MV" />
+        <eq:equipmentProfile name="FREEDM_Meter_MV"/>
       </eq:equipment>
       <eq:equipment name="TCE">
-        <eq:equipmentProfile name="FREEDM_Meter_MV" />
+        <eq:equipmentProfile name="FREEDM_Meter_MV"/>
       </eq:equipment>
-      <eq:equipmentProfile name="MicroGridProfile" />
-      <!--End MV Equipment Configuration-->
+      <eq:equipmentProfile name="MicroGridProfile"/>
     </eq:equipment>
-    <!--LV-->
+
+    <!--LV Equipment Configuration-->
+
     <eq:equipment name="LV">
-      <!--Start LV Equipment Configuration-->
+
       <common:info>
-        <common:configFile fileName="onelines/lv.svg" mimeType="schematic/svg+xml" name="lv" />
+        <common:configFile fileName="onelines/lv.svg" mimeType="schematic/svg+xml" name="lv"/>
       </common:info>
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
       <eq:equipment name="Line">
-        <eq:equipmentProfile name="FREEDM_PM800_LV" />
+        <eq:equipmentProfile name="FREEDM_PM800_LV"/>
       </eq:equipment>
       <eq:equipment name="Line_PV">
-        <eq:equipmentProfile name="FREEDM_Meter_PV" />
+        <eq:equipmentProfile name="FREEDM_Meter_PV"/>
       </eq:equipment>
       <eq:equipment name="CB_Main">
-        <eq:status name="Status" unit="status" pointProfile="FID_BKR" />
-        <eq:type name="CB" />
+        <eq:status name="Status" unit="status" pointProfile="FID_BKR"/>
+        <eq:type name="CB"/>
       </eq:equipment>
       <eq:equipment name="CB_BTB1">
-        <eq:status name="Status" unit="status" pointProfile="FID_BKR" />
-        <eq:type name="CB" />
+        <eq:status name="Status" unit="status" pointProfile="FID_BKR"/>
+        <eq:type name="CB"/>
       </eq:equipment>
       <eq:equipment name="CB_BTB2">
-        <eq:status name="Status" unit="status" pointProfile="FID_BKR" />
-        <eq:type name="CB" />
+        <eq:status name="Status" unit="status" pointProfile="FID_BKR"/>
+        <eq:type name="CB"/>
       </eq:equipment>
       <eq:equipment name="CB_HAD">
-        <eq:status name="Status" unit="status" pointProfile="FID_BKR" />
-        <eq:type name="CB" />
+        <eq:status name="Status" unit="status" pointProfile="FID_BKR"/>
+        <eq:type name="CB"/>
       </eq:equipment>
       <eq:equipment name="CB_MainHAD">
-        <eq:status name="Status" unit="status" pointProfile="FID_BKR" />
-        <eq:type name="CB" />
+        <eq:status name="Status" unit="status" pointProfile="FID_BKR"/>
+        <eq:type name="CB"/>
       </eq:equipment>
       <eq:equipment name="CB_T3">
-        <eq:status name="Status" unit="status" pointProfile="FID_BKR" />
-        <eq:type name="CB" />
+        <eq:status name="Status" unit="status" pointProfile="FID_BKR"/>
+        <eq:type name="CB"/>
       </eq:equipment>
+
       <!--PM800_BTB-->
+
       <eq:equipment name="Line_BTB">
-        <eq:equipmentProfile name="FREEDM_PM800_LV" />
+        <eq:equipmentProfile name="FREEDM_PM800_LV"/>
       </eq:equipment>
-      <!--End LV Equipment Configuration-->
+
     </eq:equipment>
+
+    <!--CES Equipment Configuration-->
+
     <eq:equipment name="CES_Test_Case">
       <common:info xmlns:common="common.loader.reef.totalgrid.org">
-        <common:configFile fileName="onelines/cesTC.svg" mimeType="schematic/svg+xml" name="cesTC" />
+        <common:configFile fileName="onelines/cesTC.svg" mimeType="schematic/svg+xml" name="cesTC"/>
       </common:info>
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
       <eq:equipment name="CES">
-        <eq:type name="Equipment" />
-        <eq:type name="CES" />
-        <eq:analog name="SOC" unit="%" />
-        <eq:analog name="kVar" unit="kVar" />
-        <eq:analog name="kW" unit="kW" />
-        <eq:setpoint name="Pset" />
+        <eq:type name="Equipment"/>
+        <eq:type name="CES"/>
+        <eq:analog name="SOC" unit="%"/>
+        <eq:analog name="kVar" unit="kVar"/>
+        <eq:analog name="kW" unit="kW"/>
+        <eq:setpoint name="Pset"/>
       </eq:equipment>
       <eq:equipment name="SST">
-        <eq:analog name="kW_a" unit="kW" />
-        <eq:analog name="kVar_a" unit="kVar" />
-        <eq:analog name="kV_ap" unit="kV" />
-        <eq:analog name="kV_as" unit="kV" />
-        <eq:setpoint name="Qset" />
+        <eq:analog name="kW_a" unit="kW"/>
+        <eq:analog name="kVar_a" unit="kVar"/>
+        <eq:analog name="kV_ap" unit="kV"/>
+        <eq:analog name="kV_as" unit="kV"/>
+        <eq:setpoint name="Qset"/>
       </eq:equipment>
       <eq:equipment name="PV">
-        <eq:analog name="kW" unit="kW" />
-        <eq:analog name="kVar" unit="kVar" />
-        <eq:setpoint name="Pset" />
+        <eq:analog name="kW" unit="kW"/>
+        <eq:analog name="kVar" unit="kVar"/>
+        <eq:setpoint name="Pset"/>
       </eq:equipment>
       <eq:equipment name="LOAD">
-        <eq:analog name="kW" unit="kW" />
-        <eq:analog name="kVar" unit="kVar" />
-        <eq:setpoint name="Pset" />
-        <eq:setpoint name="Pl" />
-        <eq:setpoint name="Pg" />
+        <eq:analog name="kW" unit="kW"/>
+        <eq:analog name="kVar" unit="kVar"/>
+        <eq:setpoint name="Pset"/>
+        <eq:setpoint name="Pl"/>
+        <eq:setpoint name="Pg"/>
       </eq:equipment>
       <eq:equipment name="Bus">
-        <eq:analog name="kW" unit="kW" />
-        <eq:analog name="kVar" unit="kVar" />
-        <eq:analog name="kV" unit="kV" />
+        <eq:analog name="kW" unit="kW"/>
+        <eq:analog name="kVar" unit="kVar"/>
+        <eq:analog name="kV" unit="kV"/>
       </eq:equipment>
       <eq:equipment name="App">
-        <eq:type name="Application" />
-        <eq:control name="Enable1" />
-        <eq:control name="Enable2" />
-        <eq:control name="Enable3" />
-        <eq:control name="Enable4" />
+        <eq:type name="Application"/>
+        <eq:control name="Enable1"/>
+        <eq:control name="Enable2"/>
+        <eq:control name="Enable3"/>
+        <eq:control name="Enable4"/>
         <eq:status name="Demo1" unit="status" pointProfile="OnOff_NoAlm">
-          <eq:control name="Enable1" />
+          <eq:control name="Enable1"/>
         </eq:status>
         <eq:status name="Demo2" unit="status" pointProfile="OnOff_NoAlm">
-          <eq:control name="Enable2" />
+          <eq:control name="Enable2"/>
         </eq:status>
         <eq:status name="Demo3" unit="status" pointProfile="OnOff_NoAlm">
-          <eq:control name="Enable3" />
+          <eq:control name="Enable3"/>
         </eq:status>
         <eq:status name="Demo4" unit="status" pointProfile="OnOff_NoAlm">
-          <eq:control name="Enable4" />
+          <eq:control name="Enable4"/>
         </eq:status>
-        <eq:analog name="LoadPset" unit="kW" />
-        <eq:analog name="PVPset" unit="kW" />
-        <eq:analog name="CESPset" unit="kW" />
-        <eq:analog name="SSTQset" unit="kVar" />
-        <eq:analog name="LoadPgset" unit="kW" />
-        <eq:analog name="LoadPlset" unit="kW" />
+        <eq:analog name="LoadPset" unit="kW"/>
+        <eq:analog name="PVPset" unit="kW"/>
+        <eq:analog name="CESPset" unit="kW"/>
+        <eq:analog name="SSTQset" unit="kVar"/>
+        <eq:analog name="LoadPgset" unit="kW"/>
+        <eq:analog name="LoadPlset" unit="kW"/>
       </eq:equipment>
     </eq:equipment>
     <eq:equipment name="Gen1_SST">
-      <!--Start Gen1_SST Equipment Configuration-->
+
+      <!--Gen1_SST Equipment Configuration-->
+
       <eq:equipment name="SST1">
-        <eq:equipmentProfile name="SST_Lprofile" />
+        <eq:equipmentProfile name="SST_Lprofile"/>
       </eq:equipment>
       <common:info>
-        <common:configFile fileName="onelines/sst_control.svg" mimeType="schematic/svg+xml" name="SST" />
+        <common:configFile fileName="onelines/sst_control.svg" mimeType="schematic/svg+xml" name="SST"/>
       </common:info>
-      <!--End Gen1_SST Equipment Configuration-->
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
     </eq:equipment>
-    <!--Gen2 SST-->
+
+     <!--Gen2_SST Equipment Configuration-->
+
     <eq:equipment name="Gen2_SST">
-      <!--Start Gen2_SST Equipment Configuration-->
       <eq:equipment name="SST2">
-        <eq:equipmentProfile name="SST_Lprofile" />
+        <eq:equipmentProfile name="SST_Lprofile"/>
       </eq:equipment>
       <common:info>
-        <common:configFile fileName="onelines/sst2_control.svg" mimeType="schematic/svg+xml" name="SST2" />
+        <common:configFile fileName="onelines/sst2_control.svg" mimeType="schematic/svg+xml" name="SST2"/>
       </common:info>
-      <!--End Gen2_SST Equipment Configuration-->
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
     </eq:equipment>
-    <!--MINIWATSON-->
+
+    <!--MINIWATSON Equipment Configuration-->
+
     <eq:equipment name="MINIWATSON">
-      <!--Start MINIWATSON Equipment Configuration-->
       <eq:equipment name="LV">
-        <eq:equipmentProfile name="MINI_profile" />
+        <eq:equipmentProfile name="MINI_profile"/>
       </eq:equipment>
       <common:info>
-        <common:configFile fileName="onelines/miniwatson.svg" mimeType="schematic/svg+xml" name="MINIWATSON" />
+        <common:configFile fileName="onelines/miniwatson.svg" mimeType="schematic/svg+xml" name="MINIWATSON"/>
       </common:info>
-      <!--End MINIWATSON Equipment Configuration-->
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
     </eq:equipment>
-    <!--Gen1 FID-->
+
+    <!--Gen1 FID Configuration-->
+
     <eq:equipment name="Gen1_FID">
-      <!--Start Gen1_FID Equipment Configuration-->
       <eq:equipment name="FID1">
-        <eq:equipmentProfile name="FID_profile" />
+        <eq:equipmentProfile name="FID_profile"/>
       </eq:equipment>
       <common:info>
-        <common:configFile fileName="onelines/GEN1_FID.svg" mimeType="schematic/svg+xml" name="FID1" />
+        <common:configFile fileName="onelines/GEN1_FID.svg" mimeType="schematic/svg+xml" name="FID1"/>
       </common:info>
-      <!--End Gen1_FID Equipment Configuration-->
-      <eq:equipmentProfile name="MicroGridProfile" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
     </eq:equipment>
-    <!--Root Equipment Configuration-->
-    <eq:equipment name="FREEDM" addParentNames="false" xmlns:equip="equipment.loader.reef.totalgrid.org">
-      <eq:type name="Root" />
-      <eq:type name="MicroGrid" />
-      <common:info xmlns:common="common.loader.reef.totalgrid.org">
-        <common:configFile fileName="onelines/Dashboard.svg" mimeType="schematic/svg+xml" name="Dashboard" />
+
+    <!--DC MICROGRID Configuration-->
+
+    <eq:equipment name="DC_microgrid">
+      <eq:equipment name="DCmgrid"/>
+      <common:info>
+        <common:configFile fileName="onelines/DCmgrid.svg" mimeType="schematic/svg+xml" name="DCmgrid"/>
       </common:info>
-      <eq:equipment name="LV" />
-      <eq:equipment name="MINIWATSON" />
-      <eq:equipment name="MV" />
-      <eq:equipment name="Residential" />
-      <eq:equipment name="RTDS" />
-      <eq:equipment name="Gen1_SST" />
-      <eq:equipment name="Gen2_SST" />
-      <eq:equipment name="Gen1_FID" />
-      <eq:equipment name="PHEV_Test_Case" />
-      <eq:equipment name="CES_Test_Case" />
-      <eq:equipment name="CES" />
+      <eq:equipmentProfile name="MicroGridProfile"/>
+    </eq:equipment>
+
+    <!--Root Equipment Configuration-->
+
+    <eq:equipment name="FREEDM" addParentNames="false" xmlns:equip="equipment.loader.reef.totalgrid.org">
+      <eq:type name="Root"/>
+      <eq:type name="MicroGrid"/>
+      <common:info xmlns:common="common.loader.reef.totalgrid.org">
+        <common:configFile fileName="onelines/Dashboard.svg" mimeType="schematic/svg+xml" name="Dashboard"/>
+      </common:info>
+      <eq:equipment name="LV"/>
+      <eq:equipment name="MINIWATSON"/>
+      <eq:equipment name="MV"/>
+      <eq:equipment name="Residential"/>
+      <eq:equipment name="RTDS"/>
+      <eq:equipment name="Gen1_SST"/>
+      <eq:equipment name="Gen2_SST"/>
+      <eq:equipment name="Gen1_FID"/>
+      <eq:equipment name="PHEV_Test_Case"/>
+      <eq:equipment name="CES_Test_Case"/>
+      <eq:equipment name="CES"/>
+      <eq:equipment name="DC_microgrid"/>
     </eq:equipment>
   </eq:equipmentModel>
+
+  <!--Communications Configuration Section-->
+
   <cm:communicationsModel>
-    <!--
-          Profiles types:
-            controlProfile
-            pointProfile
-            endpointProfile
-            equipmentProfile
-        -->
+
     <!-- Named interfaces -->
-    <cm:interface name="BM1" ip="192.168.100.30" netmask="255.255.255.0" port="8000" network="any" />
-    <cm:interface name="RTDS_DNP_NC" ip="152.14.125.32" netmask="255.255.255.0" port="20000" network="any" />
-    <cm:interface name="1800_PV_DNP" ip="152.14.125.220" netmask="255.255.255.0" port="8002" network="any" />
-    <cm:interface name="AB_PLC_DNP" ip="152.14.125.220" netmask="255.255.255.0" port="8007" network="any" />
-    <cm:interface name="1800_TCA_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8009" network="any" />
-    <cm:interface name="1800_TCB_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8010" network="any" />
-    <cm:interface name="1800_TCC_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8011" network="any" />
-    <cm:interface name="1800_TCD_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8012" network="any" />
-    <cm:interface name="1800_TCE_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8013" network="any" />
-    <cm:interface name="EatonEVCharger1" ip="152.14.125.220" netmask="255.255.255.0" port="8001" network="any" />
-    <cm:interface name="SEL751_1" ip="152.14.125.220" netmask="255.255.255.0" port="8005" network="any" />
-    <!--RTDS-->
-    <cm:interface name="RTDS_DNP_CES" ip="152.14.125.31" netmask="255.255.255.0" port="20000" network="any" />
-    <cm:interface name="Gsmith" ip="152.14.125.208" netmask="255.255.255.0" port="2009" network="any" />
+    <cm:interface name="BM1" ip="192.168.100.30" netmask="255.255.255.0" port="8000" network="any"/>
+    <cm:interface name="RTDS_DNP_NC" ip="152.14.125.32" netmask="255.255.255.0" port="20000" network="any"/>
+    <cm:interface name="1800_PV_DNP" ip="152.14.125.220" netmask="255.255.255.0" port="8002" network="any"/>
+    <cm:interface name="AB_PLC_DNP" ip="152.14.125.220" netmask="255.255.255.0" port="8007" network="any"/>
+    <cm:interface name="1800_TCA_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8009" network="any"/>
+    <cm:interface name="1800_TCB_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8010" network="any"/>
+    <cm:interface name="1800_TCC_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8011" network="any"/>
+    <cm:interface name="1800_TCD_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8012" network="any"/>
+    <cm:interface name="1800_TCE_interface" ip="152.14.125.220" netmask="255.255.255.0" port="8013" network="any"/>
+    <cm:interface name="EatonEVCharger1" ip="152.14.125.220" netmask="255.255.255.0" port="8001" network="any"/>
+    <cm:interface name="SEL751_1" ip="152.14.125.220" netmask="255.255.255.0" port="8005" network="any"/>
+    <cm:interface name="RTDS_DNP_CES" ip="152.14.125.31" netmask="255.255.255.0" port="20000" network="any"/>
+    <cm:interface name="Gsmith" ip="152.14.125.208" netmask="255.255.255.0" port="2009" network="any"/>
+
+    <!--FREEDM RTDS-->
+
     <cm:endpoint name="RTDS_DNP">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/rtds_endpoint.xml" />
+        <common:configFile fileName="comms/rtds_endpoint.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" /> -->
       </cm:protocol>
-      <cm:interface name="RTDS_DNP_NC" />
+      <cm:interface name="RTDS_DNP_NC"/>
       <cm:equipment name="RTDS">
         <cm:equipment name="FID1">
-          <cm:status name="Status" index="0" unit="raw" />
-          <cm:status name="Overcurrent" index="1" unit="raw" />
+          <cm:status name="Status" index="0" unit="raw"/>
+          <cm:status name="Overcurrent" index="1" unit="raw"/>
           <cm:control name="Open" index="0">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Close" index="1">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
         </cm:equipment>
         <cm:equipment name="FID2">
-          <cm:status name="Status" index="2" unit="raw" />
-          <cm:status name="Overcurrent" index="3" unit="raw" />
+          <cm:status name="Status" index="2" unit="raw"/>
+          <cm:status name="Overcurrent" index="3" unit="raw"/>
           <cm:control name="Open" index="2">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Close" index="3">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
         </cm:equipment>
         <cm:equipment name="FID3">
-          <cm:status name="Status" index="4" unit="raw" />
-          <cm:status name="Overcurrent" index="5" unit="raw" />
+          <cm:status name="Status" index="4" unit="raw"/>
+          <cm:status name="Overcurrent" index="5" unit="raw"/>
           <cm:control name="Open" index="4">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Close" index="5">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
         </cm:equipment>
         <cm:equipment name="FID4">
-          <cm:status name="Status" index="6" unit="raw" />
-          <cm:status name="Overcurrent" index="7" unit="raw" />
+          <cm:status name="Status" index="6" unit="raw"/>
+          <cm:status name="Overcurrent" index="7" unit="raw"/>
           <cm:control name="Open" index="6">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Close" index="7">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
         </cm:equipment>
         <cm:equipment name="Substation1">
           <cm:analog name="kV_a" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW_a" index="1">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar_a" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
-          <cm:analog name="Frequency" index="3" unit="Hz" />
+          <cm:analog name="Frequency" index="3" unit="Hz"/>
         </cm:equipment>
         <cm:equipment name="Bus1">
           <cm:analog name="kV_a" index="6">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW_a" index="4">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar_a" index="5" unit="kVar" />
+          <cm:analog name="kVar_a" index="5" unit="kVar"/>
         </cm:equipment>
         <cm:equipment name="Bus2">
           <cm:analog name="kV_a" index="9">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW_a" index="7">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar_a" index="8" unit="kVar" />
+          <cm:analog name="kVar_a" index="8" unit="kVar"/>
         </cm:equipment>
         <cm:equipment name="Bus3">
           <cm:analog name="kV_a" index="12">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW_a" index="10">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar_a" index="11" unit="kVar" />
+          <cm:analog name="kVar_a" index="11" unit="kVar"/>
         </cm:equipment>
         <cm:equipment name="PV1">
           <cm:analog name="kV" index="13">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="14">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar" index="15">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kVar" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kVar"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="PV2">
           <cm:analog name="kV" index="16">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="17">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar" index="18">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kVar" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kVar"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="PV3">
           <cm:analog name="kV" index="19">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="20">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar" index="21">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kVar" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kVar"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="DES1">
           <cm:analog name="kV" index="22">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="24">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar" index="25" unit="kVar" />
-          <cm:analog name="%SOC" index="26" unit="%SOC" />
-          <cm:setpoint name="Pset" index="0" />
-          <cm:setpoint name="Qset" index="1" />
-          <cm:analog name="Amps" index="23" unit="Amps" />
+          <cm:analog name="kVar" index="25" unit="kVar"/>
+          <cm:analog name="%SOC" index="26" unit="%SOC"/>
+          <cm:setpoint name="Pset" index="0"/>
+          <cm:setpoint name="Qset" index="1"/>
+          <cm:analog name="Amps" index="23" unit="Amps"/>
           <cm:control name="Discharge" index="8">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="Charge" index="8">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:status name="Mode" index="11" unit="raw" />
+          <cm:status name="Mode" index="11" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="Line1">
-          <cm:analog name="Amps" index="27" unit="Amps" />
+          <cm:analog name="Amps" index="27" unit="Amps"/>
           <cm:analog name="kW" index="28">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="Line2">
-          <cm:analog name="Amps" index="29" unit="Amps" />
+          <cm:analog name="Amps" index="29" unit="Amps"/>
           <cm:analog name="kW" index="30">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="Line3">
-          <cm:analog name="Amps" index="31" unit="Amps" />
+          <cm:analog name="Amps" index="31" unit="Amps"/>
           <cm:analog name="kW" index="32">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="Line4">
-          <cm:analog name="Amps" index="33" unit="Amps" />
+          <cm:analog name="Amps" index="33" unit="Amps"/>
           <cm:analog name="kW" index="34">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="SST1">
           <cm:analog name="kW_a" index="35">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW"/>
           </cm:analog>
-          <cm:setpoint name="Qref_a" index="6" />
-          <cm:status name="Qsst_a" index="8" unit="raw" />
+          <cm:setpoint name="Qref_a" index="6"/>
+          <cm:status name="Qsst_a" index="8" unit="raw"/>
           <cm:analog name="kVar_a" index="36">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kV_a" index="37">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="DES2">
           <cm:analog name="kV" index="44">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="46">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar" index="47" unit="kVar" />
-          <cm:analog name="%SOC" index="48" unit="%SOC" />
-          <cm:setpoint name="Pset" index="2" />
-          <cm:setpoint name="Qset" index="3" />
-          <cm:analog name="Amps" index="45" unit="Amps" />
+          <cm:analog name="kVar" index="47" unit="kVar"/>
+          <cm:analog name="%SOC" index="48" unit="%SOC"/>
+          <cm:setpoint name="Pset" index="2"/>
+          <cm:setpoint name="Qset" index="3"/>
+          <cm:analog name="Amps" index="45" unit="Amps"/>
           <cm:control name="Discharge" index="9">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="Charge" index="9">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:status name="Mode" index="12" unit="raw" />
+          <cm:status name="Mode" index="12" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="DES3">
           <cm:analog name="kV" index="49">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="51">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar" index="52" unit="kVar" />
-          <cm:analog name="%SOC" index="53" unit="%SOC" />
-          <cm:setpoint name="Pset" index="4" />
-          <cm:setpoint name="Qset" index="5" />
-          <cm:analog name="Amps" index="50" unit="Amps" />
+          <cm:analog name="kVar" index="52" unit="kVar"/>
+          <cm:analog name="%SOC" index="53" unit="%SOC"/>
+          <cm:setpoint name="Pset" index="4"/>
+          <cm:setpoint name="Qset" index="5"/>
+          <cm:analog name="Amps" index="50" unit="Amps"/>
           <cm:control name="Discharge" index="10">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="Charge" index="10">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:status name="Mode" index="13" unit="raw" />
+          <cm:status name="Mode" index="13" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="SST2">
           <cm:analog name="kW_a" index="38">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW"/>
           </cm:analog>
-          <cm:setpoint name="Qref_a" index="7" />
-          <cm:status name="Qsst_a" index="9" unit="raw" />
+          <cm:setpoint name="Qref_a" index="7"/>
+          <cm:status name="Qsst_a" index="9" unit="raw"/>
           <cm:analog name="kVar_a" index="39">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kV_a" index="40">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="SST3">
           <cm:analog name="kW_a" index="41">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW"/>
           </cm:analog>
-          <cm:setpoint name="Qref_a" index="8" />
-          <cm:status name="Qsst_a" index="10" unit="raw" />
+          <cm:setpoint name="Qref_a" index="8"/>
+          <cm:status name="Qsst_a" index="10" unit="raw"/>
           <cm:analog name="kVar_a" index="42">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kV_a" index="43">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--TCA-->
+
+    <!--A1800_TCA-->
+
     <cm:endpoint name="A1800_TCA">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/1800_TCA_dnp3.xml" />
-        <cm:simOptions delay="7500" />
+        <common:configFile fileName="comms/1800_TCA_dnp3.xml"/>
+        <cm:simOptions delay="7500"/>
       </cm:protocol>
-      <cm:interface name="1800_TCA_interface" />
+      <cm:interface name="1800_TCA_interface"/>
       <cm:equipment name="MV">
         <cm:equipment name="TCA">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
           <cm:analog name="I_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
-          <cm:counter name="kWh" index="1" unit="kWh" />
+          <cm:counter name="kWh" index="1" unit="kWh"/>
           <cm:analog name="I_b" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="I_c" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="kV_a" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
-          <cm:analog name="kW_a" index="13" unit="kW" />
-          <cm:analog name="kW_b" index="14" unit="kW" />
-          <cm:analog name="kW_c" index="15" unit="kW" />
-          <cm:analog name="kW_tot" index="16" unit="kW" />
-          <cm:analog name="kVar_a" index="17" unit="kVar" />
-          <cm:analog name="kVar_b" index="18" unit="kVar" />
-          <cm:analog name="kVar_c" index="19" unit="kVar" />
-          <cm:analog name="kVar_tot" index="20" unit="kVar" />
-          <cm:status name="Meter_Config_Error" index="0" unit="raw" />
-          <cm:status name="Meter_RAM_Fail" index="2" unit="raw" />
-          <cm:status name="Meter_Low_Batt" index="7" unit="raw" />
-          <cm:status name="Meter_Loss_Pot" index="8" unit="raw" />
-          <cm:status name="Meter_Power_Fail" index="10" unit="raw" />
+          <cm:analog name="kW_a" index="13" unit="kW"/>
+          <cm:analog name="kW_b" index="14" unit="kW"/>
+          <cm:analog name="kW_c" index="15" unit="kW"/>
+          <cm:analog name="kW_tot" index="16" unit="kW"/>
+          <cm:analog name="kVar_a" index="17" unit="kVar"/>
+          <cm:analog name="kVar_b" index="18" unit="kVar"/>
+          <cm:analog name="kVar_c" index="19" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="20" unit="kVar"/>
+          <cm:status name="Meter_Config_Error" index="0" unit="raw"/>
+          <cm:status name="Meter_RAM_Fail" index="2" unit="raw"/>
+          <cm:status name="Meter_Low_Batt" index="7" unit="raw"/>
+          <cm:status name="Meter_Loss_Pot" index="8" unit="raw"/>
+          <cm:status name="Meter_Power_Fail" index="10" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--TCB-->
+
+    <!--A1800_TCB-->
+
     <cm:endpoint name="A1800_TCB">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/1800_TCB_dnp3.xml" />
+        <common:configFile fileName="comms/1800_TCB_dnp3.xml"/>
       </cm:protocol>
-      <cm:interface name="1800_TCB_interface" />
+      <cm:interface name="1800_TCB_interface"/>
       <cm:equipment name="MV">
         <cm:equipment name="TCB">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
           <cm:analog name="I_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
-          <cm:counter name="kWh" index="1" unit="kWh" />
+          <cm:counter name="kWh" index="1" unit="kWh"/>
           <cm:analog name="I_b" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="I_c" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="kV_a" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
-          <cm:analog name="kW_a" index="13" unit="kW" />
-          <cm:analog name="kW_b" index="14" unit="kW" />
-          <cm:analog name="kW_c" index="15" unit="kW" />
-          <cm:analog name="kW_tot" index="16" unit="kW" />
-          <cm:analog name="kVar_a" index="17" unit="kVar" />
-          <cm:analog name="kVar_b" index="18" unit="kVar" />
-          <cm:analog name="kVar_c" index="19" unit="kVar" />
-          <cm:analog name="kVar_tot" index="20" unit="kVar" />
-          <cm:status name="Meter_Config_Error" index="0" unit="raw" />
-          <cm:status name="Meter_RAM_Fail" index="2" unit="raw" />
-          <cm:status name="Meter_Low_Batt" index="7" unit="raw" />
-          <cm:status name="Meter_Loss_Pot" index="8" unit="raw" />
-          <cm:status name="Meter_Power_Fail" index="10" unit="raw" />
+          <cm:analog name="kW_a" index="13" unit="kW"/>
+          <cm:analog name="kW_b" index="14" unit="kW"/>
+          <cm:analog name="kW_c" index="15" unit="kW"/>
+          <cm:analog name="kW_tot" index="16" unit="kW"/>
+          <cm:analog name="kVar_a" index="17" unit="kVar"/>
+          <cm:analog name="kVar_b" index="18" unit="kVar"/>
+          <cm:analog name="kVar_c" index="19" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="20" unit="kVar"/>
+          <cm:status name="Meter_Config_Error" index="0" unit="raw"/>
+          <cm:status name="Meter_RAM_Fail" index="2" unit="raw"/>
+          <cm:status name="Meter_Low_Batt" index="7" unit="raw"/>
+          <cm:status name="Meter_Loss_Pot" index="8" unit="raw"/>
+          <cm:status name="Meter_Power_Fail" index="10" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--TCC-->
+
+    <!--A1800_TCC-->
+
     <cm:endpoint name="A1800_TCC">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/1800_TCC_dnp3.xml" />
+        <common:configFile fileName="comms/1800_TCC_dnp3.xml"/>
       </cm:protocol>
-      <cm:interface name="1800_TCC_interface" />
+      <cm:interface name="1800_TCC_interface"/>
       <cm:equipment name="MV">
         <cm:equipment name="TCC">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
           <cm:analog name="I_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
-          <cm:counter name="kWh" index="1" unit="kWh" />
+          <cm:counter name="kWh" index="1" unit="kWh"/>
           <cm:analog name="I_b" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="I_c" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="kV_a" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
-          <cm:analog name="kW_a" index="13" unit="kW" />
-          <cm:analog name="kW_b" index="14" unit="kW" />
-          <cm:analog name="kW_c" index="15" unit="kW" />
-          <cm:analog name="kW_tot" index="16" unit="kW" />
-          <cm:analog name="kVar_a" index="17" unit="kVar" />
-          <cm:analog name="kVar_b" index="18" unit="kVar" />
-          <cm:analog name="kVar_c" index="19" unit="kVar" />
-          <cm:analog name="kVar_tot" index="20" unit="kVar" />
-          <cm:status name="Meter_Config_Error" index="0" unit="raw" />
-          <cm:status name="Meter_RAM_Fail" index="2" unit="raw" />
-          <cm:status name="Meter_Low_Batt" index="7" unit="raw" />
-          <cm:status name="Meter_Loss_Pot" index="8" unit="raw" />
-          <cm:status name="Meter_Power_Fail" index="10" unit="raw" />
+          <cm:analog name="kW_a" index="13" unit="kW"/>
+          <cm:analog name="kW_b" index="14" unit="kW"/>
+          <cm:analog name="kW_c" index="15" unit="kW"/>
+          <cm:analog name="kW_tot" index="16" unit="kW"/>
+          <cm:analog name="kVar_a" index="17" unit="kVar"/>
+          <cm:analog name="kVar_b" index="18" unit="kVar"/>
+          <cm:analog name="kVar_c" index="19" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="20" unit="kVar"/>
+          <cm:status name="Meter_Config_Error" index="0" unit="raw"/>
+          <cm:status name="Meter_RAM_Fail" index="2" unit="raw"/>
+          <cm:status name="Meter_Low_Batt" index="7" unit="raw"/>
+          <cm:status name="Meter_Loss_Pot" index="8" unit="raw"/>
+          <cm:status name="Meter_Power_Fail" index="10" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--TCD-->
+
+    <!--A1800_TCD-->
+
     <cm:endpoint name="A1800_TCD">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/1800_TCD_dnp3.xml" />
+        <common:configFile fileName="comms/1800_TCD_dnp3.xml"/>
       </cm:protocol>
-      <cm:interface name="1800_TCD_interface" />
+      <cm:interface name="1800_TCD_interface"/>
       <cm:equipment name="MV">
         <cm:equipment name="TCD">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
           <cm:analog name="I_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
-          <cm:counter name="kWh" index="1" unit="kWh" />
+          <cm:counter name="kWh" index="1" unit="kWh"/>
           <cm:analog name="I_b" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="I_c" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="kV_a" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
-          <cm:analog name="kW_a" index="13" unit="kW" />
-          <cm:analog name="kW_b" index="14" unit="kW" />
-          <cm:analog name="kW_c" index="15" unit="kW" />
-          <cm:analog name="kW_tot" index="16" unit="kW" />
-          <cm:analog name="kVar_a" index="17" unit="kVar" />
-          <cm:analog name="kVar_b" index="18" unit="kVar" />
-          <cm:analog name="kVar_c" index="19" unit="kVar" />
-          <cm:analog name="kVar_tot" index="20" unit="kVar" />
-          <cm:status name="Meter_Config_Error" index="0" unit="raw" />
-          <cm:status name="Meter_RAM_Fail" index="2" unit="raw" />
-          <cm:status name="Meter_Low_Batt" index="7" unit="raw" />
-          <cm:status name="Meter_Loss_Pot" index="8" unit="raw" />
-          <cm:status name="Meter_Power_Fail" index="10" unit="raw" />
+          <cm:analog name="kW_a" index="13" unit="kW"/>
+          <cm:analog name="kW_b" index="14" unit="kW"/>
+          <cm:analog name="kW_c" index="15" unit="kW"/>
+          <cm:analog name="kW_tot" index="16" unit="kW"/>
+          <cm:analog name="kVar_a" index="17" unit="kVar"/>
+          <cm:analog name="kVar_b" index="18" unit="kVar"/>
+          <cm:analog name="kVar_c" index="19" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="20" unit="kVar"/>
+          <cm:status name="Meter_Config_Error" index="0" unit="raw"/>
+          <cm:status name="Meter_RAM_Fail" index="2" unit="raw"/>
+          <cm:status name="Meter_Low_Batt" index="7" unit="raw"/>
+          <cm:status name="Meter_Loss_Pot" index="8" unit="raw"/>
+          <cm:status name="Meter_Power_Fail" index="10" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--TCE-->
+
+    <!--A1800_TCE-->
+
     <cm:endpoint name="A1800_TCE">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/1800_TCE_dnp3.xml" />
+        <common:configFile fileName="comms/1800_TCE_dnp3.xml"/>
       </cm:protocol>
-      <cm:interface name="1800_TCE_interface" />
+      <cm:interface name="1800_TCE_interface"/>
       <cm:equipment name="MV">
         <cm:equipment name="TCE">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
           <cm:analog name="I_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
-          <cm:counter name="kWh" index="1" unit="kWh" />
+          <cm:counter name="kWh" index="1" unit="kWh"/>
           <cm:analog name="I_b" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="I_c" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="kV_a" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-196.60" engHigh="196.60" engUnit="kV"/>
           </cm:analog>
-          <cm:analog name="kW_a" index="13" unit="kW" />
-          <cm:analog name="kW_b" index="14" unit="kW" />
-          <cm:analog name="kW_c" index="15" unit="kW" />
-          <cm:analog name="kW_tot" index="16" unit="kW" />
-          <cm:analog name="kVar_a" index="17" unit="kVar" />
-          <cm:analog name="kVar_b" index="18" unit="kVar" />
-          <cm:analog name="kVar_c" index="19" unit="kVar" />
-          <cm:analog name="kVar_tot" index="20" unit="kVar" />
-          <cm:status name="Meter_Config_Error" index="0" unit="raw" />
-          <cm:status name="Meter_RAM_Fail" index="2" unit="raw" />
-          <cm:status name="Meter_Low_Batt" index="7" unit="raw" />
-          <cm:status name="Meter_Loss_Pot" index="8" unit="raw" />
-          <cm:status name="Meter_Power_Fail" index="10" unit="raw" />
+          <cm:analog name="kW_a" index="13" unit="kW"/>
+          <cm:analog name="kW_b" index="14" unit="kW"/>
+          <cm:analog name="kW_c" index="15" unit="kW"/>
+          <cm:analog name="kW_tot" index="16" unit="kW"/>
+          <cm:analog name="kVar_a" index="17" unit="kVar"/>
+          <cm:analog name="kVar_b" index="18" unit="kVar"/>
+          <cm:analog name="kVar_c" index="19" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="20" unit="kVar"/>
+          <cm:status name="Meter_Config_Error" index="0" unit="raw"/>
+          <cm:status name="Meter_RAM_Fail" index="2" unit="raw"/>
+          <cm:status name="Meter_Low_Batt" index="7" unit="raw"/>
+          <cm:status name="Meter_Loss_Pot" index="8" unit="raw"/>
+          <cm:status name="Meter_Power_Fail" index="10" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--A1800_PV-->
+
     <cm:endpoint name="A1800_PV">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/1800_PV_dnp3.xml" />
+        <common:configFile fileName="comms/1800_PV_dnp3.xml"/>
       </cm:protocol>
-      <cm:interface name="1800_PV_DNP" />
+      <cm:interface name="1800_PV_DNP"/>
       <cm:equipment name="LV">
         <cm:equipment name="Line_PV">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
           <cm:analog name="I_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-524.272" engHigh="524.272" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-524.272" engHigh="524.272" engUnit="Amps"/>
           </cm:analog>
           <cm:counter name="kWh" index="2">
-            <cm:scale rawLow="-9999999" rawHigh="9999999" engLow="-99999.99" engHigh="99999.99" engUnit="kWh" />
+            <cm:scale rawLow="-9999999" rawHigh="9999999" engLow="-99999.99" engHigh="99999.99" engUnit="kWh"/>
           </cm:counter>
           <cm:analog name="I_b" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-524.272" engHigh="524.272" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-524.272" engHigh="524.272" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="I_c" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-524.272" engHigh="524.272" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-524.272" engHigh="524.272" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="kV_a" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-3.2767" engHigh="3.2767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-3.2767" engHigh="3.2767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-3.2767" engHigh="3.2767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-3.2767" engHigh="3.2767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-3.2767" engHigh="3.2767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-3.2767" engHigh="3.2767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW_a" index="13">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kW_b" index="14">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kW_c" index="15">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kW_tot" index="16">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar_a" index="17">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kVar_b" index="18">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kVar_c" index="19">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kVar_tot" index="20">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="524.272" engHigh="-524.272" engUnit="kVar"/>
           </cm:analog>
-          <cm:status name="Meter_Config_Error" index="0" unit="raw" />
-          <cm:status name="Meter_RAM_Fail" index="2" unit="raw" />
-          <cm:status name="Meter_Low_Batt" index="7" unit="raw" />
-          <cm:status name="Meter_Loss_Pot" index="8" unit="raw" />
-          <cm:status name="Meter_Power_Fail" index="10" unit="raw" />
+          <cm:status name="Meter_Config_Error" index="0" unit="raw"/>
+          <cm:status name="Meter_RAM_Fail" index="2" unit="raw"/>
+          <cm:status name="Meter_Low_Batt" index="7" unit="raw"/>
+          <cm:status name="Meter_Loss_Pot" index="8" unit="raw"/>
+          <cm:status name="Meter_Power_Fail" index="10" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--Greensmith-->
+
     <cm:endpoint name="Greensmith_BMS">
-      <cm:type name="BMS" />
-      <cm:type name="Endpoint" />
+      <cm:type name="BMS"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dess-console">
-        <common:configFile fileName="comms/dess.properties" mimeType="text/properties" />
+        <common:configFile fileName="comms/dess.properties" mimeType="text/properties"/>
       </cm:protocol>
-      <cm:interface name="Gsmith" />
+      <cm:interface name="Gsmith"/>
       <cm:equipment name="Residential">
         <cm:equipment name="ESS_R">
           <cm:analog name="Vdc_out" index="0">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Volts" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Volts"/>
           </cm:analog>
           <cm:analog name="I_out" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Amps" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="Inverter_Watts" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Watts" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Watts"/>
           </cm:analog>
           <cm:analog name="Charger_Watts" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Watts" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Watts"/>
           </cm:analog>
           <cm:analog name="%SOC" index="4">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="%" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="%"/>
           </cm:analog>
           <cm:analog name="Capacity_1" index="5">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_2" index="20">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_3" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_4" index="7">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_5" index="8">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_6" index="9">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_7" index="10">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_8" index="11">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_9" index="12">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_10" index="13">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_11" index="14">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_12" index="15">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_13" index="16">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_14" index="17">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_15" index="18">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
           <cm:analog name="Capacity_16" index="19">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="Ah"/>
           </cm:analog>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--PLC-->
+
     <cm:endpoint name="AB_PLC">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/AB_PLC_dnp3.xml" />
+        <common:configFile fileName="comms/AB_PLC_dnp3.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
-      <cm:interface name="AB_PLC_DNP" />
+      <cm:interface name="AB_PLC_DNP"/>
       <cm:equipment name="LV">
         <cm:equipment name="CB_Main">
-          <cm:status name="Status" index="2" unit="raw" />
+          <cm:status name="Status" index="2" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="CB_BTB1">
-          <cm:status name="Status" index="0" unit="raw" />
+          <cm:status name="Status" index="0" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="CB_BTB2">
-          <cm:status name="Status" index="3" unit="raw" />
+          <cm:status name="Status" index="3" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="CB_HAD">
-          <cm:status name="Status" index="1" unit="raw" />
+          <cm:status name="Status" index="1" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="CB_MainHAD">
-          <cm:status name="Status" index="4" unit="raw" />
+          <cm:status name="Status" index="4" unit="raw"/>
         </cm:equipment>
         <cm:equipment name="CB_T3">
-          <cm:status name="Status" index="5" unit="raw" />
+          <cm:status name="Status" index="5" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--SST1-->
+
     <cm:endpoint name="SST_ARM">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/sst_arm_dnp3.xml" />
+        <common:configFile fileName="comms/sst_arm_dnp3.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
       <cm:equipment name="Gen1_SST">
         <cm:equipment name="SST1">
-          <cm:analog name="VAC_HIGH_RMS" index="36" unit="Volts" />
-          <cm:analog name="IAC_HIGH_RMS" index="37" unit="Amps" />
-          <cm:analog name="Freq_Grid" index="38" unit="Hz" />
-          <cm:analog name="Power_Factor" index="39" unit="PF" />
-          <cm:analog name="P_Grid" index="40" unit="Watts" />
-          <cm:analog name="Q_Grid" index="41" unit="VARs" />
-          <cm:analog name="Id_HighAC" index="42" unit="Amps" />
-          <cm:analog name="Iq_HighAC" index="43" unit="Amps" />
-          <cm:analog name="VDC1_High" index="44" unit="Volts" />
-          <cm:analog name="VDC2_High" index="45" unit="Volts" />
-          <cm:analog name="VDC3_High" index="46" unit="Volts" />
-          <cm:analog name="VDCt_High" index="47" unit="Volts" />
-          <cm:analog name="VDC_Low" index="48" unit="Volts" />
-          <cm:analog name="IDC_Low" index="49" unit="Amps" />
-          <cm:analog name="VAC_Low_RMS" index="50" unit="Volts" />
-          <cm:analog name="IAC_Low_RMS" index="51" unit="Amps" />
+          <cm:analog name="VAC_HIGH_RMS" index="36" unit="Volts"/>
+          <cm:analog name="IAC_HIGH_RMS" index="37" unit="Amps"/>
+          <cm:analog name="Freq_Grid" index="38" unit="Hz"/>
+          <cm:analog name="Power_Factor" index="39" unit="PF"/>
+          <cm:analog name="P_Grid" index="40" unit="Watts"/>
+          <cm:analog name="Q_Grid" index="41" unit="VARs"/>
+          <cm:analog name="Id_HighAC" index="42" unit="Amps"/>
+          <cm:analog name="Iq_HighAC" index="43" unit="Amps"/>
+          <cm:analog name="VDC1_High" index="44" unit="Volts"/>
+          <cm:analog name="VDC2_High" index="45" unit="Volts"/>
+          <cm:analog name="VDC3_High" index="46" unit="Volts"/>
+          <cm:analog name="VDCt_High" index="47" unit="Volts"/>
+          <cm:analog name="VDC_Low" index="48" unit="Volts"/>
+          <cm:analog name="IDC_Low" index="49" unit="Amps"/>
+          <cm:analog name="VAC_Low_RMS" index="50" unit="Volts"/>
+          <cm:analog name="IAC_Low_RMS" index="51" unit="Amps"/>
           <cm:control name="REC_Run" index="0">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="REC_Stop" index="0">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
           <cm:control name="DAB_Run" index="5">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="DAB_Stop" index="5">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
           <cm:control name="INV_Run" index="6">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="INV_Stop" index="6">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:setpoint name="REC_VDC_REF_SP" index="7" />
-          <cm:setpoint name="DAB_VSEC_REF_SP" index="8" />
-          <cm:setpoint name="INV_VAC_REF_SP" index="9" />
-          <cm:setpoint name="VAR_REF_SP" index="10" />
-          <cm:analog name="VAR_REF" index="203" unit="Volts" />
-          <cm:analog name="REC_Vdc_REF" index="200" unit="Volts" />
-          <cm:analog name="DAB_Vsec_REF" index="201" unit="Volts" />
-          <cm:analog name="INV_Vac_REF" index="202" unit="Volts" />
-          <cm:status name="REC_COMMAND" index="100" unit="raw" />
-          <cm:status name="DAB_COMMAND" index="101" unit="raw" />
-          <cm:status name="INV_COMMAND" index="102" unit="raw" />
+          <cm:setpoint name="REC_VDC_REF_SP" index="7"/>
+          <cm:setpoint name="DAB_VSEC_REF_SP" index="8"/>
+          <cm:setpoint name="INV_VAC_REF_SP" index="9"/>
+          <cm:setpoint name="VAR_REF_SP" index="10"/>
+          <cm:analog name="VAR_REF" index="203" unit="Volts"/>
+          <cm:analog name="REC_Vdc_REF" index="200" unit="Volts"/>
+          <cm:analog name="DAB_Vsec_REF" index="201" unit="Volts"/>
+          <cm:analog name="INV_Vac_REF" index="202" unit="Volts"/>
+          <cm:status name="REC_COMMAND" index="100" unit="raw"/>
+          <cm:status name="DAB_COMMAND" index="101" unit="raw"/>
+          <cm:status name="INV_COMMAND" index="102" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
-      <cm:interface name="SST_ARM_DNP" ip="152.14.125.211" netmask="255.255.255.0" port="20000" network="any" />
+      <cm:interface name="SST_ARM_DNP" ip="152.14.125.211" netmask="255.255.255.0" port="20000" network="any"/>
     </cm:endpoint>
+
     <!--SST2-->
+
     <cm:endpoint name="SST2_ARM">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/sst2_arm_dnp3.xml" />
+        <common:configFile fileName="comms/sst2_arm_dnp3.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
       <cm:equipment name="Gen2_SST">
         <cm:equipment name="SST2">
-          <cm:analog name="VAC_HIGH_RMS" index="36" unit="Volts" />
-          <cm:analog name="IAC_HIGH_RMS" index="37" unit="Amps" />
-          <cm:analog name="Freq_Grid" index="38" unit="Hz" />
-          <cm:analog name="Power_Factor" index="39" unit="PF" />
-          <cm:analog name="P_Grid" index="40" unit="Watts" />
-          <cm:analog name="Q_Grid" index="41" unit="VARs" />
-          <cm:analog name="Id_HighAC" index="42" unit="Amps" />
-          <cm:analog name="Iq_HighAC" index="43" unit="Amps" />
-          <cm:analog name="VDC1_High" index="44" unit="Volts" />
-          <cm:analog name="VDC2_High" index="45" unit="Volts" />
-          <cm:analog name="VDC3_High" index="46" unit="Volts" />
-          <cm:analog name="VDCt_High" index="47" unit="Volts" />
-          <cm:analog name="VDC_Low" index="48" unit="Volts" />
-          <cm:analog name="IDC_Low" index="49" unit="Amps" />
-          <cm:analog name="VAC_Low_RMS" index="50" unit="Volts" />
-          <cm:analog name="IAC_Low_RMS" index="51" unit="Amps" />
+          <cm:analog name="VAC_HIGH_RMS" index="36" unit="Volts"/>
+          <cm:analog name="IAC_HIGH_RMS" index="37" unit="Amps"/>
+          <cm:analog name="Freq_Grid" index="38" unit="Hz"/>
+          <cm:analog name="Power_Factor" index="39" unit="PF"/>
+          <cm:analog name="P_Grid" index="40" unit="Watts"/>
+          <cm:analog name="Q_Grid" index="41" unit="VARs"/>
+          <cm:analog name="Id_HighAC" index="42" unit="Amps"/>
+          <cm:analog name="Iq_HighAC" index="43" unit="Amps"/>
+          <cm:analog name="VDC1_High" index="44" unit="Volts"/>
+          <cm:analog name="VDC2_High" index="45" unit="Volts"/>
+          <cm:analog name="VDC3_High" index="46" unit="Volts"/>
+          <cm:analog name="VDCt_High" index="47" unit="Volts"/>
+          <cm:analog name="VDC_Low" index="48" unit="Volts"/>
+          <cm:analog name="IDC_Low" index="49" unit="Amps"/>
+          <cm:analog name="VAC_Low_RMS" index="50" unit="Volts"/>
+          <cm:analog name="IAC_Low_RMS" index="51" unit="Amps"/>
           <cm:control name="REC_Run" index="0">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="REC_Stop" index="0">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
           <cm:control name="DAB_Run" index="5">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="DAB_Stop" index="5">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
           <cm:control name="INV_Run" index="6">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="INV_Stop" index="6">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:setpoint name="REC_VDC_REF_SP" index="7" />
-          <cm:setpoint name="DAB_VSEC_REF_SP" index="8" />
-          <cm:setpoint name="INV_VAC_REF_SP" index="9" />
-          <cm:setpoint name="VAR_REF_SP" index="10" />
-          <cm:analog name="VAR_REF" index="203" unit="Volts" />
-          <cm:analog name="REC_Vdc_REF" index="200" unit="Volts" />
-          <cm:analog name="DAB_Vsec_REF" index="201" unit="Volts" />
-          <cm:analog name="INV_Vac_REF" index="202" unit="Volts" />
-          <cm:status name="REC_COMMAND" index="100" unit="raw" />
-          <cm:status name="DAB_COMMAND" index="101" unit="raw" />
-          <cm:status name="INV_COMMAND" index="102" unit="raw" />
+          <cm:setpoint name="REC_VDC_REF_SP" index="7"/>
+          <cm:setpoint name="DAB_VSEC_REF_SP" index="8"/>
+          <cm:setpoint name="INV_VAC_REF_SP" index="9"/>
+          <cm:setpoint name="VAR_REF_SP" index="10"/>
+          <cm:analog name="VAR_REF" index="203" unit="Volts"/>
+          <cm:analog name="REC_Vdc_REF" index="200" unit="Volts"/>
+          <cm:analog name="DAB_Vsec_REF" index="201" unit="Volts"/>
+          <cm:analog name="INV_Vac_REF" index="202" unit="Volts"/>
+          <cm:status name="REC_COMMAND" index="100" unit="raw"/>
+          <cm:status name="DAB_COMMAND" index="101" unit="raw"/>
+          <cm:status name="INV_COMMAND" index="102" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
-      <cm:interface name="SST2_ARM_DNP" ip="152.14.125.125" netmask="255.255.255.0" port="20000" network="any" />
+      <cm:interface name="SST2_ARM_DNP" ip="152.14.125.125" netmask="255.255.255.0" port="20000" network="any"/>
     </cm:endpoint>
+
     <!--FID1-->
+
     <cm:endpoint name="FID1_ARM">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/fid1_arm_dnp3.xml" />
+        <common:configFile fileName="comms/fid1_arm_dnp3.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
       <cm:equipment name="Gen1_FID">
         <cm:equipment name="FID1">
           <cm:control name="Open" index="0">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="Close" index="0">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:status name="Status" index="100" unit="raw" />
+          <cm:status name="Status" index="100" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
-      <cm:interface name="FID1_ARM_DNP" ip="152.14.125.154" netmask="255.255.255.0" port="20000" network="any" />
+      <cm:interface name="FID1_ARM_DNP" ip="152.14.125.154" netmask="255.255.255.0" port="20000" network="any"/>
     </cm:endpoint>
+
     <!--SEL751-->
+
     <cm:endpoint name="SEL751">
-      <cm:type name="RTU" />
-      <cm:type name="Endpoint" />
+      <cm:type name="RTU"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="modbus">
-        <common:configFile fileName="comms/SEL751_modbus.xml" />
+        <common:configFile fileName="comms/SEL751_modbus.xml"/>
       </cm:protocol>
-      <cm:interface name="SEL751_1" />
+      <cm:interface name="SEL751_1"/>
       <cm:equipment name="MV">
         <cm:equipment name="Line">
           <cm:analog name="Frequency" index="689">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-327.67" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
-          <cm:analog name="I_a" index="740" unit="Amps" />
+          <cm:analog name="I_a" index="740" unit="Amps"/>
           <cm:analog name="MWh" index="691">
-            <cm:scale rawLow="0" rawHigh="65535" engLow="0" engHigh="65.535" engUnit="MWh" />
+            <cm:scale rawLow="0" rawHigh="65535" engLow="0" engHigh="65.535" engUnit="MWh"/>
           </cm:analog>
-          <cm:analog name="I_b" index="741" unit="Amps" />
-          <cm:analog name="I_c" index="742" unit="Amps" />
+          <cm:analog name="I_b" index="741" unit="Amps"/>
+          <cm:analog name="I_c" index="742" unit="Amps"/>
           <cm:analog name="kV_a" index="744">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_b" index="745">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_c" index="746">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
-          <cm:analog name="kVA_tot" index="687" unit="kVA" />
-          <cm:analog name="kW_tot" index="685" unit="kW" />
-          <cm:analog name="kVar_tot" index="686" unit="kVar" />
+          <cm:analog name="kVA_tot" index="687" unit="kVA"/>
+          <cm:analog name="kW_tot" index="685" unit="kW"/>
+          <cm:analog name="kVar_tot" index="686" unit="kVar"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--EatonEV-->
+
     <cm:endpoint name="EatonEV_Endpoint">
       <cm:protocol name="modbus">
-        <common:configFile fileName="comms/EatonEVModbus.xml" xmlns:common="common.loader.reef.totalgrid.org" />
+        <common:configFile fileName="comms/EatonEVModbus.xml" xmlns:common="common.loader.reef.totalgrid.org"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
-      <cm:interface name="EatonEVCharger1" />
+      <cm:interface name="EatonEVCharger1"/>
       <cm:equipment name="Residential">
         <cm:equipment name="EVCS_Eaton">
           <cm:analog name="Vp" index="0">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Volts" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Volts"/>
           </cm:analog>
           <cm:analog name="ALCRatio" index="2">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="NA" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="NA"/>
           </cm:analog>
           <cm:analog name="MaxPilotDC" index="4">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Volts" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Volts"/>
           </cm:analog>
           <cm:analog name="Igf" index="6">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Amps" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="Ic" index="8">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Amps" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="Iv" index="10">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Amps" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Amps"/>
           </cm:analog>
           <cm:analog name="Rprox" index="12">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Ohms" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="Ohms"/>
           </cm:analog>
           <cm:analog name="LightSense" index="14">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="NA" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="NA"/>
           </cm:analog>
           <cm:analog name="Temp" index="16">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="DegC" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999999" engHigh="999999" engUnit="DegC"/>
           </cm:analog>
-          <cm:counter name="EVSE_State" index="18" />
-          <cm:counter name="Op_Voltage" index="20" />
+          <cm:counter name="EVSE_State" index="18"/>
+          <cm:counter name="Op_Voltage" index="20"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--PM800_Line-->
+
     <cm:endpoint name="PM800_Line">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="modbus">
-        <common:configFile fileName="comms/PM800_Line_modbus.xml" />
+        <common:configFile fileName="comms/PM800_Line_modbus.xml"/>
       </cm:protocol>
-      <cm:interface name="PM800_Line_Interface" ip="152.14.125.220" netmask="255.255.255.0" port="8004" network="any" />
+      <cm:interface name="PM800_Line_Interface" ip="152.14.125.220" netmask="255.255.255.0" port="8004" network="any"/>
       <cm:equipment name="LV">
         <cm:equipment name="Line">
           <cm:analog name="Frequency" index="0">
-            <cm:scale rawLow="0" rawHigh="32767" engLow="0" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="0" rawHigh="32767" engLow="0" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
-          <cm:analog name="I_a" index="1" unit="Amps" />
-          <cm:analog name="I_b" index="2" unit="Amps" />
-          <cm:analog name="I_c" index="3" unit="Amps" />
-          <cm:analog name="V_a" index="4" unit="Volts" />
-          <cm:analog name="V_b" index="5" unit="Volts" />
-          <cm:analog name="V_c" index="6" unit="Volts" />
-          <cm:analog name="kW_a" index="7" unit="kW" />
-          <cm:analog name="kW_b" index="8" unit="kW" />
-          <cm:analog name="kW_c" index="9" unit="kW" />
-          <cm:analog name="kW_tot" index="10" unit="kW" />
-          <cm:analog name="kVar_a" index="11" unit="kVar" />
-          <cm:analog name="kVar_b" index="12" unit="kVar" />
-          <cm:analog name="kVar_c" index="13" unit="kVar" />
-          <cm:analog name="kVar_tot" index="14" unit="kVar" />
+          <cm:analog name="I_a" index="1" unit="Amps"/>
+          <cm:analog name="I_b" index="2" unit="Amps"/>
+          <cm:analog name="I_c" index="3" unit="Amps"/>
+          <cm:analog name="V_a" index="4" unit="Volts"/>
+          <cm:analog name="V_b" index="5" unit="Volts"/>
+          <cm:analog name="V_c" index="6" unit="Volts"/>
+          <cm:analog name="kW_a" index="7" unit="kW"/>
+          <cm:analog name="kW_b" index="8" unit="kW"/>
+          <cm:analog name="kW_c" index="9" unit="kW"/>
+          <cm:analog name="kW_tot" index="10" unit="kW"/>
+          <cm:analog name="kVar_a" index="11" unit="kVar"/>
+          <cm:analog name="kVar_b" index="12" unit="kVar"/>
+          <cm:analog name="kVar_c" index="13" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="14" unit="kVar"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--PM800_BTB-->
+
     <cm:endpoint name="PM800_BTB">
-      <cm:type name="Meter" />
-      <cm:type name="Endpoint" />
+      <cm:type name="Meter"/>
+      <cm:type name="Endpoint"/>
       <cm:protocol name="modbus">
-        <common:configFile fileName="comms/PM800_BTB_modbus.xml" />
+        <common:configFile fileName="comms/PM800_BTB_modbus.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
-      <cm:interface name="PM800_BTB_Interface" ip="152.14.125.220" netmask="255.255.255.0" port="8003" network="any" />
+      <cm:interface name="PM800_BTB_Interface" ip="152.14.125.220" netmask="255.255.255.0" port="8003" network="any"/>
       <cm:equipment name="LV">
         <cm:equipment name="Line_BTB">
           <cm:analog name="Frequency" index="15">
-            <cm:scale rawLow="0" rawHigh="32767" engLow="0" engHigh="327.67" engUnit="Hz" />
+            <cm:scale rawLow="0" rawHigh="32767" engLow="0" engHigh="327.67" engUnit="Hz"/>
           </cm:analog>
-          <cm:analog name="I_a" index="16" unit="Amps" />
-          <cm:analog name="I_b" index="17" unit="Amps" />
-          <cm:analog name="I_c" index="18" unit="Amps" />
-          <cm:analog name="V_a" index="19" unit="Volts" />
-          <cm:analog name="V_b" index="20" unit="Volts" />
-          <cm:analog name="V_c" index="21" unit="Volts" />
-          <cm:analog name="kW_a" index="22" unit="kW" />
-          <cm:analog name="kW_b" index="23" unit="kW" />
-          <cm:analog name="kW_c" index="24" unit="kW" />
-          <cm:analog name="kW_tot" index="25" unit="kW" />
-          <cm:analog name="kVar_a" index="26" unit="kVar" />
-          <cm:analog name="kVar_b" index="27" unit="kVar" />
-          <cm:analog name="kVar_c" index="28" unit="kVar" />
-          <cm:analog name="kVar_tot" index="29" unit="kVar" />
+          <cm:analog name="I_a" index="16" unit="Amps"/>
+          <cm:analog name="I_b" index="17" unit="Amps"/>
+          <cm:analog name="I_c" index="18" unit="Amps"/>
+          <cm:analog name="V_a" index="19" unit="Volts"/>
+          <cm:analog name="V_b" index="20" unit="Volts"/>
+          <cm:analog name="V_c" index="21" unit="Volts"/>
+          <cm:analog name="kW_a" index="22" unit="kW"/>
+          <cm:analog name="kW_b" index="23" unit="kW"/>
+          <cm:analog name="kW_c" index="24" unit="kW"/>
+          <cm:analog name="kW_tot" index="25" unit="kW"/>
+          <cm:analog name="kVar_a" index="26" unit="kVar"/>
+          <cm:analog name="kVar_b" index="27" unit="kVar"/>
+          <cm:analog name="kVar_c" index="28" unit="kVar"/>
+          <cm:analog name="kVar_tot" index="29" unit="kVar"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--RTDS_CES-->
+
     <cm:endpoint name="RTDS_CES">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/rtds_ces_endpoint.xml" xmlns:common="common.loader.reef.totalgrid.org" />
+        <common:configFile fileName="comms/rtds_ces_endpoint.xml" xmlns:common="common.loader.reef.totalgrid.org"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" /> -->
       </cm:protocol>
-      <cm:interface name="RTDS_DNP_CES" />
+      <cm:interface name="RTDS_DNP_CES"/>
       <cm:equipment name="CES_Test_Case">
         <cm:equipment name="CES">
-          <cm:setpoint name="Pset" index="0" />
+          <cm:setpoint name="Pset" index="0"/>
           <cm:analog name="SOC" index="13">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="%" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="%"/>
           </cm:analog>
           <cm:analog name="kVar" index="12">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kW" index="11">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32767" engHigh="32767" engUnit="kW"/>
           </cm:analog>
         </cm:equipment>
         <cm:equipment name="SST">
           <cm:analog name="kW_a" index="1">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar_a" index="2">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
           <cm:analog name="kV_ap" index="3">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kV_as" index="6">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kV"/>
           </cm:analog>
-          <cm:setpoint name="Qset" index="3" />
+          <cm:setpoint name="Qset" index="3"/>
         </cm:equipment>
         <cm:equipment name="PV">
           <cm:analog name="kW" index="7">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar" index="8">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
-          <cm:setpoint name="Pset" index="2" />
+          <cm:setpoint name="Pset" index="2"/>
         </cm:equipment>
         <cm:equipment name="LOAD">
           <cm:analog name="kW" index="14">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kW"/>
           </cm:analog>
           <cm:analog name="kVar" index="15">
-            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar" />
+            <cm:scale rawLow="-32767" rawHigh="32767" engLow="-32.767" engHigh="32.767" engUnit="kVar"/>
           </cm:analog>
-          <cm:setpoint name="Pset" index="1" />
-          <cm:setpoint name="Pl" index="4" />
-          <cm:setpoint name="Pg" index="5" />
+          <cm:setpoint name="Pset" index="1"/>
+          <cm:setpoint name="Pl" index="4"/>
+          <cm:setpoint name="Pg" index="5"/>
         </cm:equipment>
         <cm:equipment name="Bus">
           <cm:analog name="kV" index="0">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kV"/>
           </cm:analog>
           <cm:analog name="kW" index="102">
-            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW" />
+            <cm:scale rawLow="-999999" rawHigh="999999" engLow="-999.999" engHigh="999.999" engUnit="kW"/>
           </cm:analog>
-          <cm:analog name="kVar" index="103" unit="kVar" />
+          <cm:analog name="kVar" index="103" unit="kVar"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
+    <!--STATEOPTIMIZER-->
+
     <cm:endpoint name="STATEOPTIMIZER">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="null">
-        <common:configFile fileName="comms/rtds_endpoint.xml" xmlns:common="common.loader.reef.totalgrid.org" />
+        <common:configFile fileName="comms/rtds_endpoint.xml" xmlns:common="common.loader.reef.totalgrid.org"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" /> -->
       </cm:protocol>
       <!--<cm:interface name="RTDS_DNP_NC" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       <cm:equipment name="CES_Test_Case">
         <cm:equipment name="App">
           <cm:control name="Enable1" index="0">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Enable2" index="1">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Enable3" index="2">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
           <cm:control name="Enable4" index="3">
-            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1" />
+            <cm:optionsDnp3 type="PULSE" onTime="1000" offTime="1000" count="1"/>
           </cm:control>
-          <cm:status name="Demo1" index="101" unit="raw" />
-          <cm:status name="Demo2" index="102" unit="raw" />
-          <cm:status name="Demo3" index="103" unit="raw" />
-          <cm:status name="Demo4" index="104" unit="raw" />
-          <cm:analog name="LoadPset" index="0" />
-          <cm:analog name="PVPset" index="1" />
-          <cm:analog name="CESPset" index="2" />
-          <cm:analog name="SSTQset" index="3" />
-          <cm:analog name="LoadPgset" index="4" />
-          <cm:analog name="LoadPlset" index="5" />
+          <cm:status name="Demo1" index="101" unit="raw"/>
+          <cm:status name="Demo2" index="102" unit="raw"/>
+          <cm:status name="Demo3" index="103" unit="raw"/>
+          <cm:status name="Demo4" index="104" unit="raw"/>
+          <cm:analog name="LoadPset" index="0"/>
+          <cm:analog name="PVPset" index="1"/>
+          <cm:analog name="CESPset" index="2"/>
+          <cm:analog name="SSTQset" index="3"/>
+          <cm:analog name="LoadPgset" index="4"/>
+          <cm:analog name="LoadPlset" index="5"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
+
     <!--Power Hub_CES-->
+
     <cm:endpoint name="CES">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/phub_dnp3.xml" xmlns:common="common.loader.reef.totalgrid.org" />
+        <common:configFile fileName="comms/phub_dnp3.xml" xmlns:common="common.loader.reef.totalgrid.org"/>
       </cm:protocol>
-      <cm:interface name="BM1" ip="216.252.206.111" netmask="255.255.255.0" port="4999" network="any" />
+      <cm:interface name="BM1" ip="216.252.206.111" netmask="255.255.255.0" port="4999" network="any"/>
       <cm:equipment name="CES">
         <cm:equipment name="Residential">
-          <cm:status name="OpModWLim_0" index="0" unit="raw" />
+          <cm:status name="OpModWLim_0" index="0" unit="raw"/>
           <cm:control name="PeakEnable" index="1">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="PeakDisable" index="1">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:status name="OpModWRte_2" index="2" unit="raw" />
+          <cm:status name="OpModWRte_2" index="2" unit="raw"/>
           <cm:control name="Enable" index="3">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="Disable" index="3">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:status name="DERStr_3" index="3" unit="raw" />
-          <cm:status name="DERStop_4" index="4" unit="raw" />
-          <cm:status name="AutoManCtl_5" index="5" unit="raw" />
-          <cm:status name="LocRemCtl_6" index="6" unit="raw" />
-          <cm:status name="AutoMan_7" index="7" unit="raw" />
+          <cm:status name="DERStr_3" index="3" unit="raw"/>
+          <cm:status name="DERStop_4" index="4" unit="raw"/>
+          <cm:status name="AutoManCtl_5" index="5" unit="raw"/>
+          <cm:status name="LocRemCtl_6" index="6" unit="raw"/>
+          <cm:status name="AutoMan_7" index="7" unit="raw"/>
           <cm:control name="SetAuto" index="6">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
-          <cm:status name="ModOnConn_8" index="8" unit="raw" />
+          <cm:status name="ModOnConn_8" index="8" unit="raw"/>
           <cm:control name="StartPVGen" index="4">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="StopPVGen" index="5">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
-          <cm:status name="ModOnAval_9" index="9" unit="raw" />
-          <cm:status name="ModOffAval_10" index="10" unit="raw" />
-          <cm:status name="ModOffUnav_11" index="11" unit="raw" />
-          <cm:status name="TotWrange_13" index="13" unit="raw" />
-          <cm:status name="TotWrange_14" index="14" unit="raw" />
-          <cm:status name="TotVArrange_15" index="15" unit="raw" />
-          <cm:status name="ITotVArrange_16" index="16" unit="raw" />
-          <cm:status name="Hzrange_17" index="17" unit="raw" />
-          <cm:status name="Hzrange_18" index="18" unit="raw" />
-          <cm:status name="Amprange_27" index="27" unit="raw" />
-          <cm:status name="Amprange_28" index="28" unit="raw" />
-          <cm:status name="Volrange_29" index="29" unit="raw" />
-          <cm:status name="Volrange_30" index="30" unit="raw" />
-          <cm:status name="BatSt_31" index="31" unit="raw" />
-          <cm:status name="Volrange_32" index="32" unit="raw" />
-          <cm:status name="Volrange_33" index="33" unit="raw" />
-          <cm:status name="InBatV_34" index="34" unit="raw" />
-          <cm:status name="InBatV_35" index="35" unit="raw" />
-          <cm:status name="SchdSt_36" index="36" unit="raw" />
-          <cm:status name="SchdSt_37" index="37" unit="raw" />
-          <cm:status name="SchdSt_38" index="38" unit="raw" />
-          <cm:status name="SchdSt_39" index="39" unit="raw" />
-          <cm:status name="SchdSt_40" index="40" unit="raw" />
-          <cm:status name="SchdSt_41" index="41" unit="raw" />
-          <cm:status name="SchdSt_42" index="42" unit="raw" />
-          <cm:status name="SchdSt_43" index="43" unit="raw" />
-          <cm:status name="SchdSt_44" index="44" unit="raw" />
-          <cm:status name="SchdSt_45" index="45" unit="raw" />
-          <cm:status name="SchdSt_46" index="46" unit="raw" />
-          <cm:status name="SchdSt_47" index="47" unit="raw" />
-          <cm:status name="PhAVoltsHigh_48" index="48" unit="raw" />
-          <cm:status name="PhAVoltsLow_49" index="49" unit="raw" />
-          <cm:status name="PhBVoltsHigh_50" index="50" unit="raw" />
-          <cm:status name="PhBVoltsLow_51" index="51" unit="raw" />
-          <cm:status name="DERSw_ctl" index="500" unit="raw" />
+          <cm:status name="ModOnAval_9" index="9" unit="raw"/>
+          <cm:status name="ModOffAval_10" index="10" unit="raw"/>
+          <cm:status name="ModOffUnav_11" index="11" unit="raw"/>
+          <cm:status name="TotWrange_13" index="13" unit="raw"/>
+          <cm:status name="TotWrange_14" index="14" unit="raw"/>
+          <cm:status name="TotVArrange_15" index="15" unit="raw"/>
+          <cm:status name="ITotVArrange_16" index="16" unit="raw"/>
+          <cm:status name="Hzrange_17" index="17" unit="raw"/>
+          <cm:status name="Hzrange_18" index="18" unit="raw"/>
+          <cm:status name="Amprange_27" index="27" unit="raw"/>
+          <cm:status name="Amprange_28" index="28" unit="raw"/>
+          <cm:status name="Volrange_29" index="29" unit="raw"/>
+          <cm:status name="Volrange_30" index="30" unit="raw"/>
+          <cm:status name="BatSt_31" index="31" unit="raw"/>
+          <cm:status name="Volrange_32" index="32" unit="raw"/>
+          <cm:status name="Volrange_33" index="33" unit="raw"/>
+          <cm:status name="InBatV_34" index="34" unit="raw"/>
+          <cm:status name="InBatV_35" index="35" unit="raw"/>
+          <cm:status name="SchdSt_36" index="36" unit="raw"/>
+          <cm:status name="SchdSt_37" index="37" unit="raw"/>
+          <cm:status name="SchdSt_38" index="38" unit="raw"/>
+          <cm:status name="SchdSt_39" index="39" unit="raw"/>
+          <cm:status name="SchdSt_40" index="40" unit="raw"/>
+          <cm:status name="SchdSt_41" index="41" unit="raw"/>
+          <cm:status name="SchdSt_42" index="42" unit="raw"/>
+          <cm:status name="SchdSt_43" index="43" unit="raw"/>
+          <cm:status name="SchdSt_44" index="44" unit="raw"/>
+          <cm:status name="SchdSt_45" index="45" unit="raw"/>
+          <cm:status name="SchdSt_46" index="46" unit="raw"/>
+          <cm:status name="SchdSt_47" index="47" unit="raw"/>
+          <cm:status name="PhAVoltsHigh_48" index="48" unit="raw"/>
+          <cm:status name="PhAVoltsLow_49" index="49" unit="raw"/>
+          <cm:status name="PhBVoltsHigh_50" index="50" unit="raw"/>
+          <cm:status name="PhBVoltsLow_51" index="51" unit="raw"/>
+          <cm:status name="DERSw_ctl" index="500" unit="raw"/>
           <cm:control name="Close" index="0">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="Open" index="0">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:counter name="SupWh_0" index="0" unit="Wh" />
-          <cm:counter name="DmdWh_2" index="2" unit="Wh" />
-          <cm:analog name="MaxLimWPct_0" index="0" unit="%" />
-          <cm:analog name="OutWRte_1" index="1" unit="%" />
-          <cm:analog name="OpTmh_6" index="6" unit="Hours" />
-          <cm:analog name="OpTms_7" index="7" unit="Seconds" />
-          <cm:analog name="TotW_8" index="8" unit="Watts" />
-          <cm:analog name="TotVAr_9" index="9" unit="VARs" />
-          <cm:analog name="Hz_10" index="10" unit="Hz" />
-          <cm:analog name="TotW_11" index="11" unit="Watts" />
-          <cm:analog name="TotVAr_12" index="12" unit="VARs" />
-          <cm:analog name="PF_13" index="13" unit="PF" />
-          <cm:analog name="PhVPhsAmag_14" index="14" unit="Volts" />
-          <cm:analog name="PhVPhsBmag_16" index="16" unit="Volts" />
-          <cm:analog name="PhVPhsCmag_18" index="18" unit="Volts" />
-          <cm:analog name="Pin_20" index="20" unit="Watts" />
-          <cm:analog name="Amp_21" index="21" unit="Amps" />
-          <cm:analog name="Vol_22" index="22" unit="Volts" />
-          <cm:analog name="InBatV_24" index="24" unit="Volts" />
-          <cm:analog name="AhrPct_25" index="25" unit="%SOC" />
-          <cm:analog name="%RateSP_16" index="250" unit="%" />
-          <cm:analog name="MaxChRateSP_56" index="251" unit="%" />
-          <cm:analog name="MaxDisRateSP_57" index="252" unit="%" />
-          <cm:analog name="HzHighSP_33" index="253" unit="Hz" />
-          <cm:analog name="HzLowSP_34" index="254" unit="Hz" />
-          <cm:analog name="VHighSP_41" index="255" unit="Volts" />
-          <cm:analog name="VLowSP_42" index="256" unit="Volts" />
-          <cm:analog name="VbHighSP_43" index="257" unit="Volts" />
-          <cm:analog name="VbLowSP_44" index="258" unit="Volts" />
-          <cm:analog name="StorIndSP_21" index="259" unit="%SOC" />
-          <cm:setpoint name="%Rate" index="16" />
-          <cm:setpoint name="StorInd" index="21" />
-          <cm:setpoint name="HzHigh" index="33" />
-          <cm:setpoint name="HzLow" index="34" />
-          <cm:setpoint name="VoltsHighLim" index="41" />
-          <cm:setpoint name="VoltsLowLim" index="42" />
-          <cm:setpoint name="VbHighLim" index="43" />
-          <cm:setpoint name="VbLowLim" index="44" />
-          <cm:setpoint name="MaxChRate" index="56" />
-          <cm:setpoint name="MaxDisRate" index="57" />
+          <cm:counter name="SupWh_0" index="0" unit="Wh"/>
+          <cm:counter name="DmdWh_2" index="2" unit="Wh"/>
+          <cm:analog name="MaxLimWPct_0" index="0" unit="%"/>
+          <cm:analog name="OutWRte_1" index="1" unit="%"/>
+          <cm:analog name="OpTmh_6" index="6" unit="Hours"/>
+          <cm:analog name="OpTms_7" index="7" unit="Seconds"/>
+          <cm:analog name="TotW_8" index="8" unit="Watts"/>
+          <cm:analog name="TotVAr_9" index="9" unit="VARs"/>
+          <cm:analog name="Hz_10" index="10" unit="Hz"/>
+          <cm:analog name="TotW_11" index="11" unit="Watts"/>
+          <cm:analog name="TotVAr_12" index="12" unit="VARs"/>
+          <cm:analog name="PF_13" index="13" unit="PF"/>
+          <cm:analog name="PhVPhsAmag_14" index="14" unit="Volts"/>
+          <cm:analog name="PhVPhsBmag_16" index="16" unit="Volts"/>
+          <cm:analog name="PhVPhsCmag_18" index="18" unit="Volts"/>
+          <cm:analog name="Pin_20" index="20" unit="Watts"/>
+          <cm:analog name="Amp_21" index="21" unit="Amps"/>
+          <cm:analog name="Vol_22" index="22" unit="Volts"/>
+          <cm:analog name="InBatV_24" index="24" unit="Volts"/>
+          <cm:analog name="AhrPct_25" index="25" unit="%SOC"/>
+          <cm:analog name="%RateSP_16" index="250" unit="%"/>
+          <cm:analog name="MaxChRateSP_56" index="251" unit="%"/>
+          <cm:analog name="MaxDisRateSP_57" index="252" unit="%"/>
+          <cm:analog name="HzHighSP_33" index="253" unit="Hz"/>
+          <cm:analog name="HzLowSP_34" index="254" unit="Hz"/>
+          <cm:analog name="VHighSP_41" index="255" unit="Volts"/>
+          <cm:analog name="VLowSP_42" index="256" unit="Volts"/>
+          <cm:analog name="VbHighSP_43" index="257" unit="Volts"/>
+          <cm:analog name="VbLowSP_44" index="258" unit="Volts"/>
+          <cm:analog name="StorIndSP_21" index="259" unit="%SOC"/>
+          <cm:setpoint name="%Rate" index="16"/>
+          <cm:setpoint name="StorInd" index="21"/>
+          <cm:setpoint name="HzHigh" index="33"/>
+          <cm:setpoint name="HzLow" index="34"/>
+          <cm:setpoint name="VoltsHighLim" index="41"/>
+          <cm:setpoint name="VoltsLowLim" index="42"/>
+          <cm:setpoint name="VbHighLim" index="43"/>
+          <cm:setpoint name="VbLowLim" index="44"/>
+          <cm:setpoint name="MaxChRate" index="56"/>
+          <cm:setpoint name="MaxDisRate" index="57"/>
         </cm:equipment>
       </cm:equipment>
     </cm:endpoint>
-    <!--MINI-->
+
+    <!--MINI_WATSON-->
+
     <cm:endpoint name="MINI_WATSON">
-      <cm:type name="Endpoint" />
+      <cm:type name="Endpoint"/>
       <cm:protocol name="dnp3">
-        <common:configFile fileName="comms/mini_arm_dnp3.xml" />
+        <common:configFile fileName="comms/mini_arm_dnp3.xml"/>
         <!--<cm:simOptions delay="7500" xmlns:cm="communications.loader.reef.totalgrid.org" />-->
       </cm:protocol>
       <cm:equipment name="MINIWATSON">
         <cm:equipment name="LV">
-          <cm:analog name="Vs" index="36" unit="Volts" />
-          <cm:analog name="Vdc" index="37" unit="Volts" />
-          <cm:analog name="Vload" index="38" unit="Volts" />
-          <cm:analog name="Is" index="39" unit="Amps" />
-          <cm:analog name="Freq" index="40" unit="Hz" />
-          <cm:analog name="PF" index="41" unit="PF" />
-          <cm:analog name="P" index="42" unit="Watts" />
-          <cm:analog name="Q" index="43" unit="VARs" />
-          <cm:analog name="Iload" index="44" unit="Amps" />
-          <cm:analog name="PL" index="45" unit="Watts" />
-          <cm:analog name="QL" index="46" unit="VARs" />
-          <cm:analog name="PFL" index="47" unit="PF" />
+          <cm:analog name="Vs" index="36" unit="Volts"/>
+          <cm:analog name="Vdc" index="37" unit="Volts"/>
+          <cm:analog name="Vload" index="38" unit="Volts"/>
+          <cm:analog name="Is" index="39" unit="Amps"/>
+          <cm:analog name="Freq" index="40" unit="Hz"/>
+          <cm:analog name="PF" index="41" unit="PF"/>
+          <cm:analog name="P" index="42" unit="Watts"/>
+          <cm:analog name="Q" index="43" unit="VARs"/>
+          <cm:analog name="Iload" index="44" unit="Amps"/>
+          <cm:analog name="PL" index="45" unit="Watts"/>
+          <cm:analog name="QL" index="46" unit="VARs"/>
+          <cm:analog name="PFL" index="47" unit="PF"/>
           <cm:control name="work_Run" index="0">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="work_Stop" index="0">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
           <cm:control name="bypass_Run" index="5">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="bypass_Stop" index="5">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
           <cm:control name="startup_Run" index="6">
-            <cm:optionsDnp3 type="LATCH_ON" />
+            <cm:optionsDnp3 type="LATCH_ON"/>
           </cm:control>
           <cm:control name="startup_Stop" index="6">
-            <cm:optionsDnp3 type="LATCH_OFF" />
+            <cm:optionsDnp3 type="LATCH_OFF"/>
           </cm:control>
-          <cm:setpoint name="Vcr" index="7" />
-          <cm:setpoint name="Qcr" index="8" />
-          <cm:setpoint name="Mode" index="9" />
-          <cm:analog name="Vcr_REF" index="203" unit="Volts" />
-          <cm:analog name="Qcr_REF" index="200" unit="VARs" />
-          <cm:analog name="Mode_REF" index="201" unit="Volts" />
-          <cm:status name="work_COMMAND" index="100" unit="raw" />
-          <cm:status name="bypass_COMMAND" index="101" unit="raw" />
-          <cm:status name="startup_COMMAND" index="102" unit="raw" />
-          <cm:status name="brk" index="103" unit="raw" />
-          <cm:status name="inv_work" index="104" unit="raw" />
-          <cm:status name="mos_bypass" index="105" unit="raw" />
+          <cm:setpoint name="Vcr" index="7"/>
+          <cm:setpoint name="Qcr" index="8"/>
+          <cm:setpoint name="Mode" index="9"/>
+          <cm:analog name="Vcr_REF" index="203" unit="Volts"/>
+          <cm:analog name="Qcr_REF" index="200" unit="VARs"/>
+          <cm:analog name="Mode_REF" index="201" unit="Volts"/>
+          <cm:status name="work_COMMAND" index="100" unit="raw"/>
+          <cm:status name="bypass_COMMAND" index="101" unit="raw"/>
+          <cm:status name="startup_COMMAND" index="102" unit="raw"/>
+          <cm:status name="brk" index="103" unit="raw"/>
+          <cm:status name="inv_work" index="104" unit="raw"/>
+          <cm:status name="mos_bypass" index="105" unit="raw"/>
         </cm:equipment>
       </cm:equipment>
-      <cm:interface name="MINI_ARM_DNP3" ip="152.14.125.192" netmask="255.255.255.0" port="20000" network="any" />
+      <cm:interface name="MINI_ARM_DNP3" ip="152.14.125.192" netmask="255.255.255.0" port="20000" network="any"/>
     </cm:endpoint>
   </cm:communicationsModel>
 </configuration>
