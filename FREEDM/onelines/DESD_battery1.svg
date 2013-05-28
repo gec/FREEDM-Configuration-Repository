@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:tgs="http://www.totalgrid.org" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color:black;" viewBox="0 0 640 480">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+ <title>DESD_battery1</title>
+ <g>
+  <title>modeling</title>
+  <rect id="svg_124" fill="none" stroke="#bf0000" stroke-width="2" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="303" y="322" width="200" height="98"/>
+  <rect id="svg_123" fill="none" stroke="#bf0000" stroke-width="2" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="101" y="322" width="200" height="98"/>
+  <rect fill="none" stroke="#bf0000" stroke-width="2" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="301" y="101" width="200" height="98" id="svg_80"/>
+  <rect id="svg_122" fill="none" stroke="#bf0000" stroke-width="2" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="100" y="101" width="200" height="98"/>
+  <polyline se:connector="svg_12 svg_19" id="svg_48" points="270,230 300,230 330,230" stroke="#FFFFFF" fill="none"/>
+  <text fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="303" y="44" id="svg_56" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" font-weight="bold">BATTERY PACK MONITORING</text>
+  <g id="svg_57">
+   <g id="svg_16">
+    <rect fill="none" x="169" y="200" width="130" height="60" id="svg_7" stroke-width="2" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="209" cy="230" r="10" id="svg_10" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="259" cy="230" r="10" id="svg_12" stroke="#FFFFFF"/>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="209" y="216" id="svg_13" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" stroke="#FFFFFF">-</text>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="259" y="216" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_15" stroke="#FFFFFF">+</text>
+   </g>
+   <g id="svg_17">
+    <rect fill="none" x="301" y="200" width="130" height="60" stroke-width="2" id="svg_18" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="341" cy="230" r="10" id="svg_19" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="391" cy="230" r="10" id="svg_20" stroke="#FFFFFF"/>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="341" y="216" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_21" stroke="#FFFFFF">-</text>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="391" y="216" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_22" stroke="#FFFFFF">+</text>
+   </g>
+   <g id="svg_35" transform="rotate(-180 234 291.281)">
+    <rect fill="none" x="169" y="262" width="130" height="60" stroke-width="2" id="svg_36" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="209" cy="292" r="10" id="svg_37" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="259" cy="292" r="10" id="svg_38" stroke="#FFFFFF"/>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="209" y="278" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_39" stroke="#FFFFFF">-</text>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="259" y="278" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_40" stroke="#FFFFFF">+</text>
+   </g>
+   <g transform="rotate(-180 366 291.5)" id="svg_41">
+    <rect fill="none" x="301" y="262" width="130" height="60" stroke-width="2" id="svg_42" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="341" cy="292" r="10" id="svg_43" stroke="#FFFFFF"/>
+    <circle fill="none" stroke-width="2" cx="391" cy="292" r="10" id="svg_44" stroke="#FFFFFF"/>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="341" y="278" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_45" stroke="#FFFFFF">-</text>
+    <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="391" y="278" font-size="17" font-family="serif" text-anchor="middle" xml:space="preserve" id="svg_46" stroke="#FFFFFF">+</text>
+   </g>
+   <line fill="none" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="270" y1="290" x2="330" y2="290" id="svg_52" stroke="#FFFFFF"/>
+   <line fill="none" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="209" y1="241" x2="209" y2="279" id="svg_53" stroke="#FFFFFF"/>
+   <line fill="none" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="402" y1="230" x2="461" y2="230" id="svg_54" stroke="#FFFFFF"/>
+   <line fill="none" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="402" y1="291" x2="461" y2="291" id="svg_55" stroke="#FFFFFF"/>
+  </g>
+  <g id="svg_62" class="point" tgs:schematic-type="point" opacity="0.65">soc</g>
+  <g tgs:schematic-type="point" class="point" id="svg_4" tgs:point-name="DC_microgrid.DCmgrid.SOC11">
+   <use x="205.5" y="128" class="quality-display" xlink:href="#quality_questionable" id="svg_3"/>
+   <text class="data-label" xml:space="preserve" id="svg_2" y="126" x="205.5">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" id="svg_5" y="127" x="154" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">SOC</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" id="svg_6" y="155" x="154" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">VOLTAGE</text>
+  <g tgs:schematic-type="point" class="point" id="svg_11" tgs:point-name="DC_microgrid.DCmgrid.V11">
+   <use x="205.5" y="156.5" class="quality-display" xlink:href="#quality_questionable" id="svg_9"/>
+   <text class="data-label" xml:space="preserve" id="svg_8" y="154.5" x="205.5">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" id="svg_14" y="182" x="154" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">TEMPERATURE</text>
+  <g tgs:schematic-type="point" class="point" id="svg_25" tgs:point-name="DC_microgrid.DCmgrid.T11">
+   <use x="205.5" y="183" class="quality-display" xlink:href="#quality_questionable" id="svg_24"/>
+   <text class="data-label" xml:space="preserve" id="svg_23" y="181" x="205.5">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" id="svg_29" y="127" x="265" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">%</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" id="svg_30" y="155" x="263" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">V</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" id="svg_31" y="182" x="276" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">deg C</text>
+  <g id="svg_120">
+   <svg id="svg_26" tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="100" y="101" tgs:action="command" tgs:point-name="DC_microgrid.DCmgrid.DESD1" xmlns:tgs="http://www.totalgrid.org">
+    <g id="svg_32" tgs:state="open" display="none">
+     <rect id="svg_33" x="2" y="2" width="30" height="30" fill="#00FF00"/>
+    </g>
+    <g id="svg_27" tgs:state="closed">
+     <rect id="svg_28" x="2" y="2" width="30" height="30" fill="#A40000"/>
+    </g>
+   </svg>
+  </g>
+  <g tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.SOC13" id="svg_81">
+   <use x="206.25" y="350" class="quality-display" xlink:href="#quality_questionable" id="svg_82"/>
+   <text class="data-label" xml:space="preserve" y="348" x="206.25" id="svg_83">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="349" x="154" stroke-width="0" stroke="#ff0000" fill="#FFFFFF" id="svg_84">SOC</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="377" x="154" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF" id="svg_85">VOLTAGE</text>
+  <g tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.V13" id="svg_86">
+   <use x="206.25" y="378" class="quality-display" xlink:href="#quality_questionable" id="svg_87"/>
+   <text class="data-label" xml:space="preserve" y="376" x="206.25" id="svg_88">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="403" x="154" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF" id="svg_89">TEMPERATURE</text>
+  <g tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.T13" id="svg_90">
+   <use x="206.25" y="404.5" class="quality-display" xlink:href="#quality_questionable" id="svg_91"/>
+   <text class="data-label" xml:space="preserve" y="402.5" x="206.25" id="svg_92">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="349" x="265" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF" id="svg_93">%</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="377" x="263" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF" id="svg_94">V</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="403" x="276" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF" id="svg_95">deg C</text>
+  <g id="svg_121">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="100.75" y="322" tgs:action="command" tgs:point-name="DC_microgrid.DCmgrid.DESD3" id="svg_34" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_50">
+     <rect x="2" y="2" width="30" height="30" fill="#00FF00" id="svg_51"/>
+    </g>
+    <g tgs:state="closed" id="svg_47">
+     <rect x="2" y="2" width="30" height="30" fill="#A40000" id="svg_49"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_59" tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.SOC13">
+   <use id="svg_60" x="402.625" y="350" class="quality-display" xlink:href="#quality_questionable"/>
+   <text id="svg_61" class="data-label" xml:space="preserve" y="348" x="402.625">xxxxxx uu</text>
+  </g>
+  <text id="svg_63" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="349" x="350" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">SOC</text>
+  <text id="svg_64" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="377" x="350" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">VOLTAGE</text>
+  <g id="svg_65" tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.V13">
+   <use id="svg_66" x="402.625" y="378" class="quality-display" xlink:href="#quality_questionable"/>
+   <text id="svg_67" class="data-label" xml:space="preserve" y="376" x="402.625">xxxxxx uu</text>
+  </g>
+  <text id="svg_68" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="403" x="350" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">TEMPERATURE</text>
+  <g id="svg_69" tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.T13">
+   <use id="svg_70" x="402.625" y="404.5" class="quality-display" xlink:href="#quality_questionable"/>
+   <text id="svg_71" class="data-label" xml:space="preserve" y="402.5" x="402.625">xxxxxx uu</text>
+  </g>
+  <text id="svg_72" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="349" x="461" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">%</text>
+  <text id="svg_73" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="377" x="459" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">V</text>
+  <text id="svg_74" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="403" x="472" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">deg C</text>
+  <g id="svg_75">
+   <svg id="svg_58" tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="471.125" y="320.5" tgs:action="command" tgs:point-name="DC_microgrid.DCmgrid.DESD3" xmlns:tgs="http://www.totalgrid.org">
+    <g id="svg_78" tgs:state="open" display="none">
+     <rect id="svg_79" x="2" y="2" width="30" height="30" fill="#00FF00"/>
+    </g>
+    <g id="svg_76" tgs:state="closed">
+     <rect id="svg_77" x="2" y="2" width="30" height="30" fill="#A40000"/>
+    </g>
+   </svg>
+  </g>
+  <g id="svg_97" tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.SOC11">
+   <use id="svg_98" x="399.25" y="128" class="quality-display" xlink:href="#quality_questionable"/>
+   <text id="svg_99" class="data-label" xml:space="preserve" y="126" x="399.25">xxxxxx uu</text>
+  </g>
+  <text id="svg_100" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="127" x="348" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">SOC</text>
+  <text id="svg_101" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="155" x="348" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">VOLTAGE</text>
+  <g id="svg_102" tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.V11">
+   <use id="svg_103" x="399.25" y="156.5" class="quality-display" xlink:href="#quality_questionable"/>
+   <text id="svg_104" class="data-label" xml:space="preserve" y="154.5" x="399.25">xxxxxx uu</text>
+  </g>
+  <text id="svg_105" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="182" x="348" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">TEMPERATURE</text>
+  <g id="svg_106" tgs:schematic-type="point" class="point" tgs:point-name="DC_microgrid.DCmgrid.T11">
+   <use id="svg_107" x="399.25" y="183" class="quality-display" xlink:href="#quality_questionable"/>
+   <text id="svg_108" class="data-label" xml:space="preserve" y="181" x="399.25">xxxxxx uu</text>
+  </g>
+  <text id="svg_109" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="127" x="459" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">%</text>
+  <text id="svg_110" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="155" x="457" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">V</text>
+  <text id="svg_111" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="12" y="182" x="470" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#FFFFFF">deg C</text>
+  <g id="svg_112">
+   <svg id="svg_96" tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="466.75" y="101" tgs:action="command" tgs:point-name="DC_microgrid.DCmgrid.DESD1" xmlns:tgs="http://www.totalgrid.org">
+    <g id="svg_115" tgs:state="open" display="none">
+     <rect id="svg_116" x="2" y="2" width="30" height="30" fill="#00FF00"/>
+    </g>
+    <g id="svg_113" tgs:state="closed">
+     <rect id="svg_114" x="2" y="2" width="30" height="30" fill="#A40000"/>
+    </g>
+   </svg>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="20" id="svg_117" y="257" x="494" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">PACK</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="20" id="svg_118" y="275" x="494" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">CURRENT</text>
+  <g tgs:point-name="DC_microgrid.DCmgrid.I1" tgs:schematic-type="point" class="point" id="svg_126">
+   <use x="-9" y="3.671875" tgs:schematic-type="quality-display" class="quality-display" transform="translate(560.667 258)" xlink:href="#quality_questionable" id="svg_125"/>
+   <text class="data-label" xml:space="preserve" id="svg_119" y="259.671875" x="551.666667">xxxxxx uu</text>
+  </g>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="18" id="svg_127" y="263" x="612" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">A</text>
+ </g>
+ <g display="none">
+  <title>navigation</title>
+ </g>
+</svg>
