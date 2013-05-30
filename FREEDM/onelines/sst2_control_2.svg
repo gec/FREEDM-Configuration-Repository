@@ -1,0 +1,381 @@
+<?xml version="1.0"?>
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:tgs="http://www.totalgrid.org" xmlns:xlink="http://www.w3.org/1999/xlink" style="background-color:black;" viewBox="0 0 640 480">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+ <title>sst2_control_2</title>
+ <g>
+  <title>modeling</title>
+  <g y="223.605768" x="49.230769" id="svg_381" transform="matrix(1.77778 0 0 1.77778 -77.0295 -187.521)">
+   <svg width="348.93964" height="92.114777" id="svg_1" x="49.230769" y="223.605768">
+    <metadata id="svg_322">image/svg+xml</metadata>
+    <g id="svg_2">
+     <rect id="svg_321" width="356" height="102" x="-2" y="-2" fill-rule="evenodd" fill="#000000"/>
+     <path id="svg_320" d="m348.627167,46.057404c0,-3.6091 -2.926025,-6.535004 -6.535004,-6.535004c-3.608917,0 -6.534973,2.925903 -6.534973,6.535004c0,3.6091 2.926056,6.534973 6.534973,6.534973c3.608978,0 6.535004,-2.925873 6.535004,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_319" d="m342.092163,32.987427l0,6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_318" d="m342.092163,59.12735l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <g transform="matrix(0.544582 0 0 -0.544582 118.944 359.765)" id="svg_314" stroke-miterlimit="6" stroke-width="1.147669" fill="none" stroke="#ffffff">
+      <text x="-219.989914" y="-490.05127" id="svg_315" transform="matrix(1 0 0 -1 625.789 87.2586)" stroke-miterlimit="6" stroke-width="1.147669" fill="none" stroke="#ffffff">
+       <tspan id="svg_317" y="0" x="0" font-family="Symbol" stroke-miterlimit="6" stroke-width="1.147669" fill="none" font-weight="normal" font-size="15px" stroke="#ffffff">+</tspan>
+       <tspan id="svg_316" y="11.7102" x="0.036719" font-family="Symbol" stroke-miterlimit="6" stroke-width="1.147669" fill="none" font-weight="normal" font-size="15px" stroke="#ffffff">?</tspan>
+      </text>
+     </g>
+     <path id="svg_313" d="m302.882263,21.142761l0,11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_312" d="m302.882263,18.692139l0,-11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_311" d="m309.417267,18.692139l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_310" d="m309.417267,21.142761l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_309" d="m302.882263,70.155151l0,11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_308" d="m302.882263,67.704529l0,-11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_307" d="m309.417267,67.704529l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_306" d="m309.417267,70.155151l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_305" d="m149.310135,21.142761l0,11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_304" d="m149.310135,18.692139l0,-11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_303" d="m155.845139,18.692139l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_302" d="m155.845139,21.142761l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_301" d="m149.310135,73.422638l0,11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_300" d="m149.310135,70.972015l0,-11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_299" d="m155.845139,70.972015l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_298" d="m155.845139,73.422638l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_297" d="m252.23613,20.734344l4.90126,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_296" d="m252.23613,19.91745l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_295" d="m252.23613,15.016205l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_294" d="m252.23613,11.748718l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_293" d="m257.13739,6.847473l0,5.718109l-4.90126,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_292" d="m249.785538,13.382477l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_291" d="m257.13739,20.734344l0,-4.084381l-4.90126,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_290" d="m255.952927,15.588043c-1.327148,0.663849 -1.725769,0.663849 -3.716797,1.06192c1.991028,0.398102 2.389648,0.398102 3.716797,1.061951c-0.265228,-0.796722 -0.265228,-1.327698 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_289" d="m267.348267,19.91745l-3.675903,-6.534973l-3.675903,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_288" d="m263.672363,19.91745l0,6.535004" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_287" d="m263.672363,13.382477l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_286" d="m267.348267,13.382477l-7.351807,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_285" d="m252.23613,79.549194l4.90126,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_284" d="m252.23613,78.7323l0,1.633728" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_283" d="m252.23613,73.831085l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_282" d="m252.23613,70.563568l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_281" d="m257.13739,65.662354l0,5.718109l-4.90126,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_280" d="m249.785538,72.197327l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_279" d="m257.13739,79.549194l0,-4.084351l-4.90126,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_278" d="m255.952927,74.402893c-1.327148,0.663666 -1.725769,0.663666 -3.716797,1.061951c1.991028,0.398163 2.389648,0.398163 3.716797,1.06192c-0.265228,-0.796448 -0.265228,-1.327423 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_277" d="m267.348267,78.7323l-3.675903,-6.534973l-3.675903,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_276" d="m263.672363,78.7323l0,6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_275" d="m263.672363,72.197327l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_274" d="m267.348267,72.197327l-7.351807,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_273" d="m173.81633,20.734344l4.901245,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_272" d="m173.81633,19.91745l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_271" d="m173.81633,15.016205l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_270" d="m173.81633,11.748718l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_269" d="m178.717575,6.847473l0,5.718109l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_268" d="m171.365707,13.382477l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_267" d="m178.717575,20.734344l0,-4.084381l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_266" d="m177.533096,15.588043c-1.327148,0.663849 -1.725769,0.663849 -3.716766,1.06192c1.990997,0.398102 2.389618,0.398102 3.716766,1.061951c-0.265198,-0.796722 -0.265198,-1.327698 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_265" d="m188.928482,19.91745l-3.675934,-6.534973l-3.675934,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_264" d="m185.252548,19.91745l0,6.535004" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_263" d="m185.252548,13.382477l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_262" d="m188.928482,13.382477l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_261" d="m173.81633,79.549194l4.901245,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_260" d="m173.81633,78.7323l0,1.633728" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_259" d="m173.81633,73.831085l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_258" d="m173.81633,70.563568l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_257" d="m178.717575,65.662354l0,5.718109l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_256" d="m171.365707,72.197327l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_255" d="m178.717575,79.549194l0,-4.084351l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_254" d="m177.533096,74.402893c-1.327148,0.663666 -1.725769,0.663666 -3.716766,1.061951c1.990997,0.398163 2.389618,0.398163 3.716766,1.06192c-0.265198,-0.796448 -0.265198,-1.327423 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_253" d="m188.928482,78.7323l-3.675934,-6.534973l-3.675934,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_252" d="m185.252548,78.7323l0,6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_251" d="m185.252548,72.197327l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_250" d="m188.928482,72.197327l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_249" d="m82.326553,20.734344l4.901245,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_248" d="m82.326553,19.91745l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_247" d="m82.326553,15.016205l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_246" d="m82.326553,11.748718l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_245" d="m87.227798,6.847473l0,5.718109l-4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_244" d="m79.875931,13.382477l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_243" d="m87.227798,20.734344l0,-4.084381l-4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_242" d="m86.04332,15.588043c-1.327133,0.663849 -1.725769,0.663849 -3.716766,1.06192c1.990997,0.398102 2.389633,0.398102 3.716766,1.061951c-0.265213,-0.796722 -0.265213,-1.327698 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_241" d="m97.438705,19.91745l-3.675934,-6.534973l-3.675934,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_240" d="m93.762772,19.91745l0,6.535004" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_239" d="m93.762772,13.382477l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_238" d="m97.438705,13.382477l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_237" d="m118.268967,20.734344l4.90123,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_236" d="m118.268967,19.91745l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_235" d="m118.268967,15.016205l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_234" d="m118.268967,11.748718l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_233" d="m123.170197,6.847473l0,5.718109l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_232" d="m115.818344,13.382477l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_231" d="m123.170197,20.734344l0,-4.084381l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_230" d="m121.985733,15.588043c-1.327133,0.663849 -1.725784,0.663849 -3.716766,1.06192c1.990982,0.398102 2.389633,0.398102 3.716766,1.061951c-0.265213,-0.796722 -0.265213,-1.327698 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_229" d="m133.381119,19.91745l-3.675919,-6.534973l-3.675934,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_228" d="m129.705185,19.91745l0,6.535004" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_227" d="m129.705185,13.382477l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_226" d="m133.381119,13.382477l-7.351852,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_225" d="m82.326553,79.549194l4.901245,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_224" d="m82.326553,78.7323l0,1.633728" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_223" d="m82.326553,73.831085l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_222" d="m82.326553,70.563568l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_221" d="m87.227798,65.662354l0,5.718109l-4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_220" d="m79.875931,72.197327l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_219" d="m87.227798,79.549194l0,-4.084351l-4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_218" d="m86.04332,74.402893c-1.327133,0.663666 -1.725769,0.663666 -3.716766,1.061951c1.990997,0.398163 2.389633,0.398163 3.716766,1.06192c-0.265213,-0.796448 -0.265213,-1.327423 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_217" d="m97.438705,78.7323l-3.675934,-6.534973l-3.675934,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_216" d="m93.762772,78.7323l0,6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_215" d="m93.762772,72.197327l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_214" d="m97.438705,72.197327l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_213" d="m118.268967,79.549194l4.90123,0l0,5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_212" d="m118.268967,78.7323l0,1.633728" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_211" d="m118.268967,73.831085l0,3.267487" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_210" d="m118.268967,70.563568l0,1.633759" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_209" d="m123.170197,65.662354l0,5.718109l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_208" d="m115.818344,72.197327l0,6.534973l-5.718109,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_207" d="m123.170197,79.549194l0,-4.084351l-4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_206" d="m121.985733,74.402893c-1.327133,0.663666 -1.725784,0.663666 -3.716766,1.061951c1.990982,0.398163 2.389633,0.398163 3.716766,1.06192c-0.265213,-0.796448 -0.265213,-1.327423 0,-2.123871" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_205" d="m133.381119,78.7323l-3.675919,-6.534973l-3.675934,6.534973" stroke-miterlimit="6" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_204" d="m129.705185,78.7323l0,6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_203" d="m129.705185,72.197327l0,-6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_202" d="m133.381119,72.197327l-7.351852,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_201" d="m224.462448,49.733307c4.084351,0.816864 4.084351,4.084351 0,4.901245" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_200" d="m224.462448,49.733307c-4.084351,-0.816864 -4.084351,1.633759 0,0.816864" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_199" d="m224.462448,37.480225c4.084351,0.816864 4.084351,4.084381 0,4.901245" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_198" d="m224.462448,41.564606c4.084351,0.816864 4.084351,4.084351 0,4.901215" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_197" d="m224.462448,45.648956c4.084351,0.816864 4.084351,4.084351 0,4.901245" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_196" d="m224.462448,41.564606c-4.084351,-0.816895 -4.084351,1.633728 0,0.816864" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_195" d="m224.462448,45.648956c-4.084351,-0.816864 -4.084351,1.633759 0,0.816864" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_194" d="m224.462448,59.12735l0,-4.492798" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_193" d="m224.462448,32.987427l0,4.492798" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_192" d="m229.363693,55.859863l0,-19.60495" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_191" d="m232.63118,55.859863l0,-19.60495" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_190" d="m237.532425,42.38147c-4.084351,-0.816864 -4.084351,-4.084381 0,-4.901245" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_189" d="m237.532425,42.38147c4.084381,0.816864 4.084381,-1.633759 0,-0.816864" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_188" d="m237.532425,54.634552c-4.084351,-0.816864 -4.084351,-4.084351 0,-4.901245" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_187" d="m237.532425,50.550201c-4.084351,-0.816864 -4.084351,-4.084381 0,-4.901245" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_186" d="m237.532425,46.46582c-4.084351,-0.816864 -4.084351,-4.084351 0,-4.901215" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_185" d="m237.532425,50.550201c4.084381,0.816864 4.084381,-1.633759 0,-0.816864" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_184" d="m237.532425,46.46582c4.084381,0.816895 4.084381,-1.633728 0,-0.816864" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_183" d="m237.532425,32.987427l0,4.492798" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_182" d="m237.532425,59.12735l0,-4.492798" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_181" d="m206.491257,32.987427c0.816864,-4.084351 4.084351,-4.084351 4.901215,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_180" d="m206.491257,32.987427c-0.816895,4.084351 1.633728,4.084351 0.816864,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_179" d="m194.238144,32.987427c0.816864,-4.084351 4.084381,-4.084351 4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_178" d="m198.322525,32.987427c0.816864,-4.084351 4.084351,-4.084351 4.901215,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_177" d="m202.406876,32.987427c0.816864,-4.084351 4.084381,-4.084351 4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_176" d="m198.322525,32.987427c-0.816895,4.084351 1.633728,4.084351 0.816864,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_175" d="m202.406876,32.987427c-0.816864,4.084351 1.633759,4.084351 0.816864,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_174" d="m214.659988,32.987427l-3.267487,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_173" d="m191.787521,32.987427l2.450623,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_172" d="m65.98909,32.987427c0.816879,-4.084351 4.084381,-4.084351 4.901245,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_171" d="m65.98909,32.987427c-0.816864,4.084351 1.633759,4.084351 0.816879,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_170" d="m53.736008,32.987427c0.816864,-4.084351 4.084351,-4.084351 4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_169" d="m57.820358,32.987427c0.816864,-4.084351 4.084366,-4.084351 4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_168" d="m61.904739,32.987427c0.816879,-4.084351 4.084366,-4.084351 4.90123,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_167" d="m57.820358,32.987427c-0.816879,4.084351 1.633743,4.084351 0.816864,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_166" d="m61.904739,32.987427c-0.816879,4.084351 1.633743,4.084351 0.816879,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_165" d="m74.157822,32.987427l-3.267487,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_164" d="m51.285385,32.987427l2.450623,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_162" d="m44.750397,47.282715l0,11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_161" d="m44.750397,44.832092l0,-11.844666" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_159" d="m51.285385,44.832092l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_158" d="m51.285385,47.282715l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_156" d="m2.273003,46.955963l0,-3.430878" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_155" d="m2.273003,55.778168l0,3.430878" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_153" d="m0.3125,55.778168l3.92099,0l0,-8.822235l-3.92099,0l0,8.822235" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_152" d="m21.87796,42.054718l0,-3.430878" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_151" d="m21.87796,50.876953l0,3.430878" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_150" d="m19.91745,50.876953l3.92099,0l0,-8.822235l-3.92099,0l0,8.822235" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_149" d="m263.672363,6.847473l-6.534943,0l0,-6.534973l84.954742,0l0,35.942413" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_147" d="m302.882263,81.999786l0,9.80249l39.2099,0l0,-35.942444" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_114" d="m302.882263,0.3125l0,6.534973" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_97" d="m263.672363,26.452454l-6.534943,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_94" d="m257.13739,23.184937l0,42.477417l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_89" d="m302.882263,91.802277l-45.744843,0l0,-6.534973l6.534943,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_86" d="m302.882263,55.859863l0,-22.872437" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_83" d="m257.13739,32.987427l-19.604965,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_82" d="m224.462448,32.987427l-9.80246,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_80" d="m178.717575,26.452454l0,6.534973l13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_79" d="m178.717575,26.452454l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_76" d="m178.717575,32.987427l0,32.674927l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_72" d="m87.227798,91.802277l91.489777,0l0,-6.534973l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_71" d="m87.227798,0.3125l91.489777,0l0,6.534973l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_57" d="m149.310135,65.662354l0,-32.674927" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_56" d="m149.310135,0.3125l0,13.069977" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_55" d="m149.310135,91.802277l0,-9.80249" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_54" d="m123.170197,26.452454l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_53" d="m123.170197,0.3125l0,6.534973l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_52" d="m93.762772,65.662354l-6.534973,0l0,-39.2099l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_51" d="m87.227798,91.802277l0,-6.534973l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_50" d="m123.170197,23.184937l0,42.477417l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_48" d="m123.170197,91.802277l0,-6.534973l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_47" d="m87.227798,0.3125l0,6.534973l6.534973,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_46" d="m87.227798,32.987427l-13.069977,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_45" d="m2.273003,42.095551c-0.20295,0 -0.367599,0.164642 -0.367599,0.367615c0,0.202942 0.16465,0.367584 0.367599,0.367584c0.202942,0 0.367592,-0.164642 0.367592,-0.367584c0,-0.202972 -0.16465,-0.367615 -0.367592,-0.367615" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_44" d="m2.273003,42.83075l0,0.61264" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_43" d="m2.273003,36.949249c0.202942,0 0.367592,-0.164459 0.367592,-0.367584c0,-0.203125 -0.16465,-0.367584 -0.367592,-0.367584c-0.20295,0 -0.367599,0.164459 -0.367599,0.367584c0,0.203125 0.16465,0.367584 0.367599,0.367584" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_41" d="m2.273003,36.214081l0,-0.612671" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_40" d="m0.680092,42.463165l1.470383,-5.513916" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_39" d="m2.273003,32.987427l49.012383,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_38" d="m48.017883,59.12735l-45.744881,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_37" d="m255.0952,59.12735c0,-1.127655 0.914383,-2.042175 2.042191,-2.042175c1.127838,0 2.042175,0.91452 2.042175,2.042175" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_34" d="m260.404877,59.12735l-1.225311,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_33" d="m253.869888,59.12735l1.225311,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_32" d="m176.675369,59.12735c0,-1.127655 0.914368,-2.042175 2.042175,-2.042175c1.127838,0 2.042206,0.91452 2.042206,2.042175" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_31" d="m181.985062,59.12735l-1.225311,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_30" d="m175.450089,59.12735l1.225311,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_29" d="m85.185608,59.12735c0,-1.127655 0.914352,-2.042175 2.042175,-2.042175c1.127823,0 2.042175,0.91452 2.042175,2.042175" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_28" d="m90.495285,59.12735l-1.225311,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_27" d="m83.960297,59.12735l1.225311,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_26" d="m302.882263,59.12735l-42.477386,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_25" d="m237.532425,59.12735l16.337463,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_24" d="m181.985062,59.12735l42.477386,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_23" d="m149.310135,59.12735l26.139923,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_22" d="m123.170197,59.12735l-32.674927,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_21" d="m48.017883,59.12735l35.942413,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_20" d="m21.87796,59.12735l0,-5.718109" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_19" d="m21.87796,32.987427l0,8.985596" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_18" d="m2.273003,32.987427l0,2.450623" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_15" d="m189.023727,19.823853l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_9" d="m188.970901,78.596527l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_8" d="m133.366577,78.860565l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_7" d="m133.366577,20.035095l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_6" d="m97.505157,19.803802l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_5" d="m97.366257,78.833893l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_4" d="m267.354126,19.896393l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+     <path id="svg_3" d="m267.327759,78.714722l-7.351868,0" stroke-miterlimit="6" stroke-linecap="round" stroke-width="0.625" fill="none" stroke="#ffffff"/>
+    </g>
+   </svg>
+  </g>
+  <g transform="matrix(1.46667 0 0 1.46667 -180 16.573)" id="svg_36">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="448.89002" y="46.63623" tgs:action="command" tgs:point-name="Gen2_SST2.SST.REC_COMMAND" id="svg_323" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_326">
+     <rect x="2" y="2" width="30" height="30" fill="#000000" stroke="#ff0000" id="svg_327"/>
+    </g>
+    <g tgs:state="closed" id="svg_324">
+     <rect x="2" y="2" width="30" height="30" fill="#000000" stroke="#ff0000" id="svg_325"/>
+    </g>
+   </svg>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.P_Grid" id="svg_157">
+   <use xlink:href="#quality_questionable" class="quality-display" y="83.945333" x="22.50003" id="svg_10"/>
+   <text x="42.50003" y="97.945323" xml:space="preserve" class="data-label" id="svg_11">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.Q_Grid" id="svg_160">
+   <use xlink:href="#quality_questionable" class="quality-display" y="104.945323" x="22.50003" id="svg_13"/>
+   <text x="42.50003" y="118.945323" xml:space="preserve" class="data-label" id="svg_14">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.VDC_Low" id="svg_163">
+   <use xlink:href="#quality_questionable" class="quality-display" y="179.40626" x="561.50003" id="svg_16"/>
+   <text x="581.50003" y="193.40626" xml:space="preserve" class="data-label" id="svg_17">xxxxxx uu</text>
+  </g>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="690" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_35">REC</text>
+  <g transform="matrix(1.46667 0 0 1.46667 -120.973 17.2812)" id="svg_69">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="450.25337" y="46.15337" tgs:action="command" tgs:point-name="Gen2_SST2.SST.DAB_COMMAND" id="svg_328" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_331">
+     <rect x="2" y="2" width="30" height="30" fill="#000000" stroke="#ff0000" id="svg_332"/>
+    </g>
+    <g tgs:state="closed" id="svg_329">
+     <rect x="2" y="2" width="30" height="30" fill="#000000" stroke="#ff0000" id="svg_330"/>
+    </g>
+   </svg>
+  </g>
+  <g transform="matrix(1.46667 0 0 1.46667 -242.64 14.6146)" id="svg_75">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="448.88973" y="47.9715" tgs:action="command" tgs:point-name="Gen2_SST2.SST.INV_COMMAND" id="svg_333" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_336">
+     <rect x="2" y="2" width="30" height="30" fill="#000000" stroke-linecap="round" stroke-width="2" stroke="#ff0000" id="svg_337"/>
+    </g>
+    <g tgs:state="closed" id="svg_334">
+     <rect x="2" y="2" width="30" height="30" fill="#000000" stroke-linecap="round" stroke-width="2" stroke="#ff0000" id="svg_335"/>
+    </g>
+   </svg>
+  </g>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="580" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_49">INV</text>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="800" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_42">DAB</text>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="700" y="100" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_81">SST Commands</text>
+  <line fill="none" stroke-width="2" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="420" y1="80" x2="590" y2="80" stroke="#FFFFFF" id="svg_105"/>
+  <g transform="matrix(1.46667 0 0 1.46667 -600 89.3233)" id="svg_106">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="596.16241" y="-2.96613" tgs:action="command" tgs:point-name="Gen2_SST2.SST.REC_Vdc_REF" id="svg_338" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_341">
+     <rect stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_342"/>
+    </g>
+    <g tgs:state="closed" id="svg_339">
+     <rect stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_340"/>
+    </g>
+   </svg>
+  </g>
+  <g transform="matrix(1.46667 0 0 1.46667 -540.973 89.0313)" id="svg_116">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="597.52576" y="-2.76704" tgs:action="command" tgs:point-name="Gen2_SST2.SST.DAB_Vsec_REF" id="svg_343" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_346">
+     <rect stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_347"/>
+    </g>
+    <g tgs:state="closed" id="svg_344">
+     <rect stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_345"/>
+    </g>
+   </svg>
+  </g>
+  <g transform="matrix(1.46667 0 0 1.46667 -661.64 89.3643)" id="svg_125">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="597.52576" y="-2.99409" tgs:action="command" tgs:point-name="Gen2_SST2.SST.VAR_REF" id="svg_348" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_351">
+     <rect stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_352"/>
+    </g>
+    <g tgs:state="closed" id="svg_349">
+     <rect stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_350"/>
+    </g>
+   </svg>
+  </g>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="280" y="100" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_134">SST Setpoints</text>
+  <line fill="none" stroke-width="2" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="150" y1="80" x2="380" y2="80" stroke="#FFFFFF" id="svg_135"/>
+  <g transform="matrix(1.46667 0 0 1.46667 -722.307 88.6143)" id="svg_136">
+   <svg tgs:symbol-type="circuitbreaker" tgs:schematic-type="equipment-symbol" class="symbol clickable" preserveAspectRatio="xMaxYMax" x="597.52576" y="-2.48272" tgs:action="command" tgs:point-name="Gen2_SST2.SST.INV_Vac_REF" id="svg_353" xmlns:tgs="http://www.totalgrid.org">
+    <g tgs:state="open" display="none" id="svg_356">
+     <rect stroke-width="2" stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_357"/>
+    </g>
+    <g tgs:state="closed" id="svg_354">
+     <rect stroke-width="2" stroke="#007f00" x="2" y="2" width="30" height="30" fill="#000000" id="svg_355"/>
+    </g>
+   </svg>
+  </g>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="110" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_12">Vac</text>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="440" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_67">Vsec</text>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="220" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_68">VAR</text>
+  <text fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="330" y="150" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.565217 0 0 0.7 113.913 0.3)" id="svg_70">Vdc</text>
+  <text transform="matrix(0.765823 0 0 0.8125 -6.79114 2.625)" fill="#FFFFFF" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="450" y="50" font-size="26" font-family="Sans-serif" text-anchor="middle" xml:space="preserve" font-style="normal" font-weight="normal" id="svg_145">Gen-2 SST Control</text>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.IAC_Low_RMS" id="svg_139">
+   <use xlink:href="#quality_questionable" class="quality-display" y="144.992198" x="532.50003" id="svg_73"/>
+   <text x="552.50003" y="158.992198" xml:space="preserve" class="data-label" id="svg_74">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.IAC_HIGH_RMS" id="svg_148">
+   <use xlink:href="#quality_questionable" class="quality-display" y="354.40626" x="41.50003" id="svg_77"/>
+   <text x="61.50003" y="368.40626" xml:space="preserve" class="data-label" id="svg_78">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.VAC_HIGH_RMS" id="svg_154">
+   <use xlink:href="#quality_questionable" class="quality-display" y="338.40626" x="41.50003" id="svg_84"/>
+   <text x="61.50003" y="352.40626" xml:space="preserve" class="data-label" id="svg_85">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.Power_Factor" id="svg_90">
+   <use xlink:href="#quality_questionable" class="quality-display" y="125.992198" x="22.50003" id="svg_87"/>
+   <text x="42.50003" y="139.992198" xml:space="preserve" class="data-label" id="svg_88">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.Freq_Grid" id="svg_93">
+   <use xlink:href="#quality_questionable" class="quality-display" y="321.90626" x="41.50003" id="svg_91"/>
+   <text x="61.50003" y="335.90626" xml:space="preserve" class="data-label" id="svg_92">xxxxxx uu</text>
+  </g>
+  <g class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.VDCt_High" id="svg_96">
+   <use xlink:href="#quality_questionable" class="quality-display" y="179.40626" x="233.00003" id="svg_95"/>
+   <text x="253.00003" y="193.40626" xml:space="preserve" class="data-label" id="svg_96">xxxxxx uu</text>
+  </g>
+  <rect fill="none" x="139" y="201" width="116" height="189" id="svg_131" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5,5" stroke="#007fff"/>
+  <text stroke="#FFFFFF" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="256" x="797" stroke-width="0" fill="#FFFFFF" id="svg_132" transform="matrix(0.538462 0 0 0.538462 52.3846 57)">DUAL ACTIVE BRIDGE</text>
+  <rect fill="none" stroke-width="2" stroke-dasharray="5,5" stroke-linejoin="round" stroke-linecap="round" x="301" y="201" width="274" height="190" id="svg_133" stroke="#00bf00"/>
+  <text stroke="#FFFFFF" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="256" x="269" stroke-width="0" fill="#FFFFFF" id="svg_137" transform="matrix(0.538462 0 0 0.538462 52.3846 57)">INVERTER</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" id="svg_58" y="160" x="520" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">Status</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" id="svg_59" y="99" x="30" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">P:</text>
+  <text id="svg_60" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" y="120" x="30" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">Q:</text>
+  <text id="svg_61" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" y="141" x="30" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">PF:</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" id="svg_62" y="246" x="19" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">FID</text>
+  <text id="svg_63" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" y="246" x="57" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">Status</text>
+  <g id="svg_64" class="point" tgs:schematic-type="point" tgs:point-name="Gen2_SST2.SST.VAC_Low_RMS">
+   <use id="svg_65" xlink:href="#quality_questionable" class="quality-display" y="230.742198" x="61.00003"/>
+   <text id="svg_66" x="81.00003" y="244.742198" xml:space="preserve" class="data-label">xxxxxx uu</text>
+  </g>
+  <text transform="matrix(1 0 0 1 0 0)" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" id="svg_362" y="275" x="629" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" stroke="#FFFFFF" fill="#FFFFFF">+</text>
+  <text stroke="#FFFFFF" transform="matrix(1.57143 0 0 1 -357.143 0)" id="svg_363" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="14" y="316" x="628" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" fill="#FFFFFF">-</text>
+ </g>
+ <g display="none">
+  <title>navigation</title>
+ </g>
+</svg>
